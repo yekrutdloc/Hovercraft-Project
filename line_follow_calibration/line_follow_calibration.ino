@@ -1,56 +1,43 @@
-#define PHOTO_AMOUNT 4 //Change value to amount of photoresistors
 
-int photoPins[PHOTO_AMOUNT];
-int photoWhiteValues[PHOTO_AMOUNT];
-int photoBlackValues[PHOTO_AMOUNT];
+int photoFrontPins[] = {0, 1, 2, 3};
+int photoBackPins[] = {4, 5, 6, 7};
+int const photoAmount = sizeof(photoFrontPins);
+int photoFrontWhiteValues[photoAmount];
 
-void setup()
-{
+void setup() {
   Serial.begin(9600);
 }
 
-void loop()
-{
-  for (int i = 0; i < PHOTO_AMOUNT; i++) {
-    photoPins[i] = i;
+void loop() {
+  // Store Front photoarray white light values locally
+  for (int i = 0; i < photoAmount / 2; i++) {
+    photoFrontWhiteValues[i] = getLightValue(photoFrontPins[i]);
   }
-  calibrateWhiteValues();
-  //  calibrateBlackValues();
+
+  //Print all Front photoarray white lightvalues
+  for (int i = 0; i < photoAmount  / 2; i++) {
+    Serial.print(photoFrontWhiteValues[i]);
+  }
+
   delay(500);
 }
 
-void calibratefrontPhotoArray() {
+//void calibratefrontPhotoArray() {
+//
+//}
+//
+//
+//void calibratebakrehotoArray() {
+//
+//}
 
+
+
+//Get B/W value
+int getLightValue(int photoPin) {
+  int photoWhiteValue;
+
+  photoWhiteValue = analogRead(photoPin);
+
+  return photoWhiteValue;
 }
-
-
-void calibratebakrehotoArray() {
-
-}
-
-void calibrateWhiteValues() {
-  //Get white value
-  for (int i = 0; i < PHOTO_AMOUNT; i++) {
-    photoWhiteValues[i] = analogRead(photoPins[i]);
-  }
-  Serial.println("");
-
-  for (int i = 0; i < PHOTO_AMOUNT; i++) {
-    Serial.print(photoWhiteValues[i]);
-    Serial.print("-");
-  }
-}
-
-void calibrateBlackValues() {
-  //Get black value
-  for (int i = 0; i < PHOTO_AMOUNT; i++) {
-    photoBlackValues[i] = analogRead(photoPins[i]);
-  }
-  Serial.println("");
-
-  for (int i = 0; i < PHOTO_AMOUNT; i++) {
-    Serial.print(photoBlackValues[i]);
-    Serial.print("-");
-  }
-}
-
