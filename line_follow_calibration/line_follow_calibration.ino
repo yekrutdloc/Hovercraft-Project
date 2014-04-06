@@ -28,7 +28,6 @@ void setup() {
 
   // Setup 433 MHz Radio reciever
   mySwitch.enableReceive(0);  // Receiver on interrupt 0 --> RX0
-
 }
 
 // Loop function
@@ -39,9 +38,13 @@ void loop() {
     checkReceivedCommand();
     mySwitch.resetAvailable();
   }
+  
+  
 
   delay(500);
 }
+
+
 
 void checkReceivedCommand() {
   if (mySwitch.getReceivedValue() == 5393 && photoFrontWhiteCal == 0) {
