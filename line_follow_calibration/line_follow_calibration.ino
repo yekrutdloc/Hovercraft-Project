@@ -2,9 +2,11 @@
 #include <RCSwitch.h>
 RCSwitch mySwitch = RCSwitch();
 
+int buzzerPin = 30; // Buzzer
+
 // Photoresistor array variables
-int photoFrontPins[] = {0, 1, 2, 3};
-int photoBackPins[] = {4, 5, 6, 7};
+int lightFollowModuleFrontPins[] = {0, 1, 2, 3};
+int lightFollowModuleBackPins[] = {4, 5, 6, 7};
 int const photoAmount = 4;
 int photoFrontWhiteValues[photoAmount];
 int photoFrontWhiteCal = 0;
@@ -20,6 +22,10 @@ void setup() {
   //  Serial.begin(9600);
   SerialUSB.begin(115200);
 
+  //Buzzer Setup
+  pinMode(buzzerPin, OUTPUT);
+  digitalWrite(buzzerPin, LOW);
+
   // Setup 433 MHz Radio reciever
   mySwitch.enableReceive(0);  // Receiver on inerrupt 0 => that is pin #2
 
@@ -27,12 +33,16 @@ void setup() {
 
 // Loop function
 void loop() {
+  // Check 433 MHz radio signals
   if (mySwitch.available()) {
     if (mySwitch.getReceivedValue() == 5393 && photoFrontWhiteCal == 0) {
-      SerialUSB.println("Running Front PhotoArray White Light Calibration");
-      calibrateFrontWhitePhotoArray();
-      printValues();
+      SerialUSB.println("Running Front Light-follow module White Light Calibration");
+      calibrateFrontWhiteLFM();
+      printValues(photoFrontWhiteValues);
       photoFrontWhiteCal = 1;
+      digitalWrite(buzzerPin, HIGH);   // turn the LED on (HIGH is the voltage level)
+      delay(100);               // wait for a second
+      digitalWrite(buzzerPin, LOW);    // turn the LED off by making the voltage LOW
     }
   }
   mySwitch.resetAvailable();
@@ -41,37 +51,37 @@ void loop() {
 }
 
 //Print all Front photoarray white lightvalues
-void printValues() {
+void printValues(int lFMValues[]) {
   for (int i = 0; i < photoAmount; i++) {
-    SerialUSB.print(photoFrontWhiteValues[i]);
-    SerialUSB.print("-");
+    SerialUSB.print(lFMValues[i]);
+    SerialUSB.print(" ");
   }
   SerialUSB.println("");
 }
 
 // Store Front photoarray white light values
-void calibrateFrontWhitePhotoArray() {
+void calibrateFrontWhiteLFM() {
   for (int i = 0; i < photoAmount; i++) {
-    photoFrontWhiteValues[i] = getLightValue(photoFrontPins[i]);
+    photoFrontWhiteValues[i] = getLightValue(lightFollowModuleFrontPins[i]);
   }
 }
 
 // Store Front photoarray black light values
-void calibrateFrontBlackPhotoArray() {
+void calibrateFrontBlackLFM() {
   for (int i = 0; i < photoAmount; i++) {
-    photoFrontBlackValues[i] = getLightValue(photoFrontPins[i]);
+    photoFrontBlackValues[i] = getLightValue(lightFollowModuleFrontPins[i]);
   }
 }
 
-void calibrateBackWhitePhotoArray() {
+void calibrateBackWhiteLFM() {
   for (int i = 0; i < photoAmount; i++) {
-    photoBackWhiteValues[i] = getLightValue(photoFrontPins[i]);
+    photoBackWhiteValues[i] = getLightValue(lightFollowModuleFrontPins[i]);
   }
 }
 
-void calibrateBackBlackPhotoArray() {
+void calibrateBackBlackLFM() {
   for (int i = 0; i < photoAmount; i++) {
-    photoBackBlackValues[i] = getLightValue(photoFrontPins[i]);
+    photoBackBlackValues[i] = getLightValue(lightFollowModuleFrontPins[i]);
   }
 }
 
