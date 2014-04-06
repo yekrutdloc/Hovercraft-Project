@@ -27,27 +27,36 @@ void setup() {
   digitalWrite(buzzerPin, LOW);
 
   // Setup 433 MHz Radio reciever
-  mySwitch.enableReceive(0);  // Receiver on inerrupt 0 => that is pin #2
+  mySwitch.enableReceive(0);  // Receiver on interrupt 0 --> RX0
 
 }
 
 // Loop function
 void loop() {
+
   // Check 433 MHz radio signals
   if (mySwitch.available()) {
-    if (mySwitch.getReceivedValue() == 5393 && photoFrontWhiteCal == 0) {
-      SerialUSB.println("Running Front Light-follow module White Light Calibration");
-      calibrateFrontWhiteLFM();
-      printValues(photoFrontWhiteValues);
-      photoFrontWhiteCal = 1;
-      digitalWrite(buzzerPin, HIGH);   // turn the LED on (HIGH is the voltage level)
-      delay(100);               // wait for a second
-      digitalWrite(buzzerPin, LOW);    // turn the LED off by making the voltage LOW
-    }
+    checkReceivedCommand();
+    mySwitch.resetAvailable();
   }
-  mySwitch.resetAvailable();
 
   delay(500);
+}
+
+void checkReceivedCommand() {
+  if (mySwitch.getReceivedValue() == 5393 && photoFrontWhiteCal == 0) {
+    SerialUSB.println("Running Front Light-follow module White Light Calibration");
+    calibrateFrontWhiteLFM();
+    printValues(photoFrontWhiteValues);
+    photoFrontWhiteCal = 1;
+    runBeep();
+  }
+}
+
+void runBeep() {
+  digitalWrite(buzzerPin, HIGH);
+  delay(75);
+  digitalWrite(buzzerPin, LOW);
 }
 
 //Print all Front photoarray white lightvalues
@@ -85,11 +94,11 @@ void calibrateBackBlackLFM() {
   }
 }
 
-//Get B/W value
+//Get light value from a photoresistor
 int getLightValue(int photoPin) {
-  int photoBWValue;
+  int photoresValue;
 
-  photoBWValue = analogRead(photoPin);
+  photoresValue = analogRead(photoPin);
 
-  return photoBWValue;
+  return photoresValue;
 }
