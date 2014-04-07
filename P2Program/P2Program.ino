@@ -20,7 +20,7 @@ int photoBackBlackCal = 0;
 // Setup function
 void setup() {
   //  Serial.begin(9600);
-  SerialUSB.begin(115200);
+  SerialUSB.begin(9600);
 
   //Buzzer Setup
   pinMode(buzzerPin, OUTPUT);
@@ -37,22 +37,30 @@ void loop() {
   if (mySwitch.available()) {
     checkReceivedCommand();
     mySwitch.resetAvailable();
+
   }
-  
-  
+  SerialUSB.println("looptest");
 
   delay(500);
 }
 
 
-
 void checkReceivedCommand() {
   if (mySwitch.getReceivedValue() == 5393 && photoFrontWhiteCal == 0) {
-    SerialUSB.println("Running Front Light-follow module White Light Calibration");
+    SerialUSB.println("Running FRONT Light-follow module WHITE Light Calibration");
     calibrateFrontWhiteLFM();
-    printValues(photoFrontWhiteValues);
     photoFrontWhiteCal = 1;
     runBeep();
+    printValues(photoFrontWhiteValues);
+  } else if (mySwitch.getReceivedValue() == 5398 && photoFrontBlackCal == 0) {
+    SerialUSB.println("Running FRONT Light-follow module BLACK Light Calibration");
+    calibrateFrontBlackLFM();
+    photoFrontBlackCal = 1;
+    runBeep();
+    printValues(photoFrontBlackValues);
+  }
+  else {
+    SerialUSB.println("Error! 433 MHz Command Unknown or previously already pressed!");
   }
 }
 
@@ -64,6 +72,7 @@ void runBeep() {
 
 //Print all Front photoarray white lightvalues
 void printValues(int lFMValues[]) {
+  SerialUSB.println("Photoresistor Values:");
   for (int i = 0; i < photoAmount; i++) {
     SerialUSB.print(lFMValues[i]);
     SerialUSB.print(" ");
