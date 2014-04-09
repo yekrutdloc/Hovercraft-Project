@@ -21,6 +21,7 @@ void setup() {
 
   // LED settings
   pinMode(ledPin, OUTPUT);
+  digitalWrite(ledPin, LOW);
 
 
   // Button settings
