@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -453,33 +453,33 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="10PIN" library="Wuerth_Elektronik_eiCan_05_Box_Header_IDC_Connectors_1_2" package="61201022021" value="61201022021" x="58.42" y="11.43"/>
-<element name="16PIN" library="Wuerth_Elektronik_eiCan_05_Box_Header_IDC_Connectors_1_2" package="61201622021" value="61201622021" x="58.42" y="31.75"/>
-<element name="FAN1" library="con-molex" package="22-23-2041" value="22-23-2041" x="80.137" y="53.34">
-<attribute name="OC_NEWARK" value="38C0355" x="130.937" y="17.78" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="22-23-2041" x="130.937" y="17.78" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="MOLEX" x="130.937" y="17.78" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="1462920" x="130.937" y="17.78" size="1.778" layer="27" display="off"/>
+<element name="10PIN" library="Wuerth_Elektronik_eiCan_05_Box_Header_IDC_Connectors_1_2" package="61201022021" value="61201022021" x="62.484" y="15.748"/>
+<element name="16PIN" library="Wuerth_Elektronik_eiCan_05_Box_Header_IDC_Connectors_1_2" package="61201622021" value="61201622021" x="65.532" y="36.576"/>
+<element name="FAN1" library="con-molex" package="22-23-2041" value="22-23-2041" x="22.352" y="57.404">
+<attribute name="OC_NEWARK" value="38C0355" x="73.152" y="21.844" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="22-23-2041" x="73.152" y="21.844" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="MOLEX" x="73.152" y="21.844" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="1462920" x="73.152" y="21.844" size="1.778" layer="27" display="off"/>
 </element>
-<element name="FAN2" library="con-molex" package="22-23-2041" value="22-23-2041" x="64.77" y="53.34">
-<attribute name="OC_NEWARK" value="38C0355" x="83.82" y="3.81" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="22-23-2041" x="83.82" y="3.81" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="MOLEX" x="83.82" y="3.81" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="1462920" x="83.82" y="3.81" size="1.778" layer="27" display="off"/>
+<element name="FAN2" library="con-molex" package="22-23-2041" value="22-23-2041" x="36.83" y="57.15">
+<attribute name="OC_NEWARK" value="38C0355" x="55.88" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="22-23-2041" x="55.88" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="MOLEX" x="55.88" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="1462920" x="55.88" y="7.62" size="1.778" layer="27" display="off"/>
 </element>
-<element name="FAN3" library="con-molex" package="22-23-2041" value="22-23-2041" x="49.53" y="53.34">
-<attribute name="OC_NEWARK" value="38C0355" x="80.01" y="3.81" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="22-23-2041" x="80.01" y="3.81" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="MOLEX" x="80.01" y="3.81" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="1462920" x="80.01" y="3.81" size="1.778" layer="27" display="off"/>
+<element name="FAN3" library="con-molex" package="22-23-2041" value="22-23-2041" x="54.61" y="57.15">
+<attribute name="OC_NEWARK" value="38C0355" x="85.09" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="22-23-2041" x="85.09" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="MOLEX" x="85.09" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="1462920" x="85.09" y="7.62" size="1.778" layer="27" display="off"/>
 </element>
-<element name="FAN4" library="con-molex" package="22-23-2041" value="22-23-2041" x="34.29" y="53.34">
-<attribute name="OC_NEWARK" value="38C0355" x="76.2" y="3.81" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="22-23-2041" x="76.2" y="3.81" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="MOLEX" x="76.2" y="3.81" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="1462920" x="76.2" y="3.81" size="1.778" layer="27" display="off"/>
+<element name="FAN4" library="con-molex" package="22-23-2041" value="22-23-2041" x="76.2" y="57.15">
+<attribute name="OC_NEWARK" value="38C0355" x="118.11" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="22-23-2041" x="118.11" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="MOLEX" x="118.11" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="1462920" x="118.11" y="7.62" size="1.778" layer="27" display="off"/>
 </element>
-<element name="MULTIPLEX1" library="40xx" package="DIL16" value="4051N" x="16.51" y="21.59" rot="R90"/>
+<element name="MULTIPLEX1" library="40xx" package="DIL16" value="4051N" x="23.114" y="15.748"/>
 </elements>
 <signals>
 <signal name="VEE">
@@ -493,12 +493,12 @@ design rules under a new name.</description>
 <contactref element="FAN3" pad="1"/>
 <contactref element="FAN4" pad="1"/>
 <contactref element="16PIN" pad="15"/>
-<wire x1="60.96" y1="53.34" x2="76.327" y2="53.34" width="0" layer="19" extent="1-1"/>
-<wire x1="45.72" y1="53.34" x2="60.96" y2="53.34" width="0" layer="19" extent="1-1"/>
-<wire x1="30.48" y1="53.34" x2="45.72" y2="53.34" width="0" layer="19" extent="1-1"/>
-<wire x1="45.72" y1="33.02" x2="45.72" y2="53.34" width="0" layer="19" extent="1-1"/>
-<wire x1="60.96" y1="12.7" x2="45.72" y2="33.02" width="0" layer="19" extent="1-1"/>
-<wire x1="20.32" y1="30.48" x2="45.72" y2="33.02" width="0" layer="19" extent="1-1"/>
+<wire x1="32.004" y1="11.938" x2="72.39" y2="57.15" width="0" layer="19" extent="1-1"/>
+<wire x1="50.8" y1="57.15" x2="72.39" y2="57.15" width="0" layer="19" extent="1-1"/>
+<wire x1="18.542" y1="57.404" x2="50.8" y2="57.15" width="0" layer="19" extent="1-1"/>
+<wire x1="52.832" y1="37.846" x2="18.542" y2="57.404" width="0" layer="19" extent="1-1"/>
+<wire x1="33.02" y1="57.15" x2="18.542" y2="57.404" width="0" layer="19" extent="1-1"/>
+<wire x1="65.024" y1="17.018" x2="52.832" y2="37.846" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="MULTIPLEX1" pad="16"/>
@@ -506,87 +506,87 @@ design rules under a new name.</description>
 <signal name="PHOTO2">
 <contactref element="10PIN" pad="1"/>
 <contactref element="MULTIPLEX1" pad="15"/>
-<wire x1="63.5" y1="12.7" x2="12.7" y2="15.24" width="0" layer="19" extent="1-1"/>
+<wire x1="67.564" y1="17.018" x2="16.764" y2="19.558" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+3V3">
 <contactref element="10PIN" pad="5"/>
 <contactref element="16PIN" pad="11"/>
-<wire x1="58.42" y1="12.7" x2="50.8" y2="33.02" width="0" layer="19" extent="1-1"/>
+<wire x1="62.484" y1="17.018" x2="57.912" y2="37.846" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHOTO3">
 <contactref element="10PIN" pad="7"/>
 <contactref element="MULTIPLEX1" pad="12"/>
-<wire x1="55.88" y1="12.7" x2="12.7" y2="22.86" width="0" layer="19" extent="1-1"/>
+<wire x1="59.944" y1="17.018" x2="24.384" y2="19.558" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHOTO4">
 <contactref element="10PIN" pad="9"/>
 <contactref element="MULTIPLEX1" pad="1"/>
-<wire x1="53.34" y1="12.7" x2="20.32" y2="12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="57.404" y1="17.018" x2="14.224" y2="11.938" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHOTO5">
 <contactref element="10PIN" pad="10"/>
 <contactref element="MULTIPLEX1" pad="5"/>
-<wire x1="53.34" y1="10.16" x2="20.32" y2="22.86" width="0" layer="19" extent="1-1"/>
+<wire x1="57.404" y1="14.478" x2="24.384" y2="11.938" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHOTO6">
 <contactref element="10PIN" pad="8"/>
 <contactref element="MULTIPLEX1" pad="2"/>
-<wire x1="55.88" y1="10.16" x2="20.32" y2="15.24" width="0" layer="19" extent="1-1"/>
+<wire x1="59.944" y1="14.478" x2="16.764" y2="11.938" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHOTO7">
 <contactref element="10PIN" pad="6"/>
 <contactref element="MULTIPLEX1" pad="4"/>
-<wire x1="58.42" y1="10.16" x2="20.32" y2="20.32" width="0" layer="19" extent="1-1"/>
+<wire x1="62.484" y1="14.478" x2="21.844" y2="11.938" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHOTO0">
 <contactref element="10PIN" pad="4"/>
 <contactref element="MULTIPLEX1" pad="13"/>
-<wire x1="60.96" y1="10.16" x2="12.7" y2="20.32" width="0" layer="19" extent="1-1"/>
+<wire x1="65.024" y1="14.478" x2="21.844" y2="19.558" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHOTO1">
 <contactref element="10PIN" pad="2"/>
 <contactref element="MULTIPLEX1" pad="14"/>
-<wire x1="63.5" y1="10.16" x2="12.7" y2="17.78" width="0" layer="19" extent="1-1"/>
+<wire x1="67.564" y1="14.478" x2="19.304" y2="19.558" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FAN4_TACHO">
 <contactref element="FAN4" pad="3"/>
 <contactref element="16PIN" pad="8"/>
-<wire x1="55.88" y1="30.48" x2="35.56" y2="53.34" width="0" layer="19" extent="1-1"/>
+<wire x1="62.992" y1="35.306" x2="77.47" y2="57.15" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FAN4_PWM">
 <contactref element="FAN4" pad="4"/>
 <contactref element="16PIN" pad="7"/>
-<wire x1="55.88" y1="33.02" x2="38.1" y2="53.34" width="0" layer="19" extent="1-1"/>
+<wire x1="62.992" y1="37.846" x2="80.01" y2="57.15" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FAN3_PWM">
 <contactref element="FAN3" pad="4"/>
 <contactref element="16PIN" pad="5"/>
-<wire x1="58.42" y1="33.02" x2="53.34" y2="53.34" width="0" layer="19" extent="1-1"/>
+<wire x1="65.532" y1="37.846" x2="58.42" y2="57.15" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FAN3_TACHO">
 <contactref element="FAN3" pad="3"/>
 <contactref element="16PIN" pad="6"/>
-<wire x1="58.42" y1="30.48" x2="50.8" y2="53.34" width="0" layer="19" extent="1-1"/>
+<wire x1="65.532" y1="35.306" x2="55.88" y2="57.15" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FAN2_TACHO">
 <contactref element="FAN2" pad="3"/>
 <contactref element="16PIN" pad="4"/>
-<wire x1="66.04" y1="53.34" x2="60.96" y2="30.48" width="0" layer="19" extent="1-1"/>
+<wire x1="38.1" y1="57.15" x2="68.072" y2="35.306" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FAN2_PWM">
 <contactref element="FAN2" pad="4"/>
 <contactref element="16PIN" pad="3"/>
-<wire x1="68.58" y1="53.34" x2="60.96" y2="33.02" width="0" layer="19" extent="1-1"/>
+<wire x1="40.64" y1="57.15" x2="68.072" y2="37.846" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FAN1_PWM">
 <contactref element="FAN1" pad="4"/>
 <contactref element="16PIN" pad="1"/>
-<wire x1="63.5" y1="33.02" x2="83.947" y2="53.34" width="0" layer="19" extent="1-1"/>
+<wire x1="70.612" y1="37.846" x2="26.162" y2="57.404" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FAN1_TACHO">
 <contactref element="FAN1" pad="3"/>
 <contactref element="16PIN" pad="2"/>
-<wire x1="63.5" y1="30.48" x2="81.407" y2="53.34" width="0" layer="19" extent="1-1"/>
+<wire x1="70.612" y1="35.306" x2="23.622" y2="57.404" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+12V">
 <contactref element="FAN1" pad="2"/>
@@ -594,30 +594,30 @@ design rules under a new name.</description>
 <contactref element="FAN3" pad="2"/>
 <contactref element="FAN4" pad="2"/>
 <contactref element="16PIN" pad="13"/>
-<wire x1="78.867" y1="53.34" x2="48.26" y2="53.34" width="0" layer="19" extent="1-1"/>
-<wire x1="48.26" y1="33.02" x2="78.867" y2="53.34" width="0" layer="19" extent="1-1"/>
-<wire x1="48.26" y1="53.34" x2="33.02" y2="53.34" width="0" layer="19" extent="1-1"/>
-<wire x1="63.5" y1="53.34" x2="78.867" y2="53.34" width="0" layer="19" extent="1-1"/>
+<wire x1="53.34" y1="57.15" x2="74.93" y2="57.15" width="0" layer="19" extent="1-1"/>
+<wire x1="21.082" y1="57.404" x2="53.34" y2="57.15" width="0" layer="19" extent="1-1"/>
+<wire x1="55.372" y1="37.846" x2="21.082" y2="57.404" width="0" layer="19" extent="1-1"/>
+<wire x1="35.56" y1="57.15" x2="21.082" y2="57.404" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DIG1">
 <contactref element="MULTIPLEX1" pad="11"/>
 <contactref element="16PIN" pad="10"/>
-<wire x1="53.34" y1="30.48" x2="12.7" y2="25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="60.452" y1="35.306" x2="26.924" y2="19.558" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DIG2">
 <contactref element="MULTIPLEX1" pad="10"/>
 <contactref element="16PIN" pad="12"/>
-<wire x1="50.8" y1="30.48" x2="12.7" y2="27.94" width="0" layer="19" extent="1-1"/>
+<wire x1="57.912" y1="35.306" x2="29.464" y2="19.558" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DIG3">
 <contactref element="MULTIPLEX1" pad="9"/>
 <contactref element="16PIN" pad="14"/>
-<wire x1="48.26" y1="30.48" x2="12.7" y2="30.48" width="0" layer="19" extent="1-1"/>
+<wire x1="55.372" y1="35.306" x2="32.004" y2="19.558" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MUX1">
 <contactref element="MULTIPLEX1" pad="3"/>
 <contactref element="16PIN" pad="16"/>
-<wire x1="45.72" y1="30.48" x2="20.32" y2="17.78" width="0" layer="19" extent="1-1"/>
+<wire x1="52.832" y1="35.306" x2="19.304" y2="11.938" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
