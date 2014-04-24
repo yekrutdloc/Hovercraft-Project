@@ -12,7 +12,7 @@
 import processing.serial.*;
 
 Serial  myPort;
-short   portIndex = 1;
+short   portIndex = 4;
 int     lf = 10;       //ASCII linefeed
 String  inString;      //String for testing serial communication
 int     calibrating;
@@ -136,6 +136,7 @@ void draw()  {
   translate(width/6, height/2, -50); 
   rotateX(radians(-x_gyr - x_rotation));
   rotateY(radians(-y_gyr));
+  rotateZ(radians(-z_gyr));
   draw_rect(249, 250, 50);
   
   popMatrix(); 
@@ -145,6 +146,7 @@ void draw()  {
   translate(width/2, height/2, -50);
   rotateX(radians(-x_acc - x_rotation));
   rotateY(radians(-y_acc));
+  rotateZ(radians(-z_acc));
   draw_rect(56, 140, 206);
   popMatrix();
   
@@ -153,13 +155,15 @@ void draw()  {
   translate(5*width/6, height/2, -50);
   rotateX(radians(-x_fil - x_rotation));
   rotateY(radians(-y_fil));
+  rotateZ(radians(-z_fil));
+
   draw_rect(93, 175, 83);
   popMatrix();
  
   textSize(24);
-  String accStr = "(" + (int) x_acc + ", " + (int) y_acc + ")";
-  String gyrStr = "(" + (int) x_gyr + ", " + (int) y_gyr + ")";
-  String filStr = "(" + (int) x_fil + ", " + (int) y_fil + ")";
+  String accStr = "(" + (int) x_acc + ", " + (int) y_acc + ", " + (int) z_acc + ")";
+  String gyrStr = "(" + (int) x_gyr + ", " + (int) y_gyr + ", " + (int) z_gyr + ")";
+  String filStr = "(" + (int) x_fil + ", " + (int) y_fil + ", " + (int) z_fil + ")";
  
 
   fill(249, 250, 50);
