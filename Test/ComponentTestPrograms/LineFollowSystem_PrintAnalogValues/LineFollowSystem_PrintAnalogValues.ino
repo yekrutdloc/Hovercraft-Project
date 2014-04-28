@@ -17,9 +17,6 @@ int photoValFinalArray[15];
 int photoFrontBlackValues[15];
 int lineFollowValArray[8];
 
-// Buzzer
-int buzzerPin = 30; // Buzzer set to "Digital pin 30"
-
 void setup() {
   // Log-output setup
   Serial.begin(9600);
@@ -29,25 +26,7 @@ void setup() {
   pinMode(s1pin, OUTPUT);    // s1
   pinMode(s2pin, OUTPUT);    // s2
 
-  //Buzzer Setup
-  pinMode(buzzerPin, OUTPUT);
-  digitalWrite(buzzerPin, LOW);
-
-  // Line-Follow Sensor Calibration program
-  delay(2000);
-  getPhotoArrayValues();
-  calculateApproxValues();
-  for (int j = 0; j < 15; j++) {
-    photoFrontBlackValues[j] = photoValFinalArray[j];
-  }
-  runBuzzerBeep();
-  Serial.println('Black calibration values: ');
-  for (int i = 0; i < 15; i++) {
-    Serial.print(photoFrontBlackValues[i]);
-    Serial.print('-');
-  }
-  Serial.println(' ');
-} // end of void setup()();
+} // end of void setup();
 
 void loop() {
   // Get values
@@ -58,14 +37,9 @@ void loop() {
 
   //  // Convert analog values to 1 or 0
   for (int i = 0; i < 15; i++) {
-    if (photoValFinalArray[i] > (photoFrontBlackValues[i] + 200)) {
-      lineFollowValArray[i] = 0;
-      Serial.print(0);
-    } else {
-      lineFollowValArray[i] = 1;
-      Serial.print(1);
-    }
+    Serial.print(photoValFinalArray[i]);
     Serial.print("-");
+
   }
   Serial.println(" "); //newline
 } // end of loop();
@@ -141,10 +115,4 @@ void getPhotoArrayValues() {
 
 int getPhotoValue() {
   return analogRead(z);
-}
-
-void runBuzzerBeep() {
-  digitalWrite(buzzerPin, HIGH);
-  delay(75);
-  digitalWrite(buzzerPin, LOW);
 }
