@@ -27,7 +27,7 @@ void setup() {
   digitalWrite(buzzerPin, LOW);
 
   // Setup 433 MHz Radio reciever
-  mySwitch.enableReceive(0);  // Receiver on interrupt 0 --> RX0
+  mySwitch.enableReceive(2);  // Receiver on interrupt 0 --> RX0
 }
 
 // Loop function
