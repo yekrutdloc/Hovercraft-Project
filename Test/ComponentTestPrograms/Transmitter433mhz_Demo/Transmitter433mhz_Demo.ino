@@ -21,11 +21,8 @@ void setup() {
 }
 
 void loop() {
-
-  /* Same switch as above, but using decimal code */
   mySwitch.send(5525845, 24);
-  delay(1000);  
+  delay(2000);  
   mySwitch.send(5525844, 24);
-  
-  delay(20000);
+  delay(2000);  
 }
