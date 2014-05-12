@@ -1813,6 +1813,7 @@
 <circle x="289.56" y="2.54" radius="0.635" width="0.0254" layer="20"/>
 <circle x="292.1" y="2.54" radius="0.635" width="0.0254" layer="20"/>
 <circle x="55.88" y="25.4" radius="0.635" width="0.0254" layer="20"/>
+<dimension x1="2.54" y1="22.86" x2="238.76" y2="22.86" x3="120.65" y3="20.32" textsize="1.778" layer="1"/>
 </plain>
 <libraries>
 <library name="opto-trans-siemens">
@@ -3231,135 +3232,135 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="D1" library="opto-trans-siemens" package="BPX65" value="Photo0" x="3.81" y="30.48" smashed="yes" rot="R315">
-<attribute name="OC_NEWARK" value="06WX2764" x="0.2179" y="-5.441015625" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MPN" value="BPX65." x="0.2179" y="-5.441015625" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MF" value="" x="0.2179" y="-5.441015625" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="OC_FARNELL" value="327451" x="0.2179" y="-5.441015625" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="NAME" x="6.0550625" y="28.234934375" size="1.27" layer="25" ratio="10" rot="R315"/>
+<element name="D1" library="opto-trans-siemens" package="BPX65" value="Photo0" x="6.35" y="12.7" smashed="yes" rot="R315">
+<attribute name="OC_NEWARK" value="06WX2764" x="2.7579" y="-23.221015625" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MPN" value="BPX65." x="2.7579" y="-23.221015625" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MF" value="" x="2.7579" y="-23.221015625" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="OC_FARNELL" value="327451" x="2.7579" y="-23.221015625" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="NAME" x="8.5950625" y="10.454934375" size="1.27" layer="25" ratio="10" rot="R315"/>
 </element>
-<element name="R1" library="resistor" package="0207/10" value="10k" x="5.08" y="20.32" rot="R270"/>
-<element name="D2" library="opto-trans-siemens" package="BPX65" value="Photo1" x="19.05" y="30.48" smashed="yes" rot="R315">
-<attribute name="OC_NEWARK" value="06WX2764" x="25.33618125" y="-15.3193" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MPN" value="BPX65." x="25.33618125" y="-15.3193" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MF" value="" x="25.33618125" y="-15.3193" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="OC_FARNELL" value="327451" x="25.33618125" y="-15.3193" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="NAME" x="21.2950625" y="28.234934375" size="1.27" layer="25" ratio="10" rot="R315"/>
+<element name="R1" library="resistor" package="0207/10" value="10k" x="12.7" y="7.62"/>
+<element name="D2" library="opto-trans-siemens" package="BPX65" value="Photo1" x="21.59" y="12.7" smashed="yes" rot="R315">
+<attribute name="OC_NEWARK" value="06WX2764" x="27.87618125" y="-33.0993" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MPN" value="BPX65." x="27.87618125" y="-33.0993" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MF" value="" x="27.87618125" y="-33.0993" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="OC_FARNELL" value="327451" x="27.87618125" y="-33.0993" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="NAME" x="23.8350625" y="10.454934375" size="1.27" layer="25" ratio="10" rot="R315"/>
 </element>
-<element name="R2" library="resistor" package="0207/10" value="10k" x="20.32" y="20.32" rot="R270"/>
-<element name="D3" library="opto-trans-siemens" package="BPX65" value="Photo2" x="34.29" y="30.48" smashed="yes" rot="R315">
-<attribute name="OC_NEWARK" value="06WX2764" x="50.454459375" y="-25.197584375" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MPN" value="BPX65." x="50.454459375" y="-25.197584375" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MF" value="" x="50.454459375" y="-25.197584375" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="OC_FARNELL" value="327451" x="50.454459375" y="-25.197584375" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="NAME" x="36.5350625" y="28.234934375" size="1.27" layer="25" ratio="10" rot="R315"/>
+<element name="R2" library="resistor" package="0207/10" value="10k" x="27.94" y="7.62"/>
+<element name="D3" library="opto-trans-siemens" package="BPX65" value="Photo2" x="36.83" y="12.7" smashed="yes" rot="R315">
+<attribute name="OC_NEWARK" value="06WX2764" x="52.994459375" y="-42.977584375" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MPN" value="BPX65." x="52.994459375" y="-42.977584375" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MF" value="" x="52.994459375" y="-42.977584375" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="OC_FARNELL" value="327451" x="52.994459375" y="-42.977584375" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="NAME" x="39.0750625" y="10.454934375" size="1.27" layer="25" ratio="10" rot="R315"/>
 </element>
-<element name="R3" library="resistor" package="0207/10" value="10k" x="35.56" y="20.32" rot="R270"/>
-<element name="D4" library="opto-trans-siemens" package="BPX65" value="Photo3" x="49.53" y="30.48" smashed="yes" rot="R315">
-<attribute name="OC_NEWARK" value="06WX2764" x="41.447771875" y="-9.93115" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MPN" value="BPX65." x="41.447771875" y="-9.93115" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MF" value="" x="41.447771875" y="-9.93115" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="OC_FARNELL" value="327451" x="41.447771875" y="-9.93115" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="NAME" x="51.7750625" y="28.234934375" size="1.27" layer="25" ratio="10" rot="R315"/>
+<element name="R3" library="resistor" package="0207/10" value="10k" x="43.18" y="7.62"/>
+<element name="D4" library="opto-trans-siemens" package="BPX65" value="Photo3" x="52.07" y="12.7" smashed="yes" rot="R315">
+<attribute name="OC_NEWARK" value="06WX2764" x="43.987771875" y="-27.71115" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MPN" value="BPX65." x="43.987771875" y="-27.71115" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MF" value="" x="43.987771875" y="-27.71115" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="OC_FARNELL" value="327451" x="43.987771875" y="-27.71115" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="NAME" x="54.3150625" y="10.454934375" size="1.27" layer="25" ratio="10" rot="R315"/>
 </element>
-<element name="R4" library="resistor" package="0207/10" value="10k" x="50.8" y="20.32" rot="R270"/>
-<element name="D5" library="opto-trans-siemens" package="BPX65" value="Photo4" x="64.77" y="30.48" smashed="yes" rot="R315">
-<attribute name="OC_NEWARK" value="06WX2764" x="66.566053125" y="-19.809428125" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MPN" value="BPX65." x="66.566053125" y="-19.809428125" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MF" value="" x="66.566053125" y="-19.809428125" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="OC_FARNELL" value="327451" x="66.566053125" y="-19.809428125" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="NAME" x="67.0150625" y="28.234934375" size="1.27" layer="25" ratio="10" rot="R315"/>
+<element name="R4" library="resistor" package="0207/10" value="10k" x="58.42" y="7.62"/>
+<element name="D5" library="opto-trans-siemens" package="BPX65" value="Photo4" x="67.31" y="12.7" smashed="yes" rot="R315">
+<attribute name="OC_NEWARK" value="06WX2764" x="69.106053125" y="-37.589428125" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MPN" value="BPX65." x="69.106053125" y="-37.589428125" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MF" value="" x="69.106053125" y="-37.589428125" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="OC_FARNELL" value="327451" x="69.106053125" y="-37.589428125" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="NAME" x="69.5550625" y="10.454934375" size="1.27" layer="25" ratio="10" rot="R315"/>
 </element>
-<element name="R5" library="resistor" package="0207/10" value="10k" x="66.04" y="20.32" rot="R270"/>
-<element name="D6" library="opto-trans-siemens" package="BPX65" value="Photo5" x="80.01" y="30.48" smashed="yes" rot="R315">
-<attribute name="OC_NEWARK" value="06WX2764" x="91.68433125" y="-29.6877125" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MPN" value="BPX65." x="91.68433125" y="-29.6877125" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MF" value="" x="91.68433125" y="-29.6877125" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="OC_FARNELL" value="327451" x="91.68433125" y="-29.6877125" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="NAME" x="82.2550625" y="28.234934375" size="1.27" layer="25" ratio="10" rot="R315"/>
+<element name="R5" library="resistor" package="0207/10" value="10k" x="73.66" y="7.62"/>
+<element name="D6" library="opto-trans-siemens" package="BPX65" value="Photo5" x="82.55" y="12.7" smashed="yes" rot="R315">
+<attribute name="OC_NEWARK" value="06WX2764" x="94.22433125" y="-47.4677125" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MPN" value="BPX65." x="94.22433125" y="-47.4677125" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MF" value="" x="94.22433125" y="-47.4677125" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="OC_FARNELL" value="327451" x="94.22433125" y="-47.4677125" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="NAME" x="84.7950625" y="10.454934375" size="1.27" layer="25" ratio="10" rot="R315"/>
 </element>
-<element name="R6" library="resistor" package="0207/10" value="10k" x="81.28" y="20.32" rot="R270"/>
-<element name="D7" library="opto-trans-siemens" package="BPX65" value="Photo6" x="92.71" y="30.48" smashed="yes" rot="R315">
-<attribute name="OC_NEWARK" value="06WX2764" x="80.13764375" y="-14.421275" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MPN" value="BPX65." x="80.13764375" y="-14.421275" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MF" value="" x="80.13764375" y="-14.421275" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="OC_FARNELL" value="327451" x="80.13764375" y="-14.421275" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="NAME" x="94.9550625" y="28.234934375" size="1.27" layer="25" ratio="10" rot="R315"/>
+<element name="R6" library="resistor" package="0207/10" value="10k" x="88.9" y="7.62"/>
+<element name="D7" library="opto-trans-siemens" package="BPX65" value="Photo6" x="97.79" y="12.7" smashed="yes" rot="R315">
+<attribute name="OC_NEWARK" value="06WX2764" x="85.21764375" y="-32.201275" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MPN" value="BPX65." x="85.21764375" y="-32.201275" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MF" value="" x="85.21764375" y="-32.201275" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="OC_FARNELL" value="327451" x="85.21764375" y="-32.201275" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="NAME" x="100.0350625" y="10.454934375" size="1.27" layer="25" ratio="10" rot="R315"/>
 </element>
-<element name="R7" library="resistor" package="0207/10" value="10k" x="93.98" y="20.32" rot="R270"/>
-<element name="D8" library="opto-trans-siemens" package="BPX65" value="Photo7" x="105.41" y="30.48" smashed="yes" rot="R315">
-<attribute name="OC_NEWARK" value="06WX2764" x="102.715925" y="-24.29955625" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MPN" value="BPX65." x="102.715925" y="-24.29955625" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MF" value="" x="102.715925" y="-24.29955625" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="OC_FARNELL" value="327451" x="102.715925" y="-24.29955625" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="NAME" x="107.6550625" y="28.234934375" size="1.27" layer="25" ratio="10" rot="R315"/>
+<element name="R7" library="resistor" package="0207/10" value="10k" x="104.14" y="7.62"/>
+<element name="D8" library="opto-trans-siemens" package="BPX65" value="Photo7" x="113.03" y="12.7" smashed="yes" rot="R315">
+<attribute name="OC_NEWARK" value="06WX2764" x="110.335925" y="-42.07955625" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MPN" value="BPX65." x="110.335925" y="-42.07955625" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MF" value="" x="110.335925" y="-42.07955625" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="OC_FARNELL" value="327451" x="110.335925" y="-42.07955625" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="NAME" x="115.2750625" y="10.454934375" size="1.27" layer="25" ratio="10" rot="R315"/>
 </element>
-<element name="R8" library="resistor" package="0207/10" value="10k" x="106.68" y="20.32" rot="R270"/>
-<element name="D9" library="opto-trans-siemens" package="BPX65" value="Photo0" x="118.12805" y="30.461946875" smashed="yes" rot="R315">
-<attribute name="OC_NEWARK" value="06WX2764" x="118.12805" y="30.461946875" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MPN" value="BPX65." x="118.12805" y="30.461946875" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MF" value="" x="118.12805" y="30.461946875" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="OC_FARNELL" value="327451" x="118.12805" y="30.461946875" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="NAME" x="120.3731125" y="28.216884375" size="1.27" layer="25" ratio="10" rot="R315"/>
+<element name="R8" library="resistor" package="0207/10" value="10k" x="119.38" y="7.62"/>
+<element name="D9" library="opto-trans-siemens" package="BPX65" value="Photo0" x="128.28805" y="12.681946875" smashed="yes" rot="R315">
+<attribute name="OC_NEWARK" value="06WX2764" x="128.28805" y="12.681946875" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MPN" value="BPX65." x="128.28805" y="12.681946875" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MF" value="" x="128.28805" y="12.681946875" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="OC_FARNELL" value="327451" x="128.28805" y="12.681946875" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="NAME" x="130.5331125" y="10.436884375" size="1.27" layer="25" ratio="10" rot="R315"/>
 </element>
-<element name="R9" library="resistor" package="0207/10" value="10k" x="119.38" y="20.32" rot="R270"/>
-<element name="D10" library="opto-trans-siemens" package="BPX65" value="Photo0" x="130.77015625" y="30.449184375" smashed="yes" rot="R315">
-<attribute name="OC_NEWARK" value="06WX2764" x="130.77015625" y="30.449184375" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MPN" value="BPX65." x="130.77015625" y="30.449184375" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MF" value="" x="130.77015625" y="30.449184375" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="OC_FARNELL" value="327451" x="130.77015625" y="30.449184375" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="NAME" x="133.015221875" y="28.20411875" size="1.27" layer="25" ratio="10" rot="R315"/>
+<element name="R9" library="resistor" package="0207/10" value="10k" x="134.62" y="7.62"/>
+<element name="D10" library="opto-trans-siemens" package="BPX65" value="Photo0" x="143.47015625" y="12.669184375" smashed="yes" rot="R315">
+<attribute name="OC_NEWARK" value="06WX2764" x="143.47015625" y="12.669184375" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MPN" value="BPX65." x="143.47015625" y="12.669184375" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MF" value="" x="143.47015625" y="12.669184375" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="OC_FARNELL" value="327451" x="143.47015625" y="12.669184375" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="NAME" x="145.715221875" y="10.42411875" size="1.27" layer="25" ratio="10" rot="R315"/>
 </element>
-<element name="R10" library="resistor" package="0207/10" value="10k" x="132.08" y="20.32" rot="R270"/>
-<element name="D11" library="opto-trans-siemens" package="BPX65" value="Photo0" x="143.51" y="30.48" smashed="yes" rot="R315">
-<attribute name="OC_NEWARK" value="06WX2764" x="143.51" y="30.48" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MPN" value="BPX65." x="143.51" y="30.48" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MF" value="" x="143.51" y="30.48" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="OC_FARNELL" value="327451" x="143.51" y="30.48" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="NAME" x="145.755065625" y="28.23493125" size="1.27" layer="25" ratio="10" rot="R315"/>
+<element name="R10" library="resistor" package="0207/10" value="10k" x="149.86" y="7.62"/>
+<element name="D11" library="opto-trans-siemens" package="BPX65" value="Photo0" x="158.75" y="12.7" smashed="yes" rot="R315">
+<attribute name="OC_NEWARK" value="06WX2764" x="158.75" y="12.7" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MPN" value="BPX65." x="158.75" y="12.7" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MF" value="" x="158.75" y="12.7" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="OC_FARNELL" value="327451" x="158.75" y="12.7" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="NAME" x="160.995065625" y="10.45493125" size="1.27" layer="25" ratio="10" rot="R315"/>
 </element>
-<element name="R11" library="resistor" package="0207/10" value="10k" x="144.78" y="20.32" rot="R270"/>
-<element name="D12" library="opto-trans-siemens" package="BPX65" value="Photo0" x="156.21" y="30.48" smashed="yes" rot="R315">
-<attribute name="OC_NEWARK" value="06WX2764" x="156.21" y="30.48" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MPN" value="BPX65." x="156.21" y="30.48" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MF" value="" x="156.21" y="30.48" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="OC_FARNELL" value="327451" x="156.21" y="30.48" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="NAME" x="158.455065625" y="28.23493125" size="1.27" layer="25" ratio="10" rot="R315"/>
+<element name="R11" library="resistor" package="0207/10" value="10k" x="165.1" y="7.62"/>
+<element name="D12" library="opto-trans-siemens" package="BPX65" value="Photo0" x="173.99" y="12.7" smashed="yes" rot="R315">
+<attribute name="OC_NEWARK" value="06WX2764" x="173.99" y="12.7" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MPN" value="BPX65." x="173.99" y="12.7" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MF" value="" x="173.99" y="12.7" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="OC_FARNELL" value="327451" x="173.99" y="12.7" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="NAME" x="176.235065625" y="10.45493125" size="1.27" layer="25" ratio="10" rot="R315"/>
 </element>
-<element name="R12" library="resistor" package="0207/10" value="10k" x="157.48" y="20.32" rot="R270"/>
-<element name="D13" library="opto-trans-siemens" package="BPX65" value="Photo0" x="168.91" y="30.48" smashed="yes" rot="R315">
-<attribute name="OC_NEWARK" value="06WX2764" x="168.91" y="30.48" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MPN" value="BPX65." x="168.91" y="30.48" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MF" value="" x="168.91" y="30.48" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="OC_FARNELL" value="327451" x="168.91" y="30.48" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="NAME" x="171.155065625" y="28.23493125" size="1.27" layer="25" ratio="10" rot="R315"/>
+<element name="R12" library="resistor" package="0207/10" value="10k" x="180.34" y="7.62"/>
+<element name="D13" library="opto-trans-siemens" package="BPX65" value="Photo0" x="189.23" y="12.7" smashed="yes" rot="R315">
+<attribute name="OC_NEWARK" value="06WX2764" x="189.23" y="12.7" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MPN" value="BPX65." x="189.23" y="12.7" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MF" value="" x="189.23" y="12.7" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="OC_FARNELL" value="327451" x="189.23" y="12.7" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="NAME" x="191.475065625" y="10.45493125" size="1.27" layer="25" ratio="10" rot="R315"/>
 </element>
-<element name="R13" library="resistor" package="0207/10" value="10k" x="170.18" y="20.32" rot="R270"/>
-<element name="D14" library="opto-trans-siemens" package="BPX65" value="Photo0" x="181.61" y="30.48" smashed="yes" rot="R315">
-<attribute name="OC_NEWARK" value="06WX2764" x="181.61" y="30.48" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MPN" value="BPX65." x="181.61" y="30.48" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MF" value="" x="181.61" y="30.48" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="OC_FARNELL" value="327451" x="181.61" y="30.48" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="NAME" x="183.8550625" y="28.234934375" size="1.27" layer="25" ratio="10" rot="R315"/>
+<element name="R13" library="resistor" package="0207/10" value="10k" x="195.58" y="7.62"/>
+<element name="D14" library="opto-trans-siemens" package="BPX65" value="Photo0" x="204.47" y="12.7" smashed="yes" rot="R315">
+<attribute name="OC_NEWARK" value="06WX2764" x="204.47" y="12.7" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MPN" value="BPX65." x="204.47" y="12.7" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MF" value="" x="204.47" y="12.7" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="OC_FARNELL" value="327451" x="204.47" y="12.7" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="NAME" x="206.7150625" y="10.454934375" size="1.27" layer="25" ratio="10" rot="R315"/>
 </element>
-<element name="R14" library="resistor" package="0207/10" value="10k" x="182.88" y="20.32" rot="R270"/>
-<element name="D15" library="opto-trans-siemens" package="BPX65" value="Photo0" x="194.31" y="30.48" smashed="yes" rot="R315">
-<attribute name="OC_NEWARK" value="06WX2764" x="194.31" y="30.48" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MPN" value="BPX65." x="194.31" y="30.48" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MF" value="" x="194.31" y="30.48" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="OC_FARNELL" value="327451" x="194.31" y="30.48" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="NAME" x="196.5550625" y="28.234934375" size="1.27" layer="25" ratio="10" rot="R315"/>
+<element name="R14" library="resistor" package="0207/10" value="10k" x="210.82" y="7.62"/>
+<element name="D15" library="opto-trans-siemens" package="BPX65" value="Photo0" x="219.71" y="12.7" smashed="yes" rot="R315">
+<attribute name="OC_NEWARK" value="06WX2764" x="219.71" y="12.7" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MPN" value="BPX65." x="219.71" y="12.7" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MF" value="" x="219.71" y="12.7" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="OC_FARNELL" value="327451" x="219.71" y="12.7" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="NAME" x="221.9550625" y="10.454934375" size="1.27" layer="25" ratio="10" rot="R315"/>
 </element>
-<element name="R15" library="resistor" package="0207/10" value="10k" x="195.58" y="20.32" rot="R270"/>
-<element name="D16" library="opto-trans-siemens" package="BPX65" value="Photo0" x="207.01" y="30.48" smashed="yes" rot="R315">
-<attribute name="OC_NEWARK" value="06WX2764" x="207.01" y="30.48" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MPN" value="BPX65." x="207.01" y="30.48" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MF" value="" x="207.01" y="30.48" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="OC_FARNELL" value="327451" x="207.01" y="30.48" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="NAME" x="209.2550625" y="28.234934375" size="1.27" layer="25" ratio="10" rot="R315"/>
+<element name="R15" library="resistor" package="0207/10" value="10k" x="226.06" y="7.62"/>
+<element name="D16" library="opto-trans-siemens" package="BPX65" value="Photo0" x="234.95" y="12.7" smashed="yes" rot="R315">
+<attribute name="OC_NEWARK" value="06WX2764" x="234.95" y="12.7" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MPN" value="BPX65." x="234.95" y="12.7" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MF" value="" x="234.95" y="12.7" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="OC_FARNELL" value="327451" x="234.95" y="12.7" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="NAME" x="237.1950625" y="10.454934375" size="1.27" layer="25" ratio="10" rot="R315"/>
 </element>
-<element name="R16" library="resistor" package="0207/10" value="10k" x="208.28" y="20.32" rot="R270"/>
-<element name="20X_SENSOR" library="Wuerth_Elektronik_eiCan_05_Box_Header_IDC_Connectors_1_2" package="61202022021" value="61202022021" x="114.3" y="-5.08" rot="R90"/>
+<element name="R16" library="resistor" package="0207/10" value="10k" x="241.3" y="7.62"/>
+<element name="20X_SENSOR" library="Wuerth_Elektronik_eiCan_05_Box_Header_IDC_Connectors_1_2" package="61202022021" value="61202022021" x="205.74" y="-2.54"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -3380,22 +3381,22 @@ design rules under a new name.</description>
 <contactref element="R15" pad="2"/>
 <contactref element="R16" pad="2"/>
 <contactref element="20X_SENSOR" pad="1"/>
-<wire x1="195.58" y1="15.24" x2="208.28" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="182.88" y1="15.24" x2="195.58" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="170.18" y1="15.24" x2="182.88" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="157.48" y1="15.24" x2="170.18" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="144.78" y1="15.24" x2="157.48" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="132.08" y1="15.24" x2="144.78" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="119.38" y1="15.24" x2="132.08" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="106.68" y1="15.24" x2="119.38" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="93.98" y1="15.24" x2="106.68" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="81.28" y1="15.24" x2="93.98" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="66.04" y1="15.24" x2="81.28" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="50.8" y1="15.24" x2="66.04" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="35.56" y1="15.24" x2="50.8" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="20.32" y1="15.24" x2="35.56" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="5.08" y1="15.24" x2="20.32" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="113.03" y1="0" x2="119.38" y2="15.24" width="0" layer="19" extent="1-1"/>
+<wire x1="215.9" y1="7.62" x2="231.14" y2="7.62" width="0" layer="19" extent="1-1"/>
+<wire x1="200.66" y1="7.62" x2="215.9" y2="7.62" width="0" layer="19" extent="1-1"/>
+<wire x1="185.42" y1="7.62" x2="200.66" y2="7.62" width="0" layer="19" extent="1-1"/>
+<wire x1="170.18" y1="7.62" x2="185.42" y2="7.62" width="0" layer="19" extent="1-1"/>
+<wire x1="154.94" y1="7.62" x2="170.18" y2="7.62" width="0" layer="19" extent="1-1"/>
+<wire x1="139.7" y1="7.62" x2="154.94" y2="7.62" width="0" layer="19" extent="1-1"/>
+<wire x1="124.46" y1="7.62" x2="139.7" y2="7.62" width="0" layer="19" extent="1-1"/>
+<wire x1="109.22" y1="7.62" x2="124.46" y2="7.62" width="0" layer="19" extent="1-1"/>
+<wire x1="93.98" y1="7.62" x2="109.22" y2="7.62" width="0" layer="19" extent="1-1"/>
+<wire x1="78.74" y1="7.62" x2="93.98" y2="7.62" width="0" layer="19" extent="1-1"/>
+<wire x1="63.5" y1="7.62" x2="78.74" y2="7.62" width="0" layer="19" extent="1-1"/>
+<wire x1="48.26" y1="7.62" x2="63.5" y2="7.62" width="0" layer="19" extent="1-1"/>
+<wire x1="33.02" y1="7.62" x2="48.26" y2="7.62" width="0" layer="19" extent="1-1"/>
+<wire x1="17.78" y1="7.62" x2="33.02" y2="7.62" width="0" layer="19" extent="1-1"/>
+<wire x1="246.38" y1="7.62" x2="231.14" y2="7.62" width="0" layer="19" extent="1-1"/>
+<wire x1="210.82" y1="-1.27" x2="139.7" y2="7.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+3V3">
 <contactref element="D1" pad="A"/>
@@ -3415,134 +3416,134 @@ design rules under a new name.</description>
 <contactref element="D15" pad="A"/>
 <contactref element="D16" pad="A"/>
 <contactref element="20X_SENSOR" pad="2"/>
-<wire x1="193.0527625" y1="30.48" x2="205.7527625" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="180.3527625" y1="30.48" x2="193.0527625" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="167.6527625" y1="30.48" x2="180.3527625" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="154.9527625" y1="30.48" x2="167.6527625" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="142.2527625" y1="30.48" x2="154.9527625" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="129.51291875" y1="30.449184375" x2="142.2527625" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="116.8708125" y1="30.461946875" x2="129.51291875" y2="30.449184375" width="0" layer="19" extent="1-1"/>
-<wire x1="104.1527625" y1="30.48" x2="116.8708125" y2="30.461946875" width="0" layer="19" extent="1-1"/>
-<wire x1="91.4527625" y1="30.48" x2="104.1527625" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="78.7527625" y1="30.48" x2="91.4527625" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="63.5127625" y1="30.48" x2="78.7527625" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="48.2727625" y1="30.48" x2="63.5127625" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="33.0327625" y1="30.48" x2="48.2727625" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="17.7927625" y1="30.48" x2="33.0327625" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="2.5527625" y1="30.48" x2="17.7927625" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="115.57" y1="0" x2="116.8708125" y2="30.461946875" width="0" layer="19" extent="1-1"/>
+<wire x1="218.4527625" y1="12.7" x2="233.6927625" y2="12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="203.2127625" y1="12.7" x2="218.4527625" y2="12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="187.9727625" y1="12.7" x2="203.2127625" y2="12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="172.7327625" y1="12.7" x2="187.9727625" y2="12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="157.4927625" y1="12.7" x2="172.7327625" y2="12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="142.21291875" y1="12.669184375" x2="157.4927625" y2="12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="127.0308125" y1="12.681946875" x2="142.21291875" y2="12.669184375" width="0" layer="19" extent="1-1"/>
+<wire x1="111.7727625" y1="12.7" x2="127.0308125" y2="12.681946875" width="0" layer="19" extent="1-1"/>
+<wire x1="96.5327625" y1="12.7" x2="111.7727625" y2="12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="81.2927625" y1="12.7" x2="96.5327625" y2="12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="66.0527625" y1="12.7" x2="81.2927625" y2="12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="50.8127625" y1="12.7" x2="66.0527625" y2="12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="35.5727625" y1="12.7" x2="50.8127625" y2="12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="20.3327625" y1="12.7" x2="35.5727625" y2="12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="5.0927625" y1="12.7" x2="20.3327625" y2="12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="210.82" y1="-3.81" x2="142.21291875" y2="12.669184375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHOTO16">
 <contactref element="D16" pad="K"/>
 <contactref element="R16" pad="1"/>
 <contactref element="20X_SENSOR" pad="18"/>
-<wire x1="208.28" y1="25.4" x2="208.267234375" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="115.57" y1="-20.32" x2="208.28" y2="25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="236.22" y1="7.62" x2="236.207234375" y2="12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="190.5" y1="-3.81" x2="236.22" y2="7.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHOTO1">
 <contactref element="D8" pad="K"/>
 <contactref element="R8" pad="1"/>
-<wire x1="106.667234375" y1="30.48" x2="106.68" y2="25.4" width="0.4064" layer="1"/>
+<wire x1="114.287234375" y1="12.7" x2="114.3" y2="7.62" width="0.4064" layer="1"/>
 <contactref element="20X_SENSOR" pad="3"/>
-<wire x1="113.03" y1="-2.54" x2="106.68" y2="25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="208.28" y1="-1.27" x2="114.3" y2="7.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHOTO2">
 <contactref element="D7" pad="K"/>
 <contactref element="R7" pad="1"/>
-<wire x1="93.967234375" y1="30.48" x2="93.98" y2="25.4" width="0.4064" layer="1"/>
+<wire x1="99.047234375" y1="12.7" x2="99.06" y2="7.62" width="0.4064" layer="1"/>
 <contactref element="20X_SENSOR" pad="5"/>
-<wire x1="113.03" y1="-5.08" x2="93.98" y2="25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="99.06" y1="7.62" x2="205.74" y2="-1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHOTO3">
 <contactref element="D6" pad="K"/>
 <contactref element="R6" pad="1"/>
-<wire x1="81.267234375" y1="30.48" x2="81.28" y2="25.4" width="0.4064" layer="1"/>
+<wire x1="83.807234375" y1="12.7" x2="83.82" y2="7.62" width="0.4064" layer="1"/>
 <contactref element="20X_SENSOR" pad="7"/>
-<wire x1="113.03" y1="-7.62" x2="81.28" y2="25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="83.82" y1="7.62" x2="203.2" y2="-1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHOTO4">
 <contactref element="D5" pad="K"/>
 <contactref element="R5" pad="1"/>
-<wire x1="66.027234375" y1="30.48" x2="66.04" y2="25.4" width="0.4064" layer="1"/>
+<wire x1="68.567234375" y1="12.7" x2="68.58" y2="7.62" width="0.4064" layer="1"/>
 <contactref element="20X_SENSOR" pad="9"/>
-<wire x1="66.04" y1="25.4" x2="113.03" y2="-10.16" width="0" layer="19" extent="1-1"/>
+<wire x1="68.58" y1="7.62" x2="200.66" y2="-1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHOTO5">
 <contactref element="D4" pad="K"/>
 <contactref element="R4" pad="1"/>
-<wire x1="50.787234375" y1="30.48" x2="50.8" y2="25.4" width="0.4064" layer="1"/>
+<wire x1="53.327234375" y1="12.7" x2="53.34" y2="7.62" width="0.4064" layer="1"/>
 <contactref element="20X_SENSOR" pad="11"/>
-<wire x1="50.8" y1="25.4" x2="113.03" y2="-12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="53.34" y1="7.62" x2="198.12" y2="-1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHOTO6">
 <contactref element="D3" pad="K"/>
 <contactref element="R3" pad="1"/>
-<wire x1="35.547234375" y1="30.48" x2="35.56" y2="25.4" width="0.4064" layer="1"/>
+<wire x1="38.087234375" y1="12.7" x2="38.1" y2="7.62" width="0.4064" layer="1"/>
 <contactref element="20X_SENSOR" pad="13"/>
-<wire x1="35.56" y1="25.4" x2="113.03" y2="-15.24" width="0" layer="19" extent="1-1"/>
+<wire x1="38.1" y1="7.62" x2="195.58" y2="-1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHOTO7">
 <contactref element="D2" pad="K"/>
 <contactref element="R2" pad="1"/>
 <contactref element="20X_SENSOR" pad="15"/>
-<wire x1="20.32" y1="25.4" x2="113.03" y2="-17.78" width="0" layer="19" extent="1-1"/>
-<wire x1="20.307234375" y1="30.48" x2="20.32" y2="25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="22.86" y1="7.62" x2="193.04" y2="-1.27" width="0" layer="19" extent="1-1"/>
+<wire x1="22.847234375" y1="12.7" x2="22.86" y2="7.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHOTO8">
 <contactref element="D1" pad="K"/>
 <contactref element="R1" pad="1"/>
-<wire x1="5.067234375" y1="30.48" x2="5.08" y2="25.4" width="0.4064" layer="1"/>
+<wire x1="7.607234375" y1="12.7" x2="7.62" y2="7.62" width="0.4064" layer="1"/>
 <contactref element="20X_SENSOR" pad="17"/>
-<wire x1="5.08" y1="25.4" x2="113.03" y2="-20.32" width="0" layer="19" extent="1-1"/>
+<wire x1="7.62" y1="7.62" x2="190.5" y2="-1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHOTO9">
 <contactref element="D9" pad="K"/>
 <contactref element="R9" pad="1"/>
 <contactref element="20X_SENSOR" pad="4"/>
-<wire x1="119.38" y1="25.4" x2="119.385284375" y2="30.461946875" width="0" layer="19" extent="1-1"/>
-<wire x1="115.57" y1="-2.54" x2="119.38" y2="25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="129.54" y1="7.62" x2="129.545284375" y2="12.681946875" width="0" layer="19" extent="1-1"/>
+<wire x1="208.28" y1="-3.81" x2="129.54" y2="7.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHOTO10">
 <contactref element="D10" pad="K"/>
 <contactref element="R10" pad="1"/>
 <contactref element="20X_SENSOR" pad="6"/>
-<wire x1="132.08" y1="25.4" x2="132.027390625" y2="30.449184375" width="0" layer="19" extent="1-1"/>
-<wire x1="115.57" y1="-5.08" x2="132.08" y2="25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="144.78" y1="7.62" x2="144.727390625" y2="12.669184375" width="0" layer="19" extent="1-1"/>
+<wire x1="205.74" y1="-3.81" x2="144.78" y2="7.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHOTO11">
 <contactref element="D11" pad="K"/>
 <contactref element="R11" pad="1"/>
 <contactref element="20X_SENSOR" pad="8"/>
-<wire x1="144.78" y1="25.4" x2="144.767234375" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="115.57" y1="-7.62" x2="144.78" y2="25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="160.02" y1="7.62" x2="160.007234375" y2="12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="203.2" y1="-3.81" x2="160.02" y2="7.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHOTO12">
 <contactref element="D12" pad="K"/>
 <contactref element="R12" pad="1"/>
 <contactref element="20X_SENSOR" pad="10"/>
-<wire x1="157.48" y1="25.4" x2="157.467234375" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="115.57" y1="-10.16" x2="157.48" y2="25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="175.26" y1="7.62" x2="175.247234375" y2="12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="200.66" y1="-3.81" x2="175.26" y2="7.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHOTO13">
 <contactref element="D13" pad="K"/>
 <contactref element="R13" pad="1"/>
 <contactref element="20X_SENSOR" pad="12"/>
-<wire x1="170.18" y1="25.4" x2="170.167234375" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="115.57" y1="-12.7" x2="170.18" y2="25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="190.5" y1="7.62" x2="190.487234375" y2="12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="198.12" y1="-3.81" x2="190.5" y2="7.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHOTO14">
 <contactref element="D14" pad="K"/>
 <contactref element="R14" pad="1"/>
 <contactref element="20X_SENSOR" pad="14"/>
-<wire x1="182.88" y1="25.4" x2="182.867234375" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="115.57" y1="-15.24" x2="182.88" y2="25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="205.74" y1="7.62" x2="205.727234375" y2="12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="195.58" y1="-3.81" x2="205.74" y2="7.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHOTO15">
 <contactref element="D15" pad="K"/>
 <contactref element="R15" pad="1"/>
 <contactref element="20X_SENSOR" pad="16"/>
-<wire x1="195.58" y1="25.4" x2="195.567234375" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="115.57" y1="-17.78" x2="195.58" y2="25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="220.98" y1="7.62" x2="220.967234375" y2="12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="193.04" y1="-3.81" x2="220.98" y2="7.62" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

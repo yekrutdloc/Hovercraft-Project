@@ -3916,11 +3916,6 @@ infrared emitting diode, Infineon</description>
 <pinref part="R17" gate="G$1" pin="2"/>
 <wire x1="2.54" y1="124.46" x2="2.54" y2="129.54" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="20X_SENSOR" gate="G$1" pin="2"/>
-<wire x1="208.28" y1="88.9" x2="210.82" y2="88.9" width="0.1524" layer="91"/>
-<label x="210.82" y="88.9" size="1.778" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="PHOTO16" class="0">
 <segment>
@@ -4219,6 +4214,13 @@ infrared emitting diode, Infineon</description>
 <pinref part="R31" gate="G$1" pin="1"/>
 <pinref part="IR14" gate="1" pin="A"/>
 <wire x1="91.44" y1="35.56" x2="96.52" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+5V" class="0">
+<segment>
+<pinref part="20X_SENSOR" gate="G$1" pin="2"/>
+<wire x1="208.28" y1="88.9" x2="210.82" y2="88.9" width="0.1524" layer="91"/>
+<label x="210.82" y="88.9" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
