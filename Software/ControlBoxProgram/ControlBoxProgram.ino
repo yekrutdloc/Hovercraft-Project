@@ -1,11 +1,3 @@
-/*
-  Example for different sending methods
-
-  http://code.google.com/p/rc-switch/
-
-  Need help? http://forum.ardumote.com
-*/
-
 #include <RCSwitch.h>
 
 RCSwitch mySwitch = RCSwitch();

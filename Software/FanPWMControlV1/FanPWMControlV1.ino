@@ -1,3 +1,6 @@
+
+
+// Change to proper directory below 
 #include "/Applications/Arduino.app/Contents/Resources/Java/hardware/arduino/sam/libraries/pwm01.h"
 
 uint32_t  pwm_freq = 25000;
