@@ -5784,15 +5784,7 @@ Based on the following sources:
 <net name="PWM_SERVO3" class="0">
 <segment>
 <wire x1="104.14" y1="99.06" x2="101.6" y2="99.06" width="0.1524" layer="91"/>
-<label x="104.14" y="99.06" size="1.27" layer="95" xref="yes"/>
 <pinref part="K1" gate="G$1" pin="6"/>
-</segment>
-</net>
-<net name="PWM_SERVO4" class="0">
-<segment>
-<wire x1="104.14" y1="93.98" x2="101.6" y2="93.98" width="0.1524" layer="91"/>
-<label x="104.14" y="93.98" size="1.016" layer="95" xref="yes"/>
-<pinref part="K1" gate="G$1" pin="8"/>
 </segment>
 </net>
 <net name="N$16" class="0">
