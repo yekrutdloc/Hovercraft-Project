@@ -1,5 +1,5 @@
 void setup() {
-  Serial.begin(9600);
+  SerialUSB.begin(1152000);
   int t=analogRead(0);
 
   ADC->ADC_MR |= 0x80; // these lines set free running mode on adc 7 (pin A0)
@@ -17,7 +17,8 @@ void loop() {
     q+=a0;
   }
   t=micros()-t;
-  Serial.print("1 million conversions in ");Serial.print(t);Serial.println(" micros");
-  Serial.println(a0);
+  SerialUSB.print("1 million conversions in ");
+  SerialUSB.print(t);
+  SerialUSB.println(" micros");
 }
 
