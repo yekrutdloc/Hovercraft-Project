@@ -1,4 +1,9 @@
-// Front Line-Sensor pins
+// This program is made to test a 16 channel multiplex.
+// Connect LEDs to each channel & 5V to common Input/Output on the multiplex
+// Choosing the channel is done by writing to Serial.
+// Enter a number between 0-15 to choose a channel accordingly.
+
+// Multiplex pins
 int const s0pin = 44;
 int const s1pin = 45;
 int const s2pin = 46;
@@ -7,7 +12,7 @@ int const s3pin = 47;
 void setup() {
   Serial.begin(9600);     // opens serial port, sets data rate to 9600 bps
 
-  // Photo resistor array setup
+  // Multiplex setup
   pinMode(s0pin, OUTPUT);    // s0
   pinMode(s1pin, OUTPUT);    // s1
   pinMode(s2pin, OUTPUT);    // s2
@@ -15,20 +20,21 @@ void setup() {
 }
 
 void loop() {
-
+  // Read the serial message and convert it to an integer
   char buffer[] = {' ', ' ', ' ', ' ', ' ', ' ', ' '}; // Receive up to 7 bytes
   while (!Serial.available()); // Wait for characters
   Serial.readBytesUntil('\n', buffer, 7);
   int incomingValue = atoi(buffer);
 
-  lightLEDChannel(incomingValue);
+  lightLEDChannel(incomingValue); // Run function to choose CHannel
 
-  // say what you got:
+  // Print out the chosen channel
   Serial.print("Channel activated: ");
   Serial.println(incomingValue, DEC);
 }
 
-
+//This function takes in a channel number, and uses a case switch to alert the multiplex
+// which channel is wanted. The truth table is converted from the datasheet of the multiplex.
 void lightLEDChannel(int photoChannel) {
   switch (photoChannel) {
     case 0:

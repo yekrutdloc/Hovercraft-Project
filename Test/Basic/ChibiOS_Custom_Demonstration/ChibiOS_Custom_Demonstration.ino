@@ -1,20 +1,26 @@
-// Simple demo of three threads
-// LED blink thread, print thread, and main thread
+// Simple demo of five threads which ChibiOS
+// First thread demos a blinking LED
+// Second thread demonstrates another blinking LED which another blinking rate
+// Third thread prints out stack usage of the first three threads and photoresistor value which is read in thread four
+// The fourth thread reads a photoresistor value from analog input 0(A0)
+// The fifth and last thread smoothly lights up an LED using PWM
+
 #include <ChibiOS_ARM.h>
 // Redefine AVR Flash string macro as nop for ARM
 #undef F
 #define F(str) str
 
+// Pins for LEDs of first and second thread
 const uint8_t LED_PIN = 9;
 const uint8_t LED_PIN2 = 10;
 
+// Variable used by thread three and four, which stores a temporary photoresistor value to be printed using Serial-output
 int photoresistor = 0;
 
 volatile uint32_t count = 0;
 
 //------------------------------------------------------------------------------
-// thread 1 - high priority for blinking LED
-// 64 byte stack beyond task switch and interrupt needs
+// First thread demos a blinking LED
 static WORKING_AREA(waThread1, 64);
 
 static msg_t Thread1(void *arg) {
@@ -37,8 +43,7 @@ static msg_t Thread1(void *arg) {
   return 0;
 }
 //------------------------------------------------------------------------------
-// thread 2 - print main thread count every second
-// 100 byte stack beyond task switch and interrupt needs
+// Second thread demonstrates another blinking LED which another blinking rate
 static WORKING_AREA(waThread2, 64);
 
 static msg_t Thread2(void *arg) {
@@ -62,8 +67,7 @@ static msg_t Thread2(void *arg) {
 }
 
 //------------------------------------------------------------------------------
-// thread 2 - print main thread count every second
-// 100 byte stack beyond task switch and interrupt needs
+// Third thread prints out stack usage of the first three threads and photoresistor value which is read in thread four
 static WORKING_AREA(waThread3, 100);
 
 static msg_t Thread3(void *arg) {
@@ -97,8 +101,7 @@ static msg_t Thread3(void *arg) {
 }
 
 //------------------------------------------------------------------------------
-// thread 2 - print main thread count every second
-// 100 byte stack beyond task switch and interrupt needs
+// The fourth thread reads a photoresistor value from analog input 0(A0)
 static WORKING_AREA(waThread4, 64);
 
 static msg_t Thread4(void *arg) {
@@ -110,6 +113,8 @@ static msg_t Thread4(void *arg) {
   }
 }
 
+//------------------------------------------------------------------------------
+// The fifth and last thread smoothly lights up an LED using PWM
 static WORKING_AREA(waThread5, 64);
 
 static msg_t Thread5(void *arg) {
@@ -139,10 +144,10 @@ void setup() {
   // chBegin never returns, main thread continues with mainThread()
   while (1) {}
 }
+
 //------------------------------------------------------------------------------
 // main thread runs at NORMALPRIO
 void mainThread() {
-
 
   chThdCreateStatic(waThread1, sizeof(waThread1),
                     NORMALPRIO + 2, Thread1, NULL);
