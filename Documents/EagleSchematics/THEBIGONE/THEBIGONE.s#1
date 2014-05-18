@@ -204,72 +204,6 @@ Version 1.0,   August 27-th 2010
 &lt;HR&gt;
 Copyright: Würth Elektronik</description>
 <packages>
-<package name="61201622021">
-<description>WR-BHD 2.54mm Male Box Header With Lever, 16 Pins</description>
-<wire x1="-23.72" y1="4.15" x2="16.1" y2="4.15" width="0.127" layer="21"/>
-<wire x1="16.1" y1="4.15" x2="16.1" y2="-4.15" width="0.127" layer="21"/>
-<wire x1="16.1" y1="-4.15" x2="-23.72" y2="-4.15" width="0.127" layer="21"/>
-<wire x1="-23.72" y1="-4.15" x2="-23.72" y2="4.15" width="0.127" layer="21"/>
-<wire x1="-23.72" y1="4.15" x2="16.1" y2="4.15" width="0.127" layer="51"/>
-<wire x1="16.1" y1="4.15" x2="16.1" y2="-4.15" width="0.127" layer="51"/>
-<wire x1="16.1" y1="-4.15" x2="-23.72" y2="-4.15" width="0.127" layer="51"/>
-<wire x1="-23.72" y1="-4.15" x2="-23.72" y2="4.15" width="0.127" layer="51"/>
-<pad name="1" x="5.08" y="1.27" drill="1.1"/>
-<pad name="2" x="5.08" y="-1.27" drill="1.1"/>
-<pad name="3" x="2.54" y="1.27" drill="1.1"/>
-<pad name="4" x="2.54" y="-1.27" drill="1.1"/>
-<pad name="5" x="0" y="1.27" drill="1.1"/>
-<pad name="6" x="0" y="-1.27" drill="1.1"/>
-<pad name="7" x="-2.54" y="1.27" drill="1.1"/>
-<pad name="8" x="-2.54" y="-1.27" drill="1.1"/>
-<pad name="9" x="-5.08" y="1.27" drill="1.1"/>
-<pad name="10" x="-5.08" y="-1.27" drill="1.1"/>
-<pad name="11" x="-7.62" y="1.27" drill="1.1"/>
-<pad name="12" x="-7.62" y="-1.27" drill="1.1"/>
-<pad name="13" x="-10.16" y="1.27" drill="1.1"/>
-<pad name="14" x="-10.16" y="-1.27" drill="1.1"/>
-<pad name="15" x="-12.7" y="1.27" drill="1.1"/>
-<pad name="16" x="-12.7" y="-1.27" drill="1.1"/>
-<text x="4.445" y="0.635" size="1.27" layer="51">1</text>
-<text x="-13.97" y="-1.905" size="1.27" layer="51">16</text>
-<text x="-6.35" y="5.08" size="1.27" layer="25">&gt;NAME</text>
-<text x="-6.985" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="61202022021">
-<description>WR-BHD 2.54mm Male Box Header With Lever, 20 Pins</description>
-<wire x1="-28.8" y1="4.15" x2="16.1" y2="4.15" width="0.127" layer="21"/>
-<wire x1="16.1" y1="4.15" x2="16.1" y2="-4.15" width="0.127" layer="21"/>
-<wire x1="16.1" y1="-4.15" x2="-28.8" y2="-4.15" width="0.127" layer="21"/>
-<wire x1="-28.8" y1="-4.15" x2="-28.8" y2="4.15" width="0.127" layer="21"/>
-<wire x1="-28.8" y1="4.15" x2="16.1" y2="4.15" width="0.127" layer="51"/>
-<wire x1="16.1" y1="4.15" x2="16.1" y2="-4.15" width="0.127" layer="51"/>
-<wire x1="16.1" y1="-4.15" x2="-28.8" y2="-4.15" width="0.127" layer="51"/>
-<wire x1="-28.8" y1="-4.15" x2="-28.8" y2="4.15" width="0.127" layer="51"/>
-<pad name="1" x="5.08" y="1.27" drill="1.1"/>
-<pad name="2" x="5.08" y="-1.27" drill="1.1"/>
-<pad name="3" x="2.54" y="1.27" drill="1.1"/>
-<pad name="4" x="2.54" y="-1.27" drill="1.1"/>
-<pad name="5" x="0" y="1.27" drill="1.1"/>
-<pad name="6" x="0" y="-1.27" drill="1.1"/>
-<pad name="7" x="-2.54" y="1.27" drill="1.1"/>
-<pad name="8" x="-2.54" y="-1.27" drill="1.1"/>
-<pad name="9" x="-5.08" y="1.27" drill="1.1"/>
-<pad name="10" x="-5.08" y="-1.27" drill="1.1"/>
-<pad name="11" x="-7.62" y="1.27" drill="1.1"/>
-<pad name="12" x="-7.62" y="-1.27" drill="1.1"/>
-<pad name="13" x="-10.16" y="1.27" drill="1.1"/>
-<pad name="14" x="-10.16" y="-1.27" drill="1.1"/>
-<pad name="15" x="-12.7" y="1.27" drill="1.1"/>
-<pad name="16" x="-12.7" y="-1.27" drill="1.1"/>
-<pad name="17" x="-15.24" y="1.27" drill="1.1"/>
-<pad name="18" x="-15.24" y="-1.27" drill="1.1"/>
-<pad name="19" x="-17.78" y="1.27" drill="1.1"/>
-<pad name="20" x="-17.78" y="-1.27" drill="1.1"/>
-<text x="4.445" y="0.635" size="1.27" layer="51">1</text>
-<text x="-19.05" y="-1.905" size="1.27" layer="51">20</text>
-<text x="-9.525" y="5.08" size="1.27" layer="25">&gt;NAME</text>
-<text x="-10.16" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
-</package>
 <package name="612020235121">
 <description>WR-BHD 2.54mm Male Box Header High Temperature, 20 Pins</description>
 <wire x1="-7.71" y1="4.525" x2="25.49" y2="4.525" width="0.127" layer="21"/>
@@ -305,6 +239,37 @@ Copyright: Würth Elektronik</description>
 <text x="5.08" y="5.08" size="1.27" layer="25">&gt;NAME</text>
 <text x="4.445" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="612016235121">
+<description>WR-BHD 2.54mm Male Box Header High Temperature, 16 Pins</description>
+<wire x1="-7.71" y1="4.525" x2="20.41" y2="4.525" width="0.127" layer="21"/>
+<wire x1="20.41" y1="4.525" x2="20.41" y2="-4.525" width="0.127" layer="21"/>
+<wire x1="20.41" y1="-4.525" x2="-7.71" y2="-4.525" width="0.127" layer="21"/>
+<wire x1="-7.71" y1="-4.525" x2="-7.71" y2="4.525" width="0.127" layer="21"/>
+<wire x1="-7.71" y1="4.525" x2="20.41" y2="4.525" width="0.127" layer="51"/>
+<wire x1="20.41" y1="4.525" x2="20.41" y2="-4.525" width="0.127" layer="51"/>
+<wire x1="20.41" y1="-4.525" x2="-7.71" y2="-4.525" width="0.127" layer="51"/>
+<wire x1="-7.71" y1="-4.525" x2="-7.71" y2="4.525" width="0.127" layer="51"/>
+<pad name="2" x="-2.54" y="1.27" drill="1.02"/>
+<pad name="1" x="-2.54" y="-1.27" drill="1.02"/>
+<pad name="4" x="0" y="1.27" drill="1.02"/>
+<pad name="3" x="0" y="-1.27" drill="1.02"/>
+<pad name="6" x="2.54" y="1.27" drill="1.02"/>
+<pad name="5" x="2.54" y="-1.27" drill="1.02"/>
+<pad name="7" x="5.08" y="-1.27" drill="1.02"/>
+<pad name="8" x="5.08" y="1.27" drill="1.02"/>
+<pad name="9" x="7.62" y="-1.27" drill="1.02"/>
+<pad name="10" x="7.62" y="1.27" drill="1.02"/>
+<pad name="11" x="10.16" y="-1.27" drill="1.02"/>
+<pad name="12" x="10.16" y="1.27" drill="1.02"/>
+<pad name="13" x="12.7" y="-1.27" drill="1.02"/>
+<pad name="14" x="12.7" y="1.27" drill="1.02"/>
+<pad name="15" x="15.24" y="-1.27" drill="1.02"/>
+<pad name="16" x="15.24" y="1.27" drill="1.02"/>
+<text x="-3.175" y="-1.905" size="1.27" layer="51">1</text>
+<text x="14.605" y="0.635" size="1.27" layer="51">16</text>
+<text x="3.175" y="5.08" size="1.27" layer="25">&gt;NAME</text>
+<text x="2.54" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="8X8">
@@ -330,34 +295,6 @@ Copyright: Würth Elektronik</description>
 <pin name="13" x="15.24" y="-10.16" length="middle" direction="pas" rot="R90"/>
 <pin name="15" x="20.32" y="-10.16" length="middle" direction="pas" rot="R90"/>
 <pin name="16" x="20.32" y="10.16" length="middle" direction="pas" rot="R270"/>
-</symbol>
-<symbol name="10X10_RL">
-<wire x1="-12.7" y1="7.62" x2="-12.7" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-2.54" x2="38.1" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="38.1" y1="-2.54" x2="38.1" y2="7.62" width="0.254" layer="94"/>
-<wire x1="38.1" y1="7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
-<text x="-21.59" y="3.556" size="1.778" layer="95">&gt;NAME</text>
-<text x="-22.606" y="0.254" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="10" x="15.24" y="-7.62" length="middle" direction="pas" rot="R90"/>
-<pin name="9" x="15.24" y="12.7" length="middle" direction="pas" rot="R270"/>
-<pin name="8" x="20.32" y="-7.62" length="middle" direction="pas" rot="R90"/>
-<pin name="7" x="20.32" y="12.7" length="middle" direction="pas" rot="R270"/>
-<pin name="6" x="25.4" y="-7.62" length="middle" direction="pas" rot="R90"/>
-<pin name="5" x="25.4" y="12.7" length="middle" direction="pas" rot="R270"/>
-<pin name="4" x="30.48" y="-7.62" length="middle" direction="pas" rot="R90"/>
-<pin name="3" x="30.48" y="12.7" length="middle" direction="pas" rot="R270"/>
-<pin name="1" x="35.56" y="12.7" length="middle" direction="pas" rot="R270"/>
-<pin name="2" x="35.56" y="-7.62" length="middle" direction="pas" rot="R90"/>
-<pin name="11" x="10.16" y="12.7" length="middle" direction="pas" rot="R270"/>
-<pin name="12" x="10.16" y="-7.62" length="middle" direction="pas" rot="R90"/>
-<pin name="13" x="5.08" y="12.7" length="middle" direction="pas" rot="R270"/>
-<pin name="14" x="5.08" y="-7.62" length="middle" direction="pas" rot="R90"/>
-<pin name="15" x="0" y="12.7" length="middle" direction="pas" rot="R270"/>
-<pin name="16" x="0" y="-7.62" length="middle" direction="pas" rot="R90"/>
-<pin name="17" x="-5.08" y="12.7" length="middle" direction="pas" rot="R270"/>
-<pin name="18" x="-5.08" y="-7.62" length="middle" direction="pas" rot="R90"/>
-<pin name="19" x="-10.16" y="12.7" length="middle" direction="pas" rot="R270"/>
-<pin name="20" x="-10.16" y="-7.62" length="middle" direction="pas" rot="R90"/>
 </symbol>
 <symbol name="10X10">
 <wire x1="-22.86" y1="5.08" x2="-22.86" y2="-5.08" width="0.254" layer="94"/>
@@ -389,72 +326,6 @@ Copyright: Würth Elektronik</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="61201622021" prefix="K">
-<description>WR-BHD 2.54mm Male Box Header With Lever, 16 Pins</description>
-<gates>
-<gate name="G$1" symbol="8X8" x="-2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="61201622021">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="10" pad="10"/>
-<connect gate="G$1" pin="11" pad="11"/>
-<connect gate="G$1" pin="12" pad="12"/>
-<connect gate="G$1" pin="13" pad="13"/>
-<connect gate="G$1" pin="14" pad="14"/>
-<connect gate="G$1" pin="15" pad="15"/>
-<connect gate="G$1" pin="16" pad="16"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="61202022021" prefix="K">
-<description>WR-BHD 2.54mm Male Box Header With Lever, 20 Pins</description>
-<gates>
-<gate name="G$1" symbol="10X10_RL" x="-15.24" y="-5.08"/>
-</gates>
-<devices>
-<device name="" package="61202022021">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="10" pad="10"/>
-<connect gate="G$1" pin="11" pad="11"/>
-<connect gate="G$1" pin="12" pad="12"/>
-<connect gate="G$1" pin="13" pad="13"/>
-<connect gate="G$1" pin="14" pad="14"/>
-<connect gate="G$1" pin="15" pad="15"/>
-<connect gate="G$1" pin="16" pad="16"/>
-<connect gate="G$1" pin="17" pad="17"/>
-<connect gate="G$1" pin="18" pad="18"/>
-<connect gate="G$1" pin="19" pad="19"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="20" pad="20"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="612020235121">
 <description>WR-BHD 2.54mm Male Box Header High Temperature, 20 Pins</description>
 <gates>
@@ -476,6 +347,37 @@ Copyright: Würth Elektronik</description>
 <connect gate="G$1" pin="19" pad="19"/>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="20" pad="20"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="612016235121" prefix="K">
+<description>WR-BHD 2.54mm Male Box Header High Temperature, 16 Pins</description>
+<gates>
+<gate name="G$1" symbol="8X8" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="612016235121">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="15" pad="15"/>
+<connect gate="G$1" pin="16" pad="16"/>
+<connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
@@ -4949,8 +4851,6 @@ Based on the following sources:
 </class>
 </classes>
 <parts>
-<part name="TO_MB_16PIN" library="Wuerth_Elektronik_eiCan_05_Box_Header_IDC_Connectors_1_2" deviceset="61201622021" device=""/>
-<part name="FROM_SENSOR_TOP" library="Wuerth_Elektronik_eiCan_05_Box_Header_IDC_Connectors_1_2" deviceset="61202022021" device=""/>
 <part name="Q1" library="transistor-power" deviceset="TIP120" device=""/>
 <part name="FAN1" library="con-molex" deviceset="22-23-2021" device=""/>
 <part name="D1" library="diode" deviceset="1N4004" device=""/>
@@ -4971,8 +4871,6 @@ Based on the following sources:
 <part name="FAN5" library="con-molex" deviceset="22-23-2021" device=""/>
 <part name="D5" library="diode" deviceset="1N4004" device=""/>
 <part name="R5" library="rcl" deviceset="R-US_" device="0204/7" value="2.2k"/>
-<part name="FROM_SENSOR_BOTTOM" library="Wuerth_Elektronik_eiCan_05_Box_Header_IDC_Connectors_1_2" deviceset="61202022021" device=""/>
-<part name="TO_MB_16PIN1" library="Wuerth_Elektronik_eiCan_05_Box_Header_IDC_Connectors_1_2" deviceset="61201622021" device=""/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M03" device="JST-PTH-VERT"/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M03" device="JST-PTH-VERT"/>
 <part name="Q6" library="transistor-power" deviceset="TIP120" device=""/>
@@ -4981,17 +4879,16 @@ Based on the following sources:
 <part name="R6" library="rcl" deviceset="R-US_" device="0204/7" value="2.2k"/>
 <part name="IC1" library="40xx" deviceset="4067" device="N"/>
 <part name="IC2" library="40xx" deviceset="4067" device="N"/>
-<part name="U$5" library="Wuerth_Elektronik_eiCan_05_Box_Header_IDC_Connectors_1_2" deviceset="612020235121" device=""/>
+<part name="FROM_SENSORTOP" library="Wuerth_Elektronik_eiCan_05_Box_Header_IDC_Connectors_1_2" deviceset="612020235121" device=""/>
+<part name="FROM_SENSORBOTTOM" library="Wuerth_Elektronik_eiCan_05_Box_Header_IDC_Connectors_1_2" deviceset="612020235121" device=""/>
+<part name="K1" library="Wuerth_Elektronik_eiCan_05_Box_Header_IDC_Connectors_1_2" deviceset="612016235121" device=""/>
+<part name="K2" library="Wuerth_Elektronik_eiCan_05_Box_Header_IDC_Connectors_1_2" deviceset="612016235121" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="TO_MB_16PIN" gate="G$1" x="91.44" y="93.98" rot="R270"/>
-<instance part="FROM_SENSOR_TOP" gate="G$1" x="-76.2" y="78.74" smashed="yes" rot="R90">
-<attribute name="NAME" x="-64.77" y="65.024" size="1.778" layer="95" rot="R180"/>
-</instance>
 <instance part="Q1" gate="1" x="-142.24" y="5.08"/>
 <instance part="FAN1" gate="-1" x="-139.7" y="27.94"/>
 <instance part="FAN1" gate="-2" x="-139.7" y="25.4"/>
@@ -5017,10 +4914,6 @@ Based on the following sources:
 <instance part="FAN5" gate="-2" x="99.06" y="25.4"/>
 <instance part="D5" gate="1" x="86.36" y="27.94" rot="R90"/>
 <instance part="R5" gate="G$1" x="83.82" y="5.08" rot="R180"/>
-<instance part="FROM_SENSOR_BOTTOM" gate="G$1" x="-142.24" y="78.74" smashed="yes" rot="R90">
-<attribute name="NAME" x="-130.81" y="65.024" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="TO_MB_16PIN1" gate="G$1" x="137.16" y="93.98" rot="R270"/>
 <instance part="JP2" gate="G$1" x="167.64" y="106.68"/>
 <instance part="JP1" gate="G$1" x="167.64" y="88.9"/>
 <instance part="Q6" gate="1" x="152.4" y="5.08"/>
@@ -5030,16 +4923,19 @@ Based on the following sources:
 <instance part="R6" gate="G$1" x="139.7" y="5.08" rot="R180"/>
 <instance part="IC1" gate="A" x="-12.7" y="93.98"/>
 <instance part="IC2" gate="A" x="40.64" y="93.98"/>
-<instance part="U$5" gate="G$1" x="-132.08" y="165.1" rot="R270"/>
+<instance part="FROM_SENSORTOP" gate="G$1" x="-142.24" y="93.98" rot="R270"/>
+<instance part="FROM_SENSORBOTTOM" gate="G$1" x="-78.74" y="93.98" rot="R270"/>
+<instance part="K1" gate="G$1" x="91.44" y="93.98" rot="R270"/>
+<instance part="K2" gate="G$1" x="137.16" y="93.98" rot="R270"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="PHOTO2" class="0">
 <segment>
-<pinref part="FROM_SENSOR_TOP" gate="G$1" pin="5"/>
 <wire x1="-91.44" y1="104.14" x2="-88.9" y2="104.14" width="0.1524" layer="91"/>
 <label x="-91.44" y="104.14" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="FROM_SENSORBOTTOM" gate="G$1" pin="5"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="X1"/>
@@ -5049,14 +4945,14 @@ Based on the following sources:
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="TO_MB_16PIN" gate="G$1" pin="15"/>
 <wire x1="78.74" y1="73.66" x2="81.28" y2="73.66" width="0.1524" layer="91"/>
 <label x="78.74" y="73.66" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="K1" gate="G$1" pin="15"/>
 </segment>
 <segment>
-<pinref part="FROM_SENSOR_TOP" gate="G$1" pin="1"/>
 <wire x1="-91.44" y1="114.3" x2="-88.9" y2="114.3" width="0.1524" layer="91"/>
 <label x="-91.44" y="114.3" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="FROM_SENSORBOTTOM" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="Q1" gate="1" pin="E"/>
@@ -5084,11 +4980,6 @@ Based on the following sources:
 <label x="99.06" y="-2.54" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="FROM_SENSOR_BOTTOM" gate="G$1" pin="1"/>
-<wire x1="-157.48" y1="114.3" x2="-154.94" y2="114.3" width="0.1524" layer="91"/>
-<label x="-157.48" y="114.3" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="JP2" gate="G$1" pin="1"/>
 <wire x1="177.8" y1="104.14" x2="175.26" y2="104.14" width="0.1524" layer="91"/>
 <label x="177.8" y="104.14" size="1.016" layer="95" xref="yes"/>
@@ -5113,12 +5004,17 @@ Based on the following sources:
 <wire x1="27.94" y1="119.38" x2="25.4" y2="119.38" width="0.1524" layer="91"/>
 <label x="25.4" y="119.38" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<wire x1="-154.94" y1="114.3" x2="-152.4" y2="114.3" width="0.1524" layer="91"/>
+<label x="-154.94" y="114.3" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="FROM_SENSORTOP" gate="G$1" pin="1"/>
+</segment>
 </net>
 <net name="PHOTO3" class="0">
 <segment>
-<pinref part="FROM_SENSOR_TOP" gate="G$1" pin="7"/>
 <wire x1="-91.44" y1="99.06" x2="-88.9" y2="99.06" width="0.1524" layer="91"/>
 <label x="-91.44" y="99.06" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="FROM_SENSORBOTTOM" gate="G$1" pin="7"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="X2"/>
@@ -5128,9 +5024,9 @@ Based on the following sources:
 </net>
 <net name="PHOTO4" class="0">
 <segment>
-<pinref part="FROM_SENSOR_TOP" gate="G$1" pin="9"/>
 <wire x1="-91.44" y1="93.98" x2="-88.9" y2="93.98" width="0.1524" layer="91"/>
 <label x="-91.44" y="93.98" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="FROM_SENSORBOTTOM" gate="G$1" pin="9"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="X3"/>
@@ -5140,9 +5036,9 @@ Based on the following sources:
 </net>
 <net name="PHOTO5" class="0">
 <segment>
-<pinref part="FROM_SENSOR_TOP" gate="G$1" pin="11"/>
 <wire x1="-91.44" y1="88.9" x2="-88.9" y2="88.9" width="0.1524" layer="91"/>
 <label x="-91.44" y="88.9" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="FROM_SENSORBOTTOM" gate="G$1" pin="11"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="X4"/>
@@ -5152,9 +5048,9 @@ Based on the following sources:
 </net>
 <net name="PHOTO6" class="0">
 <segment>
-<pinref part="FROM_SENSOR_TOP" gate="G$1" pin="13"/>
 <wire x1="-91.44" y1="83.82" x2="-88.9" y2="83.82" width="0.1524" layer="91"/>
 <label x="-91.44" y="83.82" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="FROM_SENSORBOTTOM" gate="G$1" pin="13"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="X5"/>
@@ -5164,9 +5060,9 @@ Based on the following sources:
 </net>
 <net name="PHOTO7" class="0">
 <segment>
-<pinref part="FROM_SENSOR_TOP" gate="G$1" pin="15"/>
 <wire x1="-91.44" y1="78.74" x2="-88.9" y2="78.74" width="0.1524" layer="91"/>
 <label x="-91.44" y="78.74" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="FROM_SENSORBOTTOM" gate="G$1" pin="15"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="X6"/>
@@ -5176,9 +5072,9 @@ Based on the following sources:
 </net>
 <net name="PHOTO1" class="0">
 <segment>
-<pinref part="FROM_SENSOR_TOP" gate="G$1" pin="3"/>
 <wire x1="-91.44" y1="109.22" x2="-88.9" y2="109.22" width="0.1524" layer="91"/>
 <label x="-91.44" y="109.22" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="FROM_SENSORBOTTOM" gate="G$1" pin="3"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="X0"/>
@@ -5188,9 +5084,9 @@ Based on the following sources:
 </net>
 <net name="+12V" class="0">
 <segment>
-<pinref part="TO_MB_16PIN" gate="G$1" pin="13"/>
 <wire x1="78.74" y1="78.74" x2="81.28" y2="78.74" width="0.1524" layer="91"/>
 <label x="78.74" y="78.74" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="K1" gate="G$1" pin="13"/>
 </segment>
 <segment>
 <pinref part="D1" gate="1" pin="C"/>
@@ -5233,9 +5129,9 @@ Based on the following sources:
 </net>
 <net name="DIG1" class="0">
 <segment>
-<pinref part="TO_MB_16PIN1" gate="G$1" pin="2"/>
 <wire x1="149.86" y1="109.22" x2="147.32" y2="109.22" width="0.1524" layer="91"/>
 <label x="149.86" y="109.22" size="1.016" layer="95" xref="yes"/>
+<pinref part="K2" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="A"/>
@@ -5245,9 +5141,9 @@ Based on the following sources:
 </net>
 <net name="DIG2" class="0">
 <segment>
-<pinref part="TO_MB_16PIN1" gate="G$1" pin="4"/>
 <wire x1="149.86" y1="104.14" x2="147.32" y2="104.14" width="0.1524" layer="91"/>
 <label x="149.86" y="104.14" size="1.016" layer="95" xref="yes"/>
+<pinref part="K2" gate="G$1" pin="4"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="B"/>
@@ -5257,9 +5153,9 @@ Based on the following sources:
 </net>
 <net name="DIG3" class="0">
 <segment>
-<pinref part="TO_MB_16PIN1" gate="G$1" pin="6"/>
 <wire x1="149.86" y1="99.06" x2="147.32" y2="99.06" width="0.1524" layer="91"/>
 <label x="149.86" y="99.06" size="1.016" layer="95" xref="yes"/>
+<pinref part="K2" gate="G$1" pin="6"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="C"/>
@@ -5269,9 +5165,9 @@ Based on the following sources:
 </net>
 <net name="MUX1" class="0">
 <segment>
-<pinref part="TO_MB_16PIN" gate="G$1" pin="16"/>
 <wire x1="104.14" y1="73.66" x2="101.6" y2="73.66" width="0.1524" layer="91"/>
 <label x="104.14" y="73.66" size="1.016" layer="95" xref="yes"/>
+<pinref part="K1" gate="G$1" pin="16"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="X"/>
@@ -5281,9 +5177,9 @@ Based on the following sources:
 </net>
 <net name="PHOTO8" class="0">
 <segment>
-<pinref part="FROM_SENSOR_TOP" gate="G$1" pin="17"/>
 <wire x1="-91.44" y1="73.66" x2="-88.9" y2="73.66" width="0.1524" layer="91"/>
 <label x="-91.44" y="73.66" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="FROM_SENSORBOTTOM" gate="G$1" pin="17"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="X7"/>
@@ -5293,21 +5189,21 @@ Based on the following sources:
 </net>
 <net name="N$26" class="0">
 <segment>
-<pinref part="FROM_SENSOR_TOP" gate="G$1" pin="19"/>
 <wire x1="-91.44" y1="68.58" x2="-88.9" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="FROM_SENSORBOTTOM" gate="G$1" pin="19"/>
 </segment>
 </net>
 <net name="N$27" class="0">
 <segment>
-<pinref part="FROM_SENSOR_TOP" gate="G$1" pin="20"/>
 <wire x1="-66.04" y1="68.58" x2="-68.58" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="FROM_SENSORBOTTOM" gate="G$1" pin="20"/>
 </segment>
 </net>
 <net name="PHOTO16" class="0">
 <segment>
-<pinref part="FROM_SENSOR_TOP" gate="G$1" pin="18"/>
 <wire x1="-66.04" y1="73.66" x2="-68.58" y2="73.66" width="0.1524" layer="91"/>
 <label x="-66.04" y="73.66" size="1.778" layer="95" xref="yes"/>
+<pinref part="FROM_SENSORBOTTOM" gate="G$1" pin="18"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="X15"/>
@@ -5317,9 +5213,9 @@ Based on the following sources:
 </net>
 <net name="PHOTO15" class="0">
 <segment>
-<pinref part="FROM_SENSOR_TOP" gate="G$1" pin="16"/>
 <wire x1="-66.04" y1="78.74" x2="-68.58" y2="78.74" width="0.1524" layer="91"/>
 <label x="-66.04" y="78.74" size="1.778" layer="95" xref="yes"/>
+<pinref part="FROM_SENSORBOTTOM" gate="G$1" pin="16"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="X14"/>
@@ -5329,9 +5225,9 @@ Based on the following sources:
 </net>
 <net name="PHOTO14" class="0">
 <segment>
-<pinref part="FROM_SENSOR_TOP" gate="G$1" pin="14"/>
 <wire x1="-66.04" y1="83.82" x2="-68.58" y2="83.82" width="0.1524" layer="91"/>
 <label x="-66.04" y="83.82" size="1.778" layer="95" xref="yes"/>
+<pinref part="FROM_SENSORBOTTOM" gate="G$1" pin="14"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="X13"/>
@@ -5341,9 +5237,9 @@ Based on the following sources:
 </net>
 <net name="PHOTO13" class="0">
 <segment>
-<pinref part="FROM_SENSOR_TOP" gate="G$1" pin="12"/>
 <wire x1="-66.04" y1="88.9" x2="-68.58" y2="88.9" width="0.1524" layer="91"/>
 <label x="-66.04" y="88.9" size="1.778" layer="95" xref="yes"/>
+<pinref part="FROM_SENSORBOTTOM" gate="G$1" pin="12"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="X12"/>
@@ -5353,9 +5249,9 @@ Based on the following sources:
 </net>
 <net name="PHOTO12" class="0">
 <segment>
-<pinref part="FROM_SENSOR_TOP" gate="G$1" pin="10"/>
 <wire x1="-66.04" y1="93.98" x2="-68.58" y2="93.98" width="0.1524" layer="91"/>
 <label x="-66.04" y="93.98" size="1.778" layer="95" xref="yes"/>
+<pinref part="FROM_SENSORBOTTOM" gate="G$1" pin="10"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="X11"/>
@@ -5365,9 +5261,9 @@ Based on the following sources:
 </net>
 <net name="PHOTO11" class="0">
 <segment>
-<pinref part="FROM_SENSOR_TOP" gate="G$1" pin="8"/>
 <wire x1="-66.04" y1="99.06" x2="-68.58" y2="99.06" width="0.1524" layer="91"/>
 <label x="-66.04" y="99.06" size="1.778" layer="95" xref="yes"/>
+<pinref part="FROM_SENSORBOTTOM" gate="G$1" pin="8"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="X10"/>
@@ -5377,9 +5273,9 @@ Based on the following sources:
 </net>
 <net name="PHOTO10" class="0">
 <segment>
-<pinref part="FROM_SENSOR_TOP" gate="G$1" pin="6"/>
 <wire x1="-66.04" y1="104.14" x2="-68.58" y2="104.14" width="0.1524" layer="91"/>
 <label x="-66.04" y="104.14" size="1.778" layer="95" xref="yes"/>
+<pinref part="FROM_SENSORBOTTOM" gate="G$1" pin="6"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="X9"/>
@@ -5389,9 +5285,9 @@ Based on the following sources:
 </net>
 <net name="PHOTO9" class="0">
 <segment>
-<pinref part="FROM_SENSOR_TOP" gate="G$1" pin="4"/>
 <wire x1="-66.04" y1="109.22" x2="-68.58" y2="109.22" width="0.1524" layer="91"/>
 <label x="-66.04" y="109.22" size="1.778" layer="95" xref="yes"/>
+<pinref part="FROM_SENSORBOTTOM" gate="G$1" pin="4"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="X8"/>
@@ -5406,9 +5302,9 @@ Based on the following sources:
 <label x="-162.56" y="5.08" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="TO_MB_16PIN" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="109.22" x2="81.28" y2="109.22" width="0.1524" layer="91"/>
 <label x="78.74" y="109.22" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="K1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="PWM_FAN2" class="0">
@@ -5418,9 +5314,9 @@ Based on the following sources:
 <label x="-101.6" y="5.08" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="TO_MB_16PIN" gate="G$1" pin="3"/>
 <wire x1="78.74" y1="104.14" x2="81.28" y2="104.14" width="0.1524" layer="91"/>
 <label x="78.74" y="104.14" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="K1" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="PWM_FAN3" class="0">
@@ -5430,9 +5326,9 @@ Based on the following sources:
 <label x="-45.72" y="5.08" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="TO_MB_16PIN" gate="G$1" pin="5"/>
 <wire x1="78.74" y1="99.06" x2="81.28" y2="99.06" width="0.1524" layer="91"/>
 <label x="78.74" y="99.06" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="K1" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="PWM_FAN4" class="0">
@@ -5442,16 +5338,16 @@ Based on the following sources:
 <label x="20.32" y="5.08" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="TO_MB_16PIN" gate="G$1" pin="7"/>
 <wire x1="78.74" y1="93.98" x2="81.28" y2="93.98" width="0.1524" layer="91"/>
 <label x="78.74" y="93.98" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="K1" gate="G$1" pin="7"/>
 </segment>
 </net>
 <net name="DIG4" class="0">
 <segment>
-<pinref part="TO_MB_16PIN1" gate="G$1" pin="8"/>
 <wire x1="149.86" y1="93.98" x2="147.32" y2="93.98" width="0.1524" layer="91"/>
 <label x="149.86" y="93.98" size="1.016" layer="95" xref="yes"/>
+<pinref part="K2" gate="G$1" pin="8"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="D"/>
@@ -5577,220 +5473,208 @@ Based on the following sources:
 <label x="76.2" y="5.08" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="TO_MB_16PIN" gate="G$1" pin="9"/>
 <wire x1="81.28" y1="88.9" x2="78.74" y2="88.9" width="0.1524" layer="91"/>
 <label x="78.74" y="88.9" size="1.016" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="FROM_SENSOR_BOTTOM" gate="G$1" pin="19"/>
-<wire x1="-157.48" y1="68.58" x2="-154.94" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="FROM_SENSOR_BOTTOM" gate="G$1" pin="20"/>
-<wire x1="-132.08" y1="68.58" x2="-134.62" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="K1" gate="G$1" pin="9"/>
 </segment>
 </net>
 <net name="PHOTO17" class="0">
-<segment>
-<pinref part="FROM_SENSOR_BOTTOM" gate="G$1" pin="3"/>
-<wire x1="-157.48" y1="109.22" x2="-154.94" y2="109.22" width="0.1524" layer="91"/>
-<label x="-157.48" y="109.22" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
 <segment>
 <pinref part="IC2" gate="A" pin="X0"/>
 <wire x1="25.4" y1="104.14" x2="27.94" y2="104.14" width="0.1524" layer="91"/>
 <label x="25.4" y="104.14" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<wire x1="-154.94" y1="109.22" x2="-152.4" y2="109.22" width="0.1524" layer="91"/>
+<label x="-154.94" y="109.22" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="FROM_SENSORTOP" gate="G$1" pin="3"/>
+</segment>
 </net>
 <net name="PHOTO18" class="0">
-<segment>
-<pinref part="FROM_SENSOR_BOTTOM" gate="G$1" pin="5"/>
-<wire x1="-157.48" y1="104.14" x2="-154.94" y2="104.14" width="0.1524" layer="91"/>
-<label x="-157.48" y="104.14" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
 <segment>
 <pinref part="IC2" gate="A" pin="X1"/>
 <wire x1="25.4" y1="101.6" x2="27.94" y2="101.6" width="0.1524" layer="91"/>
 <label x="25.4" y="101.6" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<wire x1="-154.94" y1="104.14" x2="-152.4" y2="104.14" width="0.1524" layer="91"/>
+<label x="-154.94" y="104.14" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="FROM_SENSORTOP" gate="G$1" pin="5"/>
+</segment>
 </net>
 <net name="PHOTO19" class="0">
-<segment>
-<pinref part="FROM_SENSOR_BOTTOM" gate="G$1" pin="7"/>
-<wire x1="-157.48" y1="99.06" x2="-154.94" y2="99.06" width="0.1524" layer="91"/>
-<label x="-157.48" y="99.06" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
 <segment>
 <pinref part="IC2" gate="A" pin="X2"/>
 <wire x1="25.4" y1="99.06" x2="27.94" y2="99.06" width="0.1524" layer="91"/>
 <label x="25.4" y="99.06" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<wire x1="-154.94" y1="99.06" x2="-152.4" y2="99.06" width="0.1524" layer="91"/>
+<label x="-154.94" y="99.06" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="FROM_SENSORTOP" gate="G$1" pin="7"/>
+</segment>
 </net>
 <net name="PHOTO20" class="0">
-<segment>
-<pinref part="FROM_SENSOR_BOTTOM" gate="G$1" pin="9"/>
-<wire x1="-157.48" y1="93.98" x2="-154.94" y2="93.98" width="0.1524" layer="91"/>
-<label x="-157.48" y="93.98" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
 <segment>
 <pinref part="IC2" gate="A" pin="X3"/>
 <wire x1="25.4" y1="96.52" x2="27.94" y2="96.52" width="0.1524" layer="91"/>
 <label x="25.4" y="96.52" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<wire x1="-154.94" y1="93.98" x2="-152.4" y2="93.98" width="0.1524" layer="91"/>
+<label x="-154.94" y="93.98" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="FROM_SENSORTOP" gate="G$1" pin="9"/>
+</segment>
 </net>
 <net name="PHOTO21" class="0">
-<segment>
-<pinref part="FROM_SENSOR_BOTTOM" gate="G$1" pin="11"/>
-<wire x1="-157.48" y1="88.9" x2="-154.94" y2="88.9" width="0.1524" layer="91"/>
-<label x="-157.48" y="88.9" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
 <segment>
 <pinref part="IC2" gate="A" pin="X4"/>
 <wire x1="25.4" y1="93.98" x2="27.94" y2="93.98" width="0.1524" layer="91"/>
 <label x="25.4" y="93.98" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<wire x1="-154.94" y1="88.9" x2="-152.4" y2="88.9" width="0.1524" layer="91"/>
+<label x="-154.94" y="88.9" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="FROM_SENSORTOP" gate="G$1" pin="11"/>
+</segment>
 </net>
 <net name="PHOTO22" class="0">
-<segment>
-<pinref part="FROM_SENSOR_BOTTOM" gate="G$1" pin="13"/>
-<wire x1="-157.48" y1="83.82" x2="-154.94" y2="83.82" width="0.1524" layer="91"/>
-<label x="-157.48" y="83.82" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
 <segment>
 <pinref part="IC2" gate="A" pin="X5"/>
 <wire x1="25.4" y1="91.44" x2="27.94" y2="91.44" width="0.1524" layer="91"/>
 <label x="25.4" y="91.44" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<wire x1="-154.94" y1="83.82" x2="-152.4" y2="83.82" width="0.1524" layer="91"/>
+<label x="-154.94" y="83.82" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="FROM_SENSORTOP" gate="G$1" pin="13"/>
+</segment>
 </net>
 <net name="PHOTO23" class="0">
-<segment>
-<pinref part="FROM_SENSOR_BOTTOM" gate="G$1" pin="15"/>
-<wire x1="-157.48" y1="78.74" x2="-154.94" y2="78.74" width="0.1524" layer="91"/>
-<label x="-157.48" y="78.74" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
 <segment>
 <pinref part="IC2" gate="A" pin="X6"/>
 <wire x1="25.4" y1="88.9" x2="27.94" y2="88.9" width="0.1524" layer="91"/>
 <label x="25.4" y="88.9" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<wire x1="-154.94" y1="78.74" x2="-152.4" y2="78.74" width="0.1524" layer="91"/>
+<label x="-154.94" y="78.74" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="FROM_SENSORTOP" gate="G$1" pin="15"/>
+</segment>
 </net>
 <net name="PHOTO24" class="0">
-<segment>
-<pinref part="FROM_SENSOR_BOTTOM" gate="G$1" pin="17"/>
-<wire x1="-157.48" y1="73.66" x2="-154.94" y2="73.66" width="0.1524" layer="91"/>
-<label x="-157.48" y="73.66" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
 <segment>
 <pinref part="IC2" gate="A" pin="X7"/>
 <wire x1="25.4" y1="86.36" x2="27.94" y2="86.36" width="0.1524" layer="91"/>
 <label x="25.4" y="86.36" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<wire x1="-154.94" y1="73.66" x2="-152.4" y2="73.66" width="0.1524" layer="91"/>
+<label x="-154.94" y="73.66" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="FROM_SENSORTOP" gate="G$1" pin="17"/>
+</segment>
 </net>
 <net name="PHOTO25" class="0">
-<segment>
-<pinref part="FROM_SENSOR_BOTTOM" gate="G$1" pin="4"/>
-<wire x1="-132.08" y1="109.22" x2="-134.62" y2="109.22" width="0.1524" layer="91"/>
-<label x="-132.08" y="109.22" size="1.778" layer="95" xref="yes"/>
-</segment>
 <segment>
 <pinref part="IC2" gate="A" pin="X8"/>
 <wire x1="25.4" y1="83.82" x2="27.94" y2="83.82" width="0.1524" layer="91"/>
 <label x="25.4" y="83.82" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<wire x1="-129.54" y1="109.22" x2="-132.08" y2="109.22" width="0.1524" layer="91"/>
+<label x="-129.54" y="109.22" size="1.778" layer="95" xref="yes"/>
+<pinref part="FROM_SENSORTOP" gate="G$1" pin="4"/>
+</segment>
 </net>
 <net name="PHOTO26" class="0">
-<segment>
-<pinref part="FROM_SENSOR_BOTTOM" gate="G$1" pin="6"/>
-<wire x1="-132.08" y1="104.14" x2="-134.62" y2="104.14" width="0.1524" layer="91"/>
-<label x="-132.08" y="104.14" size="1.778" layer="95" xref="yes"/>
-</segment>
 <segment>
 <pinref part="IC2" gate="A" pin="X9"/>
 <wire x1="25.4" y1="81.28" x2="27.94" y2="81.28" width="0.1524" layer="91"/>
 <label x="25.4" y="81.28" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<wire x1="-129.54" y1="104.14" x2="-132.08" y2="104.14" width="0.1524" layer="91"/>
+<label x="-129.54" y="104.14" size="1.778" layer="95" xref="yes"/>
+<pinref part="FROM_SENSORTOP" gate="G$1" pin="6"/>
+</segment>
 </net>
 <net name="PHOTO27" class="0">
-<segment>
-<pinref part="FROM_SENSOR_BOTTOM" gate="G$1" pin="8"/>
-<wire x1="-132.08" y1="99.06" x2="-134.62" y2="99.06" width="0.1524" layer="91"/>
-<label x="-132.08" y="99.06" size="1.778" layer="95" xref="yes"/>
-</segment>
 <segment>
 <pinref part="IC2" gate="A" pin="X10"/>
 <wire x1="25.4" y1="78.74" x2="27.94" y2="78.74" width="0.1524" layer="91"/>
 <label x="25.4" y="78.74" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<wire x1="-129.54" y1="99.06" x2="-132.08" y2="99.06" width="0.1524" layer="91"/>
+<label x="-129.54" y="99.06" size="1.778" layer="95" xref="yes"/>
+<pinref part="FROM_SENSORTOP" gate="G$1" pin="8"/>
+</segment>
 </net>
 <net name="PHOTO28" class="0">
-<segment>
-<pinref part="FROM_SENSOR_BOTTOM" gate="G$1" pin="10"/>
-<wire x1="-132.08" y1="93.98" x2="-134.62" y2="93.98" width="0.1524" layer="91"/>
-<label x="-132.08" y="93.98" size="1.778" layer="95" xref="yes"/>
-</segment>
 <segment>
 <pinref part="IC2" gate="A" pin="X11"/>
 <wire x1="25.4" y1="76.2" x2="27.94" y2="76.2" width="0.1524" layer="91"/>
 <label x="25.4" y="76.2" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<wire x1="-129.54" y1="93.98" x2="-132.08" y2="93.98" width="0.1524" layer="91"/>
+<label x="-129.54" y="93.98" size="1.778" layer="95" xref="yes"/>
+<pinref part="FROM_SENSORTOP" gate="G$1" pin="10"/>
+</segment>
 </net>
 <net name="PHOTO29" class="0">
-<segment>
-<pinref part="FROM_SENSOR_BOTTOM" gate="G$1" pin="12"/>
-<wire x1="-132.08" y1="88.9" x2="-134.62" y2="88.9" width="0.1524" layer="91"/>
-<label x="-132.08" y="88.9" size="1.778" layer="95" xref="yes"/>
-</segment>
 <segment>
 <pinref part="IC2" gate="A" pin="X12"/>
 <wire x1="25.4" y1="73.66" x2="27.94" y2="73.66" width="0.1524" layer="91"/>
 <label x="25.4" y="73.66" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<wire x1="-129.54" y1="88.9" x2="-132.08" y2="88.9" width="0.1524" layer="91"/>
+<label x="-129.54" y="88.9" size="1.778" layer="95" xref="yes"/>
+<pinref part="FROM_SENSORTOP" gate="G$1" pin="12"/>
+</segment>
 </net>
 <net name="PHOTO30" class="0">
-<segment>
-<pinref part="FROM_SENSOR_BOTTOM" gate="G$1" pin="14"/>
-<wire x1="-132.08" y1="83.82" x2="-134.62" y2="83.82" width="0.1524" layer="91"/>
-<label x="-132.08" y="83.82" size="1.778" layer="95" xref="yes"/>
-</segment>
 <segment>
 <pinref part="IC2" gate="A" pin="X13"/>
 <wire x1="25.4" y1="71.12" x2="27.94" y2="71.12" width="0.1524" layer="91"/>
 <label x="25.4" y="71.12" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<wire x1="-129.54" y1="83.82" x2="-132.08" y2="83.82" width="0.1524" layer="91"/>
+<label x="-129.54" y="83.82" size="1.778" layer="95" xref="yes"/>
+<pinref part="FROM_SENSORTOP" gate="G$1" pin="14"/>
+</segment>
 </net>
 <net name="PHOTO31" class="0">
-<segment>
-<pinref part="FROM_SENSOR_BOTTOM" gate="G$1" pin="16"/>
-<wire x1="-132.08" y1="78.74" x2="-134.62" y2="78.74" width="0.1524" layer="91"/>
-<label x="-132.08" y="78.74" size="1.778" layer="95" xref="yes"/>
-</segment>
 <segment>
 <pinref part="IC2" gate="A" pin="X14"/>
 <wire x1="25.4" y1="68.58" x2="27.94" y2="68.58" width="0.1524" layer="91"/>
 <label x="25.4" y="68.58" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<wire x1="-129.54" y1="78.74" x2="-132.08" y2="78.74" width="0.1524" layer="91"/>
+<label x="-129.54" y="78.74" size="1.778" layer="95" xref="yes"/>
+<pinref part="FROM_SENSORTOP" gate="G$1" pin="16"/>
+</segment>
 </net>
 <net name="PHOTO32" class="0">
-<segment>
-<pinref part="FROM_SENSOR_BOTTOM" gate="G$1" pin="18"/>
-<wire x1="-132.08" y1="73.66" x2="-134.62" y2="73.66" width="0.1524" layer="91"/>
-<label x="-132.08" y="73.66" size="1.778" layer="95" xref="yes"/>
-</segment>
 <segment>
 <pinref part="IC2" gate="A" pin="X15"/>
 <wire x1="25.4" y1="66.04" x2="27.94" y2="66.04" width="0.1524" layer="91"/>
 <label x="25.4" y="66.04" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<wire x1="-129.54" y1="73.66" x2="-132.08" y2="73.66" width="0.1524" layer="91"/>
+<label x="-129.54" y="73.66" size="1.778" layer="95" xref="yes"/>
+<pinref part="FROM_SENSORTOP" gate="G$1" pin="18"/>
+</segment>
 </net>
 <net name="DIG5" class="0">
 <segment>
-<pinref part="TO_MB_16PIN1" gate="G$1" pin="10"/>
 <wire x1="149.86" y1="88.9" x2="147.32" y2="88.9" width="0.1524" layer="91"/>
 <label x="149.86" y="88.9" size="1.016" layer="95" xref="yes"/>
+<pinref part="K2" gate="G$1" pin="10"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="A" pin="A"/>
@@ -5800,9 +5684,9 @@ Based on the following sources:
 </net>
 <net name="DIG6" class="0">
 <segment>
-<pinref part="TO_MB_16PIN1" gate="G$1" pin="12"/>
 <wire x1="149.86" y1="83.82" x2="147.32" y2="83.82" width="0.1524" layer="91"/>
 <label x="149.86" y="83.82" size="1.016" layer="95" xref="yes"/>
+<pinref part="K2" gate="G$1" pin="12"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="A" pin="B"/>
@@ -5812,9 +5696,9 @@ Based on the following sources:
 </net>
 <net name="DIG7" class="0">
 <segment>
-<pinref part="TO_MB_16PIN1" gate="G$1" pin="14"/>
 <wire x1="149.86" y1="78.74" x2="147.32" y2="78.74" width="0.1524" layer="91"/>
 <label x="149.86" y="78.74" size="1.016" layer="95" xref="yes"/>
+<pinref part="K2" gate="G$1" pin="14"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="A" pin="C"/>
@@ -5824,9 +5708,9 @@ Based on the following sources:
 </net>
 <net name="DIG8" class="0">
 <segment>
-<pinref part="TO_MB_16PIN1" gate="G$1" pin="16"/>
 <wire x1="149.86" y1="73.66" x2="147.32" y2="73.66" width="0.1524" layer="91"/>
 <label x="149.86" y="73.66" size="1.016" layer="95" xref="yes"/>
+<pinref part="K2" gate="G$1" pin="16"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="A" pin="D"/>
@@ -5836,9 +5720,9 @@ Based on the following sources:
 </net>
 <net name="MUX2" class="0">
 <segment>
-<pinref part="TO_MB_16PIN" gate="G$1" pin="14"/>
 <wire x1="104.14" y1="78.74" x2="101.6" y2="78.74" width="0.1524" layer="91"/>
 <label x="104.14" y="78.74" size="1.27" layer="95" xref="yes"/>
+<pinref part="K1" gate="G$1" pin="14"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="A" pin="X"/>
@@ -5848,19 +5732,14 @@ Based on the following sources:
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="FROM_SENSOR_TOP" gate="G$1" pin="2"/>
 <wire x1="-66.04" y1="114.3" x2="-68.58" y2="114.3" width="0.1524" layer="91"/>
 <label x="-66.04" y="114.3" size="1.778" layer="95" xref="yes"/>
+<pinref part="FROM_SENSORBOTTOM" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="TO_MB_16PIN" gate="G$1" pin="11"/>
 <wire x1="78.74" y1="83.82" x2="81.28" y2="83.82" width="0.1524" layer="91"/>
 <label x="78.74" y="83.82" size="1.016" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="FROM_SENSOR_BOTTOM" gate="G$1" pin="2"/>
-<wire x1="-132.08" y1="114.3" x2="-134.62" y2="114.3" width="0.1524" layer="91"/>
-<label x="-132.08" y="114.3" size="1.778" layer="95" xref="yes"/>
+<pinref part="K1" gate="G$1" pin="11"/>
 </segment>
 <segment>
 <pinref part="JP2" gate="G$1" pin="2"/>
@@ -5872,12 +5751,17 @@ Based on the following sources:
 <wire x1="177.8" y1="88.9" x2="175.26" y2="88.9" width="0.1524" layer="91"/>
 <label x="177.8" y="88.9" size="1.016" layer="95" xref="yes"/>
 </segment>
+<segment>
+<wire x1="-129.54" y1="114.3" x2="-132.08" y2="114.3" width="0.1524" layer="91"/>
+<label x="-129.54" y="114.3" size="1.778" layer="95" xref="yes"/>
+<pinref part="FROM_SENSORTOP" gate="G$1" pin="2"/>
+</segment>
 </net>
 <net name="PWM_SERVO1" class="0">
 <segment>
-<pinref part="TO_MB_16PIN" gate="G$1" pin="2"/>
 <wire x1="101.6" y1="109.22" x2="104.14" y2="109.22" width="0.1524" layer="91"/>
 <label x="104.14" y="109.22" size="1.27" layer="95" xref="yes"/>
+<pinref part="K1" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="JP2" gate="G$1" pin="3"/>
@@ -5887,9 +5771,9 @@ Based on the following sources:
 </net>
 <net name="PWM_SERVO2" class="0">
 <segment>
-<pinref part="TO_MB_16PIN" gate="G$1" pin="4"/>
 <wire x1="104.14" y1="104.14" x2="101.6" y2="104.14" width="0.1524" layer="91"/>
 <label x="104.14" y="104.14" size="1.27" layer="95" xref="yes"/>
+<pinref part="K1" gate="G$1" pin="4"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="3"/>
@@ -5899,16 +5783,16 @@ Based on the following sources:
 </net>
 <net name="PWM_SERVO3" class="0">
 <segment>
-<pinref part="TO_MB_16PIN" gate="G$1" pin="6"/>
 <wire x1="104.14" y1="99.06" x2="101.6" y2="99.06" width="0.1524" layer="91"/>
 <label x="104.14" y="99.06" size="1.27" layer="95" xref="yes"/>
+<pinref part="K1" gate="G$1" pin="6"/>
 </segment>
 </net>
 <net name="PWM_SERVO4" class="0">
 <segment>
-<pinref part="TO_MB_16PIN" gate="G$1" pin="8"/>
 <wire x1="104.14" y1="93.98" x2="101.6" y2="93.98" width="0.1524" layer="91"/>
 <label x="104.14" y="93.98" size="1.016" layer="95" xref="yes"/>
+<pinref part="K1" gate="G$1" pin="8"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -5945,15 +5829,21 @@ Based on the following sources:
 <label x="132.08" y="5.08" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="TO_MB_16PIN" gate="G$1" pin="10"/>
 <wire x1="101.6" y1="88.9" x2="104.14" y2="88.9" width="0.1524" layer="91"/>
 <label x="104.14" y="88.9" size="1.016" layer="95" xref="yes"/>
+<pinref part="K1" gate="G$1" pin="10"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
-<pinref part="U$5" gate="G$1" pin="1"/>
-<wire x1="-142.24" y1="185.42" x2="-144.78" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="-154.94" y1="68.58" x2="-152.4" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="FROM_SENSORTOP" gate="G$1" pin="19"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<wire x1="-129.54" y1="68.58" x2="-132.08" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="FROM_SENSORTOP" gate="G$1" pin="20"/>
 </segment>
 </net>
 </nets>
