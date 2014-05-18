@@ -59,7 +59,7 @@ void mainThread();
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\sam\cores\arduino\arduino.h"
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\sam\variants\arduino_due_x\pins_arduino.h" 
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\sam\variants\arduino_due_x\variant.h" 
-#include "X:\Arduino\Arduino_Training\HoverCraftSystem\HoverCraftSystem.ino"
-#include "X:\Arduino\Arduino_Training\HoverCraftSystem\FrontLineSensorSystem.ino"
-#include "X:\Arduino\Arduino_Training\HoverCraftSystem\MainThread.ino"
+#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\HoverCraftSystem.ino"
+#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\FrontLineSensorSystem.ino"
+#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\MainThread.ino"
 #endif
