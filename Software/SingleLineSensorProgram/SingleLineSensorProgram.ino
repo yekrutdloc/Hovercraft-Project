@@ -1,10 +1,13 @@
 // This Arduino Sketch is to run a single Line Sensor System.
 // Before starting the program, hover the line sensor above the line.
 // When starting the program, a calibration is executed which reads the photoresistor values,
-// and stores the values in an array(photoFrontBlackValues)
+// and stores the values in an array(photoFrontBlackValues).
+// When calibration is finished, the loop begins where realtime photoresistor 
+// values are compared to the calibration values.
+// If the realtime value of a photoresistor are far from the calibration value - the white track is assumed
+// If the realtime value of a photoresistor is close to the calibration value - the black line is assumed
 // Change pin-variables below if needed
-
-
+// Change calibration sensitivity below if needed
 
 // Front Line-Sensor pins
 int const s0pin = 51;
@@ -17,6 +20,7 @@ int const z = A0;
 int const buzzerPin = 30;
 
 // Line Sensors variables
+int const calibrationSensitivity = 200;
 int photoValArray[16];
 int photoValApproxArray[15];
 int photoValMergedArray[31];
@@ -62,7 +66,7 @@ void loop() {
 
   // Convert analog values to 1 or 0
   for (int i = 0; i < 31; i++) {
-    if (photoValMergedArray[i] > (photoFrontBlackValues[i] + 200)) {
+    if (photoValMergedArray[i] > (photoFrontBlackValues[i] + calibrationSensitivity)) {
       lineFollowValArray[i] = 0;
       Serial.print(0);
     } else {

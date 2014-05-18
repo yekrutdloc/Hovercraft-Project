@@ -1,3 +1,6 @@
+// This program unit tests PIDLibrary using ArduinoUnit.
+//
+
 // Unit testing setup
 #line 2 "basic.ino"
 #include <ArduinoUnit.h>
@@ -19,9 +22,9 @@ test(onSetpointRegulationTest)
 
   //turn the PID on
   myPID.SetMode(AUTOMATIC);
-
   myPID.Compute();
 
+  // Set unit test parameters
   assertEqual(Output1, 0);
 }
 
@@ -38,9 +41,9 @@ test(noRegulationTest) {
 
   //turn the PID on
   myPID.SetMode(AUTOMATIC);
-
   myPID.Compute();
 
+  // Set unit test parameters
   assertEqual(Output2, 0);
 }
 
@@ -57,18 +60,18 @@ test(regulationActiovateTest) {
 
   //turn the PID on
   myPID.SetMode(AUTOMATIC);
-
   myPID.Compute();
 
+  // Set unit test parameters
   assertNotEqual(Output3, 0);
 }
 
 void setup()
 {
-  Serial.begin(9600);
+  Serial.begin(9600); // Needed for ArduinoUnit to function printing out the test results
 }
 
 void loop()
 {
-  Test::run();
+  Test::run(); // Function to start the unit tests
 }
