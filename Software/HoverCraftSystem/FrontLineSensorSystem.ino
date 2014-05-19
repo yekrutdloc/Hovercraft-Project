@@ -16,8 +16,15 @@ int fr_WhiteValues[16];
 int fr_difference[16];
 int fr_range[16];
 int fr_PercentValues[16];
-int fr_OneZeroValues[16];
-int fr_linePosition;
+int fr_PercentValues_Middle[17];
+int fr_OneZeroValues[17];
+int fr_OneArray[17];
+double fr_LinePosition;
+double fr_FRMPID;
+double fr_FLMPID;
+double* pfr_FRMPID = &fr_FRMPID;
+double* pfr_FLMPID = &fr_FLMPID;
+
 
 static WORKING_AREA(fr_LineSensorSystem, 64);
 
@@ -45,7 +52,7 @@ static msg_t Thread1(void *arg) {
 
 	runBuzzerBeep();
 	chThdSleepMilliseconds(2000);
-	
+
 	fr_findRange();
 
 	while (1) {
@@ -53,14 +60,110 @@ static msg_t Thread1(void *arg) {
 		getPhotoArrayValues();
 
 		for (int j = 0; j < 16; j++) {
-			fr_PercentValues[j] = (double)100*( fr_AdcValues[j] - fr_BlackValues[j] ) / fr_range[j] ;
+			fr_PercentValues[j] = (double)100 * (fr_AdcValues[j] - fr_BlackValues[j]) / fr_range[j];
 		}
 
-		for (int i = 0; i < 16; i++) {
-			Serial.print(fr_PercentValues[i]);
-			Serial.print("-");
+
+		int middle_value = (fr_PercentValues[7] + fr_PercentValues[8]) / 2;
+
+
+		for (int j = 0; j < 8; j++) {
+			fr_PercentValues_Middle[j] = fr_PercentValues[j];
 		}
-		Serial.println(" "); //newline
+
+		fr_PercentValues_Middle[8] = middle_value;
+
+		for (int j = 9; j < 17; j++) {
+			fr_PercentValues_Middle[j] = fr_PercentValues[j-1];
+		}
+
+		//for (int i = 0; i < 17; i++) {
+		//	Serial.print(fr_PercentValues_Middle[i]);
+		//	Serial.print("-");
+		//}
+		//Serial.println(" "); //newline
+
+		chThdSleepMilliseconds(10);
+
+
+		/*int min_index = 8;
+		int min_value = 0;
+		min_value = fr_PercentValues_Middle[0];
+		for (int i = 0; i < 17; i++) {
+			if (fr_PercentValues_Middle[i] < min_value) {
+				min_index = i;
+			}
+		}*/
+
+		for (int j = 0; j < 17; j++) {
+
+			if (fr_PercentValues_Middle[j] < fr_BlackSensitivity){
+				fr_OneZeroValues[j] = 1;
+			}
+
+			else{
+				fr_OneZeroValues[j] = 0;
+			}
+		}
+
+		int counter = 0;
+
+		for (int i = 0; i < 17; i++){
+			if (fr_OneZeroValues[i] == 1){
+				fr_OneArray[counter] = i;
+				counter++;
+			}
+		}
+
+
+
+		int temp = 0;
+
+		for (int i = 0; i < counter; i++){
+			temp = temp + fr_OneArray[i];
+		}
+
+		int min_index = temp/counter;
+
+		if (counter == 0){
+			min_index = 8;
+		}
+
+		//Serial.println(min_index);
+
+		//fr_LinePosition = min_index;
+
+		//fr_FRMPID = min_index;
+
+		if (min_index > 9){
+			fr_FLMPID = min_index;
+			fr_FRMPID = 8;
+		}
+		if (min_index < 9){
+			fr_FLMPID = 8;
+			fr_FRMPID = -1*(min_index-16);
+		}
+
+
+		//Serial.println(fr_FLMPID);
+
+
+	//	Serial.println(min_index);
+
+		//for (int j = 0; j < 17; j++){
+		//	if (j == min_index){
+		//		fr_OneZeroValues[j] = 1;
+		//	}
+		//	else{
+		//		fr_OneZeroValues[j] = 0;
+		//	}
+		//}
+
+		//for (int i = 0; i < 17; i++) {
+		//	Serial.print(fr_OneZeroValues[i]);
+		//	Serial.print("-");
+		//}
+		//Serial.println(" "); //newline
 
 		// Convert analog values to 1 or 0
 		//for (int i = 0; i < 16; i++) {

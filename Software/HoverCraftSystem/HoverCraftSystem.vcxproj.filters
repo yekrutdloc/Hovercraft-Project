@@ -16,6 +16,12 @@
     <Filter Include="FrontLineSensorSystem">
       <UniqueIdentifier>{fbb61898-a111-4132-9406-e9feb771db54}</UniqueIdentifier>
     </Filter>
+    <Filter Include="PIDControllers">
+      <UniqueIdentifier>{5a3f8888-d116-4d55-9eff-16ada99d6d53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MotorControllers">
+      <UniqueIdentifier>{4fcaf1b5-b935-4e99-84bc-a39f20c0bf6f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="HoverCraftSystem.ino" />
@@ -23,6 +29,18 @@
       <Filter>FrontLineSensorSystem</Filter>
     </None>
     <None Include="MainThread.ino" />
+    <None Include="FrontLeftMotorPID.ino">
+      <Filter>PIDControllers</Filter>
+    </None>
+    <None Include="FrontRightMotorPID.ino">
+      <Filter>PIDControllers</Filter>
+    </None>
+    <None Include="FrontLeftMotorControl.ino">
+      <Filter>MotorControllers</Filter>
+    </None>
+    <None Include="FrontRightMotorControl.ino">
+      <Filter>MotorControllers</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Visual Micro\.HoverCraftSystem.vsarduino.h">
