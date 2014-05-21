@@ -16,5 +16,10 @@ void setup() {
 
 void loop() {
 	// Not used
+<<<<<<< HEAD
 
+=======
+	// Commit test
+	// Commit test 2
+>>>>>>> develop
 }

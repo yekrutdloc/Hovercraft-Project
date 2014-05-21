@@ -44,7 +44,11 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+<<<<<<< HEAD
       <AdditionalIncludeDirectories>C:\Program Files (x86)\Arduino\hardware\arduino\sam\cores\arduino;C:\Program Files (x86)\Arduino\hardware\arduino\sam\variants\arduino_due_x;C:\Users\Hisham\Documents\Arduino\libraries\ChibiOS_ARM;C:\Users\Hisham\Documents\Arduino\libraries\ChibiOS_ARM\utility;C:\Users\Hisham\Documents\Arduino\libraries\PID_v1;C:\Users\Hisham\Documents\Arduino\libraries\PID_v1\utility;C:\Program Files (x86)\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\arduino\sam\libraries;C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers;C:\Users\Hisham\Documents\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\arduino\sam\system\CMSIS\CMSIS\Include\;C:\Program Files (x86)\Arduino\hardware\arduino\sam\system\CMSIS\Device\ATMEL\;C:\Program Files (x86)\Arduino\hardware\arduino\sam\system\libsam;C:\Program Files (x86)\Arduino\hardware\arduino\sam\system\libsam\include;C:\Program Files (x86)\Arduino/hardware/tools/g++_arm_none_eabi\arm-none-eabi\include;C:\Program Files (x86)\Arduino/hardware/tools/g++_arm_none_eabi\arm_none_eabi\include\;C:\Program Files (x86)\Arduino/hardware/tools/g++_arm_none_eabi\lib\gcc\arm-none-eabi\4.4.1\include;C:\Program Files (x86)\Arduino/hardware/tools/g++_arm_none_eabi\lib\gcc\arm-none-eabi\4.4.1\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+=======
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Arduino\hardware\arduino\sam\cores\arduino;C:\Program Files (x86)\Arduino\hardware\arduino\sam\variants\arduino_due_x;C:\Program Files (x86)\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\arduino\sam\libraries;C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers;C:\Users\Hisham\Documents\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\arduino\sam\system\CMSIS\CMSIS\Include\;C:\Program Files (x86)\Arduino\hardware\arduino\sam\system\CMSIS\Device\ATMEL\;C:\Program Files (x86)\Arduino\hardware\arduino\sam\system\libsam;C:\Program Files (x86)\Arduino\hardware\arduino\sam\system\libsam\include;C:\Program Files (x86)\Arduino/hardware/tools/g++_arm_none_eabi\arm-none-eabi\include;C:\Program Files (x86)\Arduino/hardware/tools/g++_arm_none_eabi\arm_none_eabi\include\;C:\Program Files (x86)\Arduino/hardware/tools/g++_arm_none_eabi\lib\gcc\arm-none-eabi\4.4.1\include;C:\Program Files (x86)\Arduino/hardware/tools/g++_arm_none_eabi\lib\gcc\arm-none-eabi\4.4.1\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+>>>>>>> develop
       <ForcedIncludeFiles>C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\Visual Micro\.HoverCraftSystem.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
       <PreprocessorDefinitions>__SAM3X8E__;USB_VID=0x2341;USB_PID=0x003e;USBCON;USB_MANUFACTURER="Unknown";USB_PRODUCT="Arduino Due";ARDUINO=156;ARDUINO_MAIN;printf=iprintf;__SAM__;__sam__;F_CPU=84000000L;__cplusplus;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -68,6 +72,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <None Include="FrontLeftMotorControl.ino" />
     <None Include="FrontLeftMotorPID.ino" />
     <None Include="FrontLineSensorSystem.ino">
@@ -75,6 +80,11 @@
     </None>
     <None Include="FrontRightMotorPID.ino" />
     <None Include="FrontRightMotorControl.ino" />
+=======
+    <None Include="FrontLineSensorSystem.ino">
+      <FileType>CppCode</FileType>
+    </None>
+>>>>>>> develop
     <None Include="HoverCraftSystem.ino">
       <FileType>CppCode</FileType>
     </None>
