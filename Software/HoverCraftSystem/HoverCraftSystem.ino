@@ -8,6 +8,4 @@ void setup() {
 
 void loop() {
 	// Not used
-	// Commit test
-	// Commit test 2
 }
