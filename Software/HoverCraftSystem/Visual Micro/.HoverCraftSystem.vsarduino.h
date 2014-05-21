@@ -51,33 +51,15 @@ extern "C" void __cxa_pure_virtual() {;}
 
 //
 //
-static msg_t Thread4(void *arg);
-static msg_t Thread2(void *arg);
 static msg_t Thread1(void *arg);
-void fr_DiffCalibration();
-void fr_blackValueCalibration();
-void fr_whiteValueCalibration();
-void fr_findRange();
 void getPhotoArrayValues();
-void runBuzzerBeep();
-static msg_t Thread5(void *arg);
-static msg_t Thread3(void *arg);
+void calculateApproxValues();
 void mainThread();
 
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\sam\cores\arduino\arduino.h"
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\sam\variants\arduino_due_x\pins_arduino.h" 
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\sam\variants\arduino_due_x\variant.h" 
-<<<<<<< HEAD
 #include "\\psf\Workspaces\P2\Software\HoverCraftSystem\HoverCraftSystem.ino"
-#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\FrontLeftMotorControl.ino"
-#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\FrontLeftMotorPID.ino"
 #include "\\psf\Workspaces\P2\Software\HoverCraftSystem\FrontLineSensorSystem.ino"
-#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\FrontRightMotorControl.ino"
-#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\FrontRightMotorPID.ino"
 #include "\\psf\Workspaces\P2\Software\HoverCraftSystem\MainThread.ino"
-=======
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\HoverCraftSystem.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\FrontLineSensorSystem.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\MainThread.ino"
->>>>>>> develop
 #endif
