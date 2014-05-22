@@ -6,7 +6,7 @@ int const s3pin = 50;
 int const mux_1 = A1;
 
 // buzzer pin
-int const buzzerPin = 47;
+int const fr_buzzerPin = 47;
 
 // Front Line Sensor variables
 int const fr_BlackSensitivity = 60;
@@ -36,28 +36,28 @@ static msg_t Thread1(void *arg) {
 	pinMode(s2pin, OUTPUT);    // s2
 	pinMode(s3pin, OUTPUT);    // 3s
 
-	pinMode(buzzerPin, OUTPUT);    // buzzer setup
-	digitalWrite(buzzerPin, LOW);
+	pinMode(fr_buzzerPin, OUTPUT);    // buzzer setup
+	digitalWrite(fr_buzzerPin, LOW);
 
-	getPhotoArrayValues();
+	fr_getPhotoArrayValues();
 
 	chThdSleepMilliseconds(200);
 
 	fr_blackValueCalibration();
 
-	runBuzzerBeep();
+	fr_runBuzzerBeep();
 	chThdSleepMilliseconds(6000);
-	getPhotoArrayValues();
+	fr_getPhotoArrayValues();
 	fr_whiteValueCalibration();
 
-	runBuzzerBeep();
+	fr_runBuzzerBeep();
 	chThdSleepMilliseconds(2000);
 
 	fr_findRange();
 
 	while (1) {
 		// Get values
-		getPhotoArrayValues();
+		fr_getPhotoArrayValues();
 
 		for (int j = 0; j < 16; j++) {
 			fr_PercentValues[j] = (double)100 * (fr_AdcValues[j] - fr_BlackValues[j]) / fr_range[j];
@@ -185,7 +185,7 @@ static msg_t Thread1(void *arg) {
 void fr_DiffCalibration(){
 	// Line-Follow Sensor Calibration program
 	chThdSleepMilliseconds(2000); // Wait 2 seconds before running calibration program
-	getPhotoArrayValues(); // Get each photoresistor value
+	fr_getPhotoArrayValues(); // Get each photoresistor value
 
 
 	// Sums together all photoresistor values
@@ -224,7 +224,7 @@ void fr_findRange(){
 }
 
 // Function to cycle through each multiplex-channel and store photoresistor value
-void getPhotoArrayValues() {
+void fr_getPhotoArrayValues() {
 	for (int photoChannel = 0; photoChannel < 16; photoChannel++) {
 		switch (photoChannel) {
 		case 0:
@@ -343,8 +343,8 @@ void getPhotoArrayValues() {
 	}
 }
 
-void runBuzzerBeep(){
-	digitalWrite(buzzerPin, HIGH);
+void fr_runBuzzerBeep(){
+	digitalWrite(fr_buzzerPin, HIGH);
 	chThdSleepMilliseconds(75);
-	digitalWrite(buzzerPin, LOW);
+	digitalWrite(fr_buzzerPin, LOW);
 }

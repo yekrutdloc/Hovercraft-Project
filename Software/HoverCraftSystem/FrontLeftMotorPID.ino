@@ -1,27 +1,27 @@
 //Define Variables we'll be connecting to
-double SetpointLeft;
+double fr_SetpointLeft;
 
 double FLMControl;
 double* pFLMControl = &FLMControl;
 
 //Specify the links and initial tuning parameters
-PID myPIDLeft(pfr_FLMPID, pFLMControl, &SetpointLeft, 20, 0.04, 600, DIRECT);
+PID fr_myPIDLeft(pfr_FLMPID, pFLMControl, &fr_SetpointLeft, 2.5, 0.008, 65, DIRECT);
 
 static WORKING_AREA(fr_LeftmotorPID, 100);
 
 static msg_t Thread2(void *arg) {
 
 	//initialize the variables we're linked to
-	SetpointLeft = 8;
+	fr_SetpointLeft = 8;
 
 	//turn the PID on
-	myPIDLeft.SetMode(AUTOMATIC);
+	fr_myPIDLeft.SetMode(AUTOMATIC);
 
-	myPIDLeft.SetControllerDirection(REVERSE);
-	myPIDLeft.SetOutputLimits(40, 225);
+	fr_myPIDLeft.SetControllerDirection(REVERSE);
+	fr_myPIDLeft.SetOutputLimits(40, 225);
 
 	while (1){
-		myPIDLeft.Compute();
+		fr_myPIDLeft.Compute();
 		Serial.print(*pfr_FLMPID);
 		Serial.print(" - ");
 		Serial.print(*pFLMControl);

@@ -58,11 +58,22 @@ void fr_DiffCalibration();
 void fr_blackValueCalibration();
 void fr_whiteValueCalibration();
 void fr_findRange();
-void getPhotoArrayValues();
-void runBuzzerBeep();
+void fr_getPhotoArrayValues();
+void fr_runBuzzerBeep();
 static msg_t Thread5(void *arg);
 static msg_t Thread3(void *arg);
 void mainThread();
+static msg_t Thread7(void *arg);
+static msg_t Thread8(void *arg);
+static msg_t Thread6(void *arg);
+void br_DiffCalibration();
+void br_blackValueCalibration();
+void br_whiteValueCalibration();
+void br_findRange();
+void br_getPhotoArrayValues();
+void br_runBuzzerBeep();
+static msg_t Thread10(void *arg);
+static msg_t Thread9(void *arg);
 
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\sam\cores\arduino\arduino.h"
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\sam\variants\arduino_due_x\pins_arduino.h" 
@@ -74,4 +85,11 @@ void mainThread();
 #include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\FrontRightMotorControl.ino"
 #include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\FrontRightMotorPID.ino"
 #include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\MainThread.ino"
+#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\RearLeftMotorControl.ino"
+#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\RearLeftMotorPID.ino"
+#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\RearLineSensorSystem.ino"
+#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\RearRightMotorControl.ino"
+#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\RearRightMotorPID.ino"
+#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\testC_file.c"
+#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\testC_file.h"
 #endif
