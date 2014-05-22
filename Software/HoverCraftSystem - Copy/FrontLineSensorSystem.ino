@@ -28,7 +28,7 @@ double* pfr_FLMPID = &fr_FLMPID;
 
 static WORKING_AREA(fr_LineSensorSystem, 64);
 
-static msg_t Thread1(void *arg) {
+static void Thread1(void *arg) {
 
 	// Photo resistor array setup
 	pinMode(s0pin, OUTPUT);    // s0
@@ -179,7 +179,6 @@ static msg_t Thread1(void *arg) {
 		//}
 		//Serial.println(" "); //newline
 	}// end of loop
-	return 0;
 }
 
 void fr_DiffCalibration(){

@@ -26,7 +26,7 @@ double* pbr_BRMPID = &br_BRMPID;
 double* pbr_BLMPID = &br_BLMPID;
 
 
-static WORKING_AREA(br_LineSensorSystem, 64);
+static WORKING_AREA(waThread12, 64);
 
 static msg_t Thread6(void *arg) {
 

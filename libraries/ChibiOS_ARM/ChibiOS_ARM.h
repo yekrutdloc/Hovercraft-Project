@@ -12,7 +12,7 @@ extern "C"{
 #endif  //  __cplusplus
 //------------------------------------------------------------------------------
 /** ChibiOS_ARM version YYYYMMDD */
-#define CHIBIOS_ARM_VERSION 20130129
+#define CHIBIOS_ARM_VERSION 20130710
 //------------------------------------------------------------------------------
 #ifndef __arm__
 #error ARM Teensy 3.0 or Due required

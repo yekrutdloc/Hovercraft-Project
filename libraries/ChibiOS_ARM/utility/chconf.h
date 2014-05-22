@@ -1,6 +1,6 @@
 /*
     ChibiOS/RT - Copyright (C) 2006,2007,2008,2009,2010,
-                 2011,2012 Giovanni Di Sirio.
+                 2011,2012,2013 Giovanni Di Sirio.
 
     This file is part of ChibiOS/RT.
 
@@ -38,7 +38,10 @@
 
 #ifndef _CHCONF_H_
 #define _CHCONF_H_
-
+// Arduino port overrides
+#define CH_USE_MEMCORE                  FALSE
+#define CH_USE_HEAP                     FALSE
+#define CH_DBG_FILL_THREADS             TRUE
 /*===========================================================================*/
 /**
  * @name Kernel parameters and options
@@ -296,8 +299,7 @@
  * @note    The default is @p TRUE.
  */
 #if !defined(CH_USE_MEMCORE) || defined(__DOXYGEN__)
-//#define CH_USE_MEMCORE                  TRUE
-#define CH_USE_MEMCORE                  FALSE
+#define CH_USE_MEMCORE                  TRUE
 #endif
 
 /**
@@ -311,8 +313,7 @@
  * @note    Mutexes are recommended.
  */
 #if !defined(CH_USE_HEAP) || defined(__DOXYGEN__)
-//#define CH_USE_HEAP                     TRUE
-#define CH_USE_HEAP                     FALSE
+#define CH_USE_HEAP                     TRUE
 #endif
 
 /**
@@ -430,8 +431,7 @@
  * @note    The default is @p FALSE.
  */
 #if !defined(CH_DBG_FILL_THREADS) || defined(__DOXYGEN__)
-//#define CH_DBG_FILL_THREADS             FALSE
-#define CH_DBG_FILL_THREADS             TRUE
+#define CH_DBG_FILL_THREADS             FALSE
 #endif
 
 /**
