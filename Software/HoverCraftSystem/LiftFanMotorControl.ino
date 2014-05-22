@@ -1,6 +1,6 @@
 const int liftFanPin = 7;
 
-int liftForce = 150;
+int liftForce = 255;
 
 static void Thread12(void *arg) {
 

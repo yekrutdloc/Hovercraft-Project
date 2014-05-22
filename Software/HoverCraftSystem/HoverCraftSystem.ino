@@ -48,7 +48,7 @@ void setup() {
 	//xTaskCreate(Thread11, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //LiftFanMotorControl
 
 	//Tasks for Liftfan
-	//xTaskCreate(Thread12, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //LiftFanMotorControl
+	xTaskCreate(Thread12, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //LiftFanMotorControl
 
 	//Tasks for additional functions
 	//xTaskCreate(Thread13, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //Buzzer
