@@ -1,6 +1,6 @@
 /*
     ChibiOS/RT - Copyright (C) 2006,2007,2008,2009,2010,
-                 2011,2012 Giovanni Di Sirio.
+                 2011,2012,2013 Giovanni Di Sirio.
 
     This file is part of ChibiOS/RT.
 
@@ -25,18 +25,29 @@
     for full details of how and when the exception can be applied.
 */
 
+/**
+ * @file    GCC/ARMCMx/STM32F4xx/cmparams.h
+ * @brief   ARM Cortex-M4 parameters for the STM32F4xx.
+ *
+ * @defgroup ARMCMx_STM32F4xx STM32F4xx Specific Parameters
+ * @ingroup ARMCMx_SPECIFIC
+ * @details This file contains the Cortex-M4 specific parameters for the
+ *          STM32F4xx platform.
+ * @{
+ */
+
 #ifndef _CMPARAMS_H_
 #define _CMPARAMS_H_
 
 /**
  * @brief   Cortex core model.
  */
-#include <Arduino.h>
 #ifdef CORE_TEENSY
 #define CORTEX_MODEL            CORTEX_M4
 #else  // CORE_TEENSY
 #define CORTEX_MODEL            CORTEX_M3
 #endif  // CORE_TEENSY
+
 /**
  * @brief   Systick unit presence.
  */
@@ -45,13 +56,12 @@
 /**
  * @brief   Memory Protection unit presence.
  */
-#define CORTEX_HAS_MPU          FALSE
+#define CORTEX_HAS_MPU          TRUE
 
 /**
  * @brief   Floating Point unit presence.
  */
 #define CORTEX_HAS_FPU          FALSE
-
 /**
  * @brief   Number of bits in priority masks.
  */

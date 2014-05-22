@@ -51,45 +51,50 @@ extern "C" void __cxa_pure_virtual() {;}
 
 //
 //
-static msg_t Thread4(void *arg);
-static msg_t Thread2(void *arg);
-static msg_t Thread1(void *arg);
+static void Thread14(void *arg);
+static void Thread11(void *arg);
+static void Thread7(void *arg);
+static void Thread3(void *arg);
+static void Thread1(void *arg);
 void fr_DiffCalibration();
 void fr_blackValueCalibration();
 void fr_whiteValueCalibration();
 void fr_findRange();
 void fr_getPhotoArrayValues();
+void frontCalibration();
 void fr_runBuzzerBeep();
-static msg_t Thread5(void *arg);
-static msg_t Thread3(void *arg);
-void mainThread();
-static msg_t Thread7(void *arg);
-static msg_t Thread8(void *arg);
-static msg_t Thread6(void *arg);
+static void Thread8(void *arg);
+static void Thread4(void *arg);
+static void Thread12(void *arg);
+static void Thread9(void *arg);
+static void Thread5(void *arg);
+static void Thread2(void *arg);
 void br_DiffCalibration();
 void br_blackValueCalibration();
 void br_whiteValueCalibration();
 void br_findRange();
 void br_getPhotoArrayValues();
+void rearCalibration();
 void br_runBuzzerBeep();
-static msg_t Thread10(void *arg);
-static msg_t Thread9(void *arg);
+static void Thread10(void *arg);
+static void Thread6(void *arg);
 
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\sam\cores\arduino\arduino.h"
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\sam\variants\arduino_due_x\pins_arduino.h" 
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\sam\variants\arduino_due_x\variant.h" 
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\HoverCraftSystem.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\FrontLeftMotorControl.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\FrontLeftMotorPID.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\FrontLineSensorSystem.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\FrontRightMotorControl.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\FrontRightMotorPID.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\MainThread.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\RearLeftMotorControl.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\RearLeftMotorPID.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\RearLineSensorSystem.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\RearRightMotorControl.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\RearRightMotorPID.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\testC_file.c"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\testC_file.h"
+#include "X:\Arduino\Arduino_Training\HoverCraftSystem\HoverCraftSystem.ino"
+#include "X:\Arduino\Arduino_Training\HoverCraftSystem\BluetoothModule.ino"
+#include "X:\Arduino\Arduino_Training\HoverCraftSystem\BuzzerFunction.ino"
+#include "X:\Arduino\Arduino_Training\HoverCraftSystem\ForwardMotorControl.ino"
+#include "X:\Arduino\Arduino_Training\HoverCraftSystem\FrontLeftMotorControl.ino"
+#include "X:\Arduino\Arduino_Training\HoverCraftSystem\FrontLeftMotorPID.ino"
+#include "X:\Arduino\Arduino_Training\HoverCraftSystem\FrontLineSensorSystem.ino"
+#include "X:\Arduino\Arduino_Training\HoverCraftSystem\FrontRightMotorControl.ino"
+#include "X:\Arduino\Arduino_Training\HoverCraftSystem\FrontRightMotorPID.ino"
+#include "X:\Arduino\Arduino_Training\HoverCraftSystem\LiftFanMotorControl.ino"
+#include "X:\Arduino\Arduino_Training\HoverCraftSystem\RearLeftMotorControl.ino"
+#include "X:\Arduino\Arduino_Training\HoverCraftSystem\RearLeftMotorPID.ino"
+#include "X:\Arduino\Arduino_Training\HoverCraftSystem\RearLineSensorSystem.ino"
+#include "X:\Arduino\Arduino_Training\HoverCraftSystem\RearRightMotorControl.ino"
+#include "X:\Arduino\Arduino_Training\HoverCraftSystem\RearRightMotorPID.ino"
 #endif

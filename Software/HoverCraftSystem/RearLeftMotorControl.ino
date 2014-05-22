@@ -1,16 +1,12 @@
-const int rearLeftMotorPin = 5;
+const int rearLeftMotorPin = 4;
 
-static WORKING_AREA(br_LeftmotorControl, 100);
-
-static msg_t Thread7(void *arg) {
-
+static void Thread9(void *arg) {
+	
 	pinMode(rearLeftMotorPin, OUTPUT);
-
 
 	while (1){
 		analogWrite(rearLeftMotorPin, (*pBLMControl / 1.5));
-
+		//Serial.println((*pFLMControl / 1.5));
 	}
-	return 0;
 }
 

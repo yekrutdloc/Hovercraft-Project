@@ -29,7 +29,7 @@ void setup() {
 //------------------------------------------------------------------------------
 // main thread and runs at NORMALPRIO
 void mainThread() {
-  uint32_t m = 0;
+  uint32_t m = 1 + millis()/1000;
   
   // start blink thead
   chThdCreateStatic(waBlink, sizeof(waBlink), NORMALPRIO, blink, NULL);

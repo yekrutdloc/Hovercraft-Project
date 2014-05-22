@@ -1,6 +1,6 @@
 /*
     ChibiOS/RT - Copyright (C) 2006,2007,2008,2009,2010,
-                 2011,2012 Giovanni Di Sirio.
+                 2011,2012,2013 Giovanni Di Sirio.
 
     This file is part of ChibiOS/RT.
 
@@ -196,7 +196,7 @@ typedef struct {
 
 #define AIRCR_VECTKEY           0x05FA0000U
 #define AIRCR_PRIGROUP_MASK     (0x7U << 8)
-#define AIRCR_PRIGROUP(n)       ((n##U) << 8)
+#define AIRCR_PRIGROUP(n)       ((n) << 8)
 
 /**
  * @brief Structure representing the FPU I/O space.
@@ -238,7 +238,6 @@ typedef struct {
 /**
  * @brief Structure representing the SCS I/O space.
  */
-#ifndef CORE_TEENSY
 typedef struct {
   IOREG32       DHCSR;
   IOREG32       DCRSR;
@@ -249,7 +248,6 @@ typedef struct {
 /**
  * @brief SCS peripheral base address.
  */
-
 #define SCSBase                 ((CMx_SCS *)0xE000EDF0U)
 #define SCS_DHCSR               (SCSBase->DHCSR)
 #define SCS_DCRSR               (SCSBase->DCRSR)
@@ -257,7 +255,7 @@ typedef struct {
 #define SCS_DEMCR               (SCSBase->DEMCR)
 
 #define SCS_DEMCR_TRCENA        (0x1U << 24)
-#endif  // CORE_TEENSY
+
 /**
  * @brief Structure representing the DWT I/O space.
  */

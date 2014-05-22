@@ -1,18 +1,13 @@
 //Define Variables we'll be connecting to
-double br_SetpointRight;
+double br_SetpointRight = 8;
 
 double BRMControl;
 double* pBRMControl = &FRMControl;
 
 //Specify the links and initial tuning parameters
-PID br_myPIDRight(pbr_BRMPID, pBRMControl, &br_SetpointRight, 2.5, 0.008, 65, DIRECT);
+PID br_myPIDRight(pbr_BRMPID, pBRMControl, &br_SetpointRight, 25, 0, 0, DIRECT);
 
-static WORKING_AREA(br_RightmotorPID, 100);
-
-static msg_t Thread9(void *arg) {
-
-	//initialize the variables we're linked to
-	br_SetpointRight = 8;
+static void Thread6(void *arg) {
 
 	//turn the PID on
 	br_myPIDRight.SetMode(AUTOMATIC);
@@ -23,6 +18,5 @@ static msg_t Thread9(void *arg) {
 	while (1){
 		br_myPIDRight.Compute();
 	}
-	return 0;
 }
 
