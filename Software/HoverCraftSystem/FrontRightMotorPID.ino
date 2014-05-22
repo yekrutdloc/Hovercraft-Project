@@ -1,18 +1,13 @@
 //Define Variables we'll be connecting to
-double fr_SetpointRight;
+double fr_SetpointRight = 8;
 
 double FRMControl;
 double* pFRMControl = &FRMControl;
 
 //Specify the links and initial tuning parameters
-PID fr_myPIDRight(pfr_FRMPID, pFRMControl, &fr_SetpointRight, 2.5, 0.008, 65, DIRECT);
+PID fr_myPIDRight(pfr_FRMPID, pFRMControl, &fr_SetpointRight, 25, 0, 0, DIRECT);
 
-static WORKING_AREA(fr_RightmotorPID, 100);
-
-static msg_t Thread3(void *arg) {
-
-	//initialize the variables we're linked to
-	fr_SetpointRight = 8;
+static void Thread4(void *arg) {
 
 	//turn the PID on
 	fr_myPIDRight.SetMode(AUTOMATIC);
@@ -23,6 +18,5 @@ static msg_t Thread3(void *arg) {
 	while (1){
 		fr_myPIDRight.Compute();
 	}
-	return 0;
 }
 

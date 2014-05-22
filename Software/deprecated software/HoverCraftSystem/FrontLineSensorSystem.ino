@@ -5,9 +5,8 @@ int const s2pin = 51;
 int const s3pin = 50;
 int const mux_1 = A1;
 
-
 // buzzer pin
-int const fr_buzzerPin = 31;
+int const fr_buzzerPin = 47;
 
 // Front Line Sensor variables
 int const fr_BlackSensitivity = 60;
@@ -26,7 +25,10 @@ double fr_FLMPID;
 double* pfr_FRMPID = &fr_FRMPID;
 double* pfr_FLMPID = &fr_FLMPID;
 
-static void Thread1(void *arg) {
+
+static WORKING_AREA(fr_LineSensorSystem, 64);
+
+static msg_t Thread1(void *arg) {
 
 	// Photo resistor array setup
 	pinMode(s0pin, OUTPUT);    // s0
@@ -37,40 +39,25 @@ static void Thread1(void *arg) {
 	pinMode(fr_buzzerPin, OUTPUT);    // buzzer setup
 	digitalWrite(fr_buzzerPin, LOW);
 
-	while (!runFrontCalibration){
-		vTaskDelay((100L * configTICK_RATE_HZ) / 1000L);
-	}
+	fr_getPhotoArrayValues();
 
-	runFrontCalibration = 0;
+	chThdSleepMilliseconds(200);
 
-	frontCalibration();
+	fr_blackValueCalibration();
 
-	while (!startDriving){
-		vTaskDelay((100L * configTICK_RATE_HZ) / 1000L);
-	}
+	fr_runBuzzerBeep();
+	chThdSleepMilliseconds(6000);
+	fr_getPhotoArrayValues();
+	fr_whiteValueCalibration();
+
+	fr_runBuzzerBeep();
+	chThdSleepMilliseconds(2000);
+
+	fr_findRange();
 
 	while (1) {
-
-		if (runFrontCalibration){
-			frontCalibration();
-			runFrontCalibration = 0;
-			startDriving = 0;
-		}
-
-		while (!startDriving){
-			vTaskDelay((100L * configTICK_RATE_HZ) / 1000L);
-		}
-
 		// Get values
 		fr_getPhotoArrayValues();
-
-
-		for (int i = 0; i < 16; i++)
-		{
-			Serial.print(fr_AdcValues[i]);
-			Serial.print(" - ");
-		}
-		Serial.println();
 
 		for (int j = 0; j < 16; j++) {
 			fr_PercentValues[j] = (double)100 * (fr_AdcValues[j] - fr_BlackValues[j]) / fr_range[j];
@@ -87,7 +74,7 @@ static void Thread1(void *arg) {
 		fr_PercentValues_Middle[8] = middle_value;
 
 		for (int j = 9; j < 17; j++) {
-			fr_PercentValues_Middle[j] = fr_PercentValues[j - 1];
+			fr_PercentValues_Middle[j] = fr_PercentValues[j-1];
 		}
 
 		//for (int i = 0; i < 17; i++) {
@@ -96,17 +83,16 @@ static void Thread1(void *arg) {
 		//}
 		//Serial.println(" "); //newline
 
-		vTaskDelay((10L * configTICK_RATE_HZ) / 1000L);
-
+		chThdSleepMilliseconds(10);
 
 
 		/*int min_index = 8;
 		int min_value = 0;
 		min_value = fr_PercentValues_Middle[0];
 		for (int i = 0; i < 17; i++) {
-		if (fr_PercentValues_Middle[i] < min_value) {
-		min_index = i;
-		}
+			if (fr_PercentValues_Middle[i] < min_value) {
+				min_index = i;
+			}
 		}*/
 
 		for (int j = 0; j < 17; j++) {
@@ -137,21 +123,11 @@ static void Thread1(void *arg) {
 			temp = temp + fr_OneArray[i];
 		}
 
-		int min_index = temp / counter;
+		int min_index = temp/counter;
 
 		if (counter == 0){
 			min_index = 8;
 		}
-
-
-		//Print out OneZeroValues
-		//for (int i = 0; i < 17; i++)
-		//{
-		//	Serial.print(fr_OneZeroValues[i]);
-		//	Serial.print(" - ");
-		//}
-		//Serial.println();
-
 
 		//Serial.println(min_index);
 
@@ -165,14 +141,14 @@ static void Thread1(void *arg) {
 		}
 		if (min_index < 9){
 			fr_FLMPID = 8;
-			fr_FRMPID = -1 * (min_index - 16);
+			fr_FRMPID = -1*(min_index-16);
 		}
 
 
 		//Serial.println(fr_FLMPID);
 
 
-		//	Serial.println(min_index);
+	//	Serial.println(min_index);
 
 		//for (int j = 0; j < 17; j++){
 		//	if (j == min_index){
@@ -203,11 +179,12 @@ static void Thread1(void *arg) {
 		//}
 		//Serial.println(" "); //newline
 	}// end of loop
+	return 0;
 }
 
 void fr_DiffCalibration(){
 	// Line-Follow Sensor Calibration program
-	vTaskDelay((2000L * configTICK_RATE_HZ) / 1000L);// Wait 2 seconds before running calibration program
+	chThdSleepMilliseconds(2000); // Wait 2 seconds before running calibration program
 	fr_getPhotoArrayValues(); // Get each photoresistor value
 
 
@@ -366,34 +343,8 @@ void fr_getPhotoArrayValues() {
 	}
 }
 
-void frontCalibration(){
-	Serial.println("Ran Front Calibration! ");
-
-	vTaskDelay((500L * configTICK_RATE_HZ) / 1000L);
-
-	fr_getPhotoArrayValues();
-
-	vTaskDelay((200L * configTICK_RATE_HZ) / 1000L);
-
-	fr_blackValueCalibration();
-
-	//xSemaphoreGive(*pbuzzerSem);
-	fr_runBuzzerBeep();
-	vTaskDelay((6000L * configTICK_RATE_HZ) / 1000L);
-
-	fr_getPhotoArrayValues();
-	fr_whiteValueCalibration();
-
-	fr_runBuzzerBeep();
-	//xSemaphoreGive(*pbuzzerSem);
-	vTaskDelay((2000L * configTICK_RATE_HZ) / 1000L);
-
-	fr_findRange();
-}
-
 void fr_runBuzzerBeep(){
 	digitalWrite(fr_buzzerPin, HIGH);
-	vTaskDelay((75L * configTICK_RATE_HZ) / 1000L);
+	chThdSleepMilliseconds(75);
 	digitalWrite(fr_buzzerPin, LOW);
 }
-
