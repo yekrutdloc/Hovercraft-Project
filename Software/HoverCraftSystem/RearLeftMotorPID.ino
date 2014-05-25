@@ -2,10 +2,10 @@
 double br_SetpointLeft = 8;
 
 double BLMControl;
-double* pBLMControl = &FLMControl;
+double* pBLMControl = &BLMControl;
 
 //Specify the links and initial tuning parameters
-PID br_myPIDLeft(pbr_BLMPID, pBLMControl, &br_SetpointLeft, 25, 0, 0, DIRECT);
+PID br_myPIDLeft(pbr_BLMPID, pBLMControl, &br_SetpointLeft, 56, 0, 0, DIRECT);
 
 static void Thread5(void *arg) {
 
@@ -13,7 +13,7 @@ static void Thread5(void *arg) {
 	br_myPIDLeft.SetMode(AUTOMATIC);
 
 	br_myPIDLeft.SetControllerDirection(REVERSE);
-	br_myPIDLeft.SetOutputLimits(40, 225);
+	br_myPIDLeft.SetOutputLimits(0, 200);
 
 	while (1){
 		br_myPIDLeft.Compute();

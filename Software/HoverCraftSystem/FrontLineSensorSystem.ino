@@ -10,7 +10,7 @@ int const mux_1 = A1;
 int const fr_buzzerPin = 31;
 
 // Front Line Sensor variables
-int const fr_BlackSensitivity = 60;
+int const fr_BlackSensitivity = 40;
 int fr_AdcValues[16];
 int fr_BlackValues[16];
 int fr_WhiteValues[16];
@@ -65,12 +65,12 @@ static void Thread1(void *arg) {
 		fr_getPhotoArrayValues();
 
 
-		for (int i = 0; i < 16; i++)
-		{
-			Serial.print(fr_AdcValues[i]);
-			Serial.print(" - ");
-		}
-		Serial.println();
+		//for (int i = 0; i < 16; i++)
+		//{
+		//	Serial.print(fr_AdcValues[i]);
+		//	Serial.print(" - ");
+		//}
+		//Serial.println();
 
 		for (int j = 0; j < 16; j++) {
 			fr_PercentValues[j] = (double)100 * (fr_AdcValues[j] - fr_BlackValues[j]) / fr_range[j];
@@ -90,24 +90,10 @@ static void Thread1(void *arg) {
 			fr_PercentValues_Middle[j] = fr_PercentValues[j - 1];
 		}
 
-		//for (int i = 0; i < 17; i++) {
-		//	Serial.print(fr_PercentValues_Middle[i]);
-		//	Serial.print("-");
-		//}
-		//Serial.println(" "); //newline
-
 		vTaskDelay((10L * configTICK_RATE_HZ) / 1000L);
 
 
 
-		/*int min_index = 8;
-		int min_value = 0;
-		min_value = fr_PercentValues_Middle[0];
-		for (int i = 0; i < 17; i++) {
-		if (fr_PercentValues_Middle[i] < min_value) {
-		min_index = i;
-		}
-		}*/
 
 		for (int j = 0; j < 17; j++) {
 
@@ -144,20 +130,6 @@ static void Thread1(void *arg) {
 		}
 
 
-		//Print out OneZeroValues
-		//for (int i = 0; i < 17; i++)
-		//{
-		//	Serial.print(fr_OneZeroValues[i]);
-		//	Serial.print(" - ");
-		//}
-		//Serial.println();
-
-
-		//Serial.println(min_index);
-
-		//fr_LinePosition = min_index;
-
-		//fr_FRMPID = min_index;
 
 		if (min_index > 9){
 			fr_FLMPID = min_index;
@@ -168,40 +140,13 @@ static void Thread1(void *arg) {
 			fr_FRMPID = -1 * (min_index - 16);
 		}
 
+		//Serial.print("Front|  ");
+		//Serial.print("FL: ");
+		//Serial.print(fr_FLMPID);
+		//Serial.print("  FR: ");
+		//Serial.print(fr_FRMPID);
+		//Serial.println();
 
-		//Serial.println(fr_FLMPID);
-
-
-		//	Serial.println(min_index);
-
-		//for (int j = 0; j < 17; j++){
-		//	if (j == min_index){
-		//		fr_OneZeroValues[j] = 1;
-		//	}
-		//	else{
-		//		fr_OneZeroValues[j] = 0;
-		//	}
-		//}
-
-		//for (int i = 0; i < 17; i++) {
-		//	Serial.print(fr_OneZeroValues[i]);
-		//	Serial.print("-");
-		//}
-		//Serial.println(" "); //newline
-
-		// Convert analog values to 1 or 0
-		//for (int i = 0; i < 16; i++) {
-		//	if (fr_MergedValues[i] >(fr_BlackValues[i] + frontSensitivity)) {
-		//		fr_OneZeroValues[i] = 0;
-		//		Serial.print(0);
-		//	}
-		//	else {
-		//		fr_OneZeroValues[i] = 1;
-		//		Serial.print(1);
-		//	}
-		//	Serial.print("-");
-		//}
-		//Serial.println(" "); //newline
 	}// end of loop
 }
 

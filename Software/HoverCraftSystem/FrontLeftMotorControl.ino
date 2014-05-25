@@ -6,7 +6,7 @@ static void Thread7(void *arg) {
 
 
 	while (1){
-		analogWrite(frontLeftMotorPin, (*pFLMControl / 1.5));
+		analogWrite(frontLeftMotorPin, (*pFLMControl));
 		//Serial.println((*pFLMControl / 1.5));
 	}
 }
