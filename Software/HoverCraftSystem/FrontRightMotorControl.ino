@@ -6,7 +6,7 @@ static void Thread8(void *arg) {
 
 
 	while (1){
-		analogWrite(frontRightMotorPin, (*pFRMControl / 1.5));
+		analogWrite(frontRightMotorPin, (*pFRMControl));
 		//Serial.println((*pFLMControl / 1.5));
 	}
 }

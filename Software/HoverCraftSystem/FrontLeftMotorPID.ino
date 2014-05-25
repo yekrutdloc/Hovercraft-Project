@@ -5,7 +5,7 @@ double FLMControl;
 double* pFLMControl = &FLMControl;
 
 //Specify the links and initial tuning parameters
-PID fr_myPIDLeft(pfr_FLMPID, pFLMControl, &fr_SetpointLeft, 25, 0, 0, DIRECT);
+PID fr_myPIDLeft(pfr_FLMPID, pFLMControl, &fr_SetpointLeft, 35, 0.008, 55, DIRECT);
 
 static void Thread3(void *arg) {
 
@@ -13,17 +13,9 @@ static void Thread3(void *arg) {
 	fr_myPIDLeft.SetMode(AUTOMATIC);
 
 	fr_myPIDLeft.SetControllerDirection(REVERSE);
-	fr_myPIDLeft.SetOutputLimits(40, 225);
+	fr_myPIDLeft.SetOutputLimits(0, 200);
 
 	while (1){
 		fr_myPIDLeft.Compute();
-		//Serial.print(*pfr_FLMPID);
-		//Serial.print(" - ");
-		//Serial.print(*pFLMControl);
-		//Serial.print(" - ");
-		//Serial.print(*pfr_FRMPID);
-		//Serial.print(" - ");
-		//Serial.print(*pFRMControl);
-		//Serial.println();
 	}
 }

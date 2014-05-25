@@ -10,7 +10,7 @@ int const mux_2 = A0;
 int const br_buzzerPin = 31;
 
 // Front Line Sensor variables
-int const br_BlackSensitivity = 60;
+int const br_BlackSensitivity = 40;
 int br_AdcValues[16];
 int br_BlackValues[16];
 int br_WhiteValues[16];
@@ -146,14 +146,20 @@ static void Thread2(void *arg) {
 
 
 		if (min_index > 9){
-			br_BLMPID = min_index;
-			br_BRMPID = 8;
+			br_BRMPID = min_index;
+			br_BLMPID = 8;
 		}
 		if (min_index < 9){
-			br_BLMPID = 8;
-			br_BRMPID = -1 * (min_index - 16);
+			br_BRMPID = 8;
+			br_BLMPID = -1 * (min_index - 16);
 		}
 
+		Serial.print("Back|  ");
+		Serial.print("BL: ");
+		Serial.print(br_BLMPID);
+		Serial.print("  BR: ");
+		Serial.print(br_BRMPID);
+		Serial.println();
 
 	}// end of loop
 }
