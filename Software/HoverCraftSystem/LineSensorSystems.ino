@@ -136,9 +136,27 @@ static void Thread1(void *arg) {
 
 		int min_index = temp / counter;
 
+		int last_turn;
+
+		if (min_index < 3){
+			last_turn = 0;
+		}
+		else if (min_index > 13){
+			last_turn = 1;
+		}
+
 		if (counter == 0){
+			//if (!last_turn){
+			//	min_index = 3;
+			//}
+			//else if(last_turn){
+			//	min_index = 13;
+			//}
+
 			min_index = 8;
 		}
+
+
 
 		//Serial.println(min_index);
 
