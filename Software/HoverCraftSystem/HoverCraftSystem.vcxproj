@@ -83,13 +83,14 @@
     <None Include="FrontRightMotor.ino">
       <FileType>CppCode</FileType>
     </None>
+    <None Include="TuningParameters.ino" />
     <None Include="HoverCraftSystem.ino">
       <FileType>CppCode</FileType>
     </None>
     <None Include="LiftFanMotor.ino">
       <FileType>CppCode</FileType>
     </None>
-    <None Include="LineSensorSystems.ino">
+    <None Include="FrontLineSensorSystems.ino">
       <FileType>CppCode</FileType>
     </None>
     <None Include="RearLeftMotor.ino">
@@ -98,7 +99,7 @@
     <None Include="RearRightMotor.ino">
       <FileType>CppCode</FileType>
     </None>
-    <None Include="ReLineSensorSystem.ino">
+    <None Include="RearLineSensorSystem.ino">
       <FileType>CppCode</FileType>
     </None>
   </ItemGroup>

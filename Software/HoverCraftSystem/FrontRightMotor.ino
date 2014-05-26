@@ -3,7 +3,7 @@ double frRM_Setpoint = 8;
 double frRM_Output;
 
 //Specify the links and initial tuning parameters
-PID frRM_PID(pfrRM_PIDInput, &frRM_Output, &frRM_Setpoint, 25, 0, 0, DIRECT);
+PID frRM_PID(pfrRM_PIDInput, &frRM_Output, &frRM_Setpoint, 17, 0, 0, DIRECT);
 
 // Pin for motor
 const int frRM_Pin = 2;
@@ -15,8 +15,9 @@ static void Thread4(void *arg) {
 	frRM_PID.SetMode(AUTOMATIC);
 
 	//Setup PID
+	//frLM_PID.SetSampleTime(100);
 	frRM_PID.SetControllerDirection(REVERSE);
-	frRM_PID.SetOutputLimits(0, 200);
+	frRM_PID.SetOutputLimits(0, 180);
 
 	//Setup motor pin
 	pinMode(frRM_Pin, OUTPUT);

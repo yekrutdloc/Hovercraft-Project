@@ -19,7 +19,7 @@ double* preRM_PIDInput = &reRM_PIDInput;
 double* preLM_PIDInput = &reLM_PIDInput;
 
 static void Thread2(void *arg) {
-
+	Serial.begin(9600);
 	// Photo resistor array setup
 	pinMode(reMux_s0Pin, OUTPUT);    // s0
 	pinMode(reMux_s1Pin, OUTPUT);    // s1
@@ -144,7 +144,25 @@ static void Thread2(void *arg) {
 
 		int min_index = temp / counter;
 
+
+		int last_turn;
+
+		if (min_index < 2){
+			last_turn = 0;
+		}
+		else if (min_index > 13){
+			last_turn = 1;
+		}
+
 		if (counter == 0){
+
+				//if (last_turn){
+				//	min_index = 13;
+				//}
+				//else if(!last_turn){
+				//	min_index = 3;
+				//}
+
 			min_index = 8;
 		}
 

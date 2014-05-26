@@ -67,6 +67,7 @@ static void Thread6(void *arg);
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\sam\cores\arduino\arduino.h"
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\sam\variants\arduino_due_x\pins_arduino.h" 
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\sam\variants\arduino_due_x\variant.h" 
+<<<<<<< HEAD
 #include "\\psf\Workspaces\P2\Software\HoverCraftSystem\HoverCraftSystem.ino"
 #include "\\psf\Workspaces\P2\Software\HoverCraftSystem\BluetoothModule.ino"
 #include "\\psf\Workspaces\P2\Software\HoverCraftSystem\BuzzerFunction.ino"
@@ -79,4 +80,17 @@ static void Thread6(void *arg);
 #include "\\psf\Workspaces\P2\Software\HoverCraftSystem\RearLineSensorSystem.ino"
 #include "\\psf\Workspaces\P2\Software\HoverCraftSystem\RearRightMotor.ino"
 #include "\\psf\Workspaces\P2\Software\HoverCraftSystem\TuningParameters.ino"
+=======
+#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\HoverCraftSystem.ino"
+#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\BluetoothModule.ino"
+#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\BuzzerFunction.ino"
+#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\ForwardMotor.ino"
+#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\FrontLeftMotor.ino"
+#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\FrontRightMotor.ino"
+#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\LiftFanMotor.ino"
+#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\LineSensorSystems.ino"
+#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\ReLineSensorSystem.ino"
+#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\RearLeftMotor.ino"
+#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\RearRightMotor.ino"
+>>>>>>> FETCH_HEAD
 #endif
