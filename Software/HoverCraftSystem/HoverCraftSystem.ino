@@ -7,7 +7,7 @@ extern double* pfrLM_PIDInput;
 extern double* preRM_PIDInput;
 extern double* preLM_PIDInput;
 
-extern int fPM_Force = 0;
+extern int fPM_Force;
 extern xSemaphoreHandle fPM_Sem;
 
 void setup() {
@@ -40,11 +40,4 @@ void setup() {
 
 void loop() {
 	// Not used
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> RTOSbuildup
-=======
->>>>>>> RTOSBuildupPrince
 }
