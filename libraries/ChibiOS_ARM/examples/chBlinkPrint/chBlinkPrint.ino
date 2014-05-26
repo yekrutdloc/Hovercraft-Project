@@ -16,18 +16,18 @@ static WORKING_AREA(waThread1, 64);
 
 static msg_t Thread1(void *arg) {
   pinMode(LED_PIN, OUTPUT);
-  
+
   // Flash led every 200 ms.
   while (1) {
     // Turn LED on.
     digitalWrite(LED_PIN, HIGH);
-    
+
     // Sleep for 50 milliseconds.
     chThdSleepMilliseconds(50);
-    
+
     // Turn LED off.
     digitalWrite(LED_PIN, LOW);
-    
+
     // Sleep for 150 milliseconds.
     chThdSleepMilliseconds(150);
   }
@@ -46,14 +46,14 @@ static msg_t Thread2(void *arg) {
     chThdSleepMilliseconds(1000);
 
     // Print count for previous second.
-    Serial.print(F("Count: "));
+    Serial.print("Count: ");
     Serial.print(count);
-    
+
     // Print unused stack for threads.
-    Serial.print(F(", Unused Stack: "));
+    Serial.print(", Unused Stack: ");
     Serial.print(chUnusedStack(waThread1, sizeof(waThread1)));
     Serial.print(' ');
-    Serial.print(chUnusedStack(waThread2, sizeof(waThread2))); 
+    Serial.print(chUnusedStack(waThread2, sizeof(waThread2)));
     Serial.print(' ');
     Serial.println(chUnusedHeapMain());
 
@@ -66,7 +66,7 @@ void setup() {
   Serial.begin(9600);
   // wait for USB Serial
   while (!Serial) {}
-  
+
   // read any input
   delay(200);
   while (Serial.read() >= 0) {}

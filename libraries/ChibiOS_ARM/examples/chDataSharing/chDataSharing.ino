@@ -90,17 +90,17 @@ static msg_t Thread2(void *arg) {
     chMtxUnlock();
 
     // Print shared data.
-    Serial.print(F("dataAge: "));
+    Serial.print("dataAge: ");
     Serial.print(millis() - tmpT);
-    Serial.print(F(" ms, dataX: "));
+    Serial.print(" ms, dataX: ");
     Serial.print(tmpX);
-    Serial.print(F(", dataY: "));
+    Serial.print(", dataY: ");
     Serial.print(tmpY);
-    Serial.print(F(", dataZ: "));
+    Serial.print(", dataZ: ");
     Serial.print(tmpZ);
 
     // Print unused stack for threads.
-    Serial.print(F(", Unused Stack: "));
+    Serial.print(", Unused Stack: ");
     Serial.print(chUnusedStack(waThread1, sizeof(waThread1)));
     Serial.print(' ');
     Serial.print(chUnusedStack(waThread2, sizeof(waThread2)));
