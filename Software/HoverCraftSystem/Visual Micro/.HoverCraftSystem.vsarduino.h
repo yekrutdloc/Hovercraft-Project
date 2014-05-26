@@ -51,7 +51,7 @@ extern "C" void __cxa_pure_virtual() {;}
 
 //
 //
-FETCH_HEAD  static void Thread7(void *arg);
+static void Thread7(void *arg);
 static void Thread3(void *arg);
 static void Thread1(void *arg);
 void fr_quick_sort(int fr_sorted_ADCwithMiddle[17], int low, int high);
@@ -67,32 +67,16 @@ static void Thread6(void *arg);
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\sam\cores\arduino\arduino.h"
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\sam\variants\arduino_due_x\pins_arduino.h" 
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\sam\variants\arduino_due_x\variant.h" 
-<<<<<<< HEAD
-<<<<<<< HEAD
 #include "X:\Arduino\Arduino_Training\HoverCraftSystem\HoverCraftSystem.ino"
-#include "X:\Arduino\Arduino_Training\HoverCraftSystem\FrontLineSensorSystem.ino"
-#include "X:\Arduino\Arduino_Training\HoverCraftSystem\MainThread.ino"
-=======
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\HoverCraftSystem.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\FrontLeftMotorControl.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\FrontLeftMotorPID.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\FrontLineSensorSystem.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\FrontRightMotorControl.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\FrontRightMotorPID.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\MainThread.ino"
->>>>>>> RTOSbuildup
-=======
-#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\HoverCraftSystem.ino"
-#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\BluetoothModule.ino"
-#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\BuzzerFunction.ino"
-#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\ForwardMotor.ino"
-#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\FrontLeftMotor.ino"
-#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\FrontLineSensorSystems.ino"
-#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\FrontRightMotor.ino"
-#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\LiftFanMotor.ino"
-#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\RearLeftMotor.ino"
-#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\RearLineSensorSystem.ino"
-#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\RearRightMotor.ino"
-#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\TuningParameters.ino"
->>>>>>> RTOSBuildupPrince
+#include "X:\Arduino\Arduino_Training\HoverCraftSystem\BluetoothModule.ino"
+#include "X:\Arduino\Arduino_Training\HoverCraftSystem\BuzzerFunction.ino"
+#include "X:\Arduino\Arduino_Training\HoverCraftSystem\ForwardMotor.ino"
+#include "X:\Arduino\Arduino_Training\HoverCraftSystem\FrontLeftMotor.ino"
+#include "X:\Arduino\Arduino_Training\HoverCraftSystem\FrontLineSensorSystems.ino"
+#include "X:\Arduino\Arduino_Training\HoverCraftSystem\FrontRightMotor.ino"
+#include "X:\Arduino\Arduino_Training\HoverCraftSystem\LiftFanMotor.ino"
+#include "X:\Arduino\Arduino_Training\HoverCraftSystem\RearLeftMotor.ino"
+#include "X:\Arduino\Arduino_Training\HoverCraftSystem\RearLineSensorSystem.ino"
+#include "X:\Arduino\Arduino_Training\HoverCraftSystem\RearRightMotor.ino"
+#include "X:\Arduino\Arduino_Training\HoverCraftSystem\TuningParameters.ino"
 #endif
