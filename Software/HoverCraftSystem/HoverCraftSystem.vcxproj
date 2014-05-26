@@ -83,7 +83,9 @@
     <None Include="FrontRightMotor.ino">
       <FileType>CppCode</FileType>
     </None>
-    <None Include="TuningParameters.ino" />
+    <None Include="TuningParameters.ino">
+      <FileType>CppCode</FileType>
+    </None>
     <None Include="HoverCraftSystem.ino">
       <FileType>CppCode</FileType>
     </None>
