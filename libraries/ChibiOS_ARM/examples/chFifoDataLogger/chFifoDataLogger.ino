@@ -90,7 +90,10 @@ void setup() {
   }
   
   // throw away input
-  while (Serial.read() >= 0);
+  while (Serial.available()) {
+    Serial.read();
+    delay(10);
+  }
   Serial.println(F("type any character to end"));
   
   // start kernel
