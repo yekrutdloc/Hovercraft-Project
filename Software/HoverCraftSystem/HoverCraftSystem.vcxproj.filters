@@ -13,21 +13,42 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="AdditionalFunctions">
+      <UniqueIdentifier>{471f6b70-d740-450b-b608-6940173a0700}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MotorControllers">
+      <UniqueIdentifier>{18f8b684-0920-4a46-8149-0323a82efa8d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="HoverCraftSystem.ino" />
-    <None Include="\\psf\Home\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\BluetoothModule.ino" />
-    <None Include="\\psf\Home\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\BuzzerFunction.ino" />
-    <None Include="\\psf\Home\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\ForwardMotor.ino" />
-    <None Include="\\psf\Home\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\FrontLeftMotor.ino" />
     <None Include="\\psf\Home\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\FrontLineSensorSystems.ino" />
-    <None Include="\\psf\Home\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\FrontRightMotor.ino" />
     <None Include="\\psf\Home\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\HoverCraftSystem.ino" />
-    <None Include="\\psf\Home\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\LiftFanMotor.ino" />
-    <None Include="\\psf\Home\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\RearLeftMotor.ino" />
     <None Include="\\psf\Home\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\RearLineSensorSystem.ino" />
-    <None Include="\\psf\Home\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\RearRightMotor.ino" />
     <None Include="\\psf\Home\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\TuningParameters.ino" />
+    <None Include="\\psf\Home\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\BuzzerFunction.ino">
+      <Filter>AdditionalFunctions</Filter>
+    </None>
+    <None Include="\\psf\Home\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\BluetoothModule.ino">
+      <Filter>AdditionalFunctions</Filter>
+    </None>
+    <None Include="\\psf\Home\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\ForwardMotor.ino">
+      <Filter>MotorControllers</Filter>
+    </None>
+    <None Include="\\psf\Home\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\FrontLeftMotor.ino">
+      <Filter>MotorControllers</Filter>
+    </None>
+    <None Include="\\psf\Home\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\FrontRightMotor.ino">
+      <Filter>MotorControllers</Filter>
+    </None>
+    <None Include="\\psf\Home\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\LiftFanMotor.ino">
+      <Filter>MotorControllers</Filter>
+    </None>
+    <None Include="\\psf\Home\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\RearLeftMotor.ino">
+      <Filter>MotorControllers</Filter>
+    </None>
+    <None Include="\\psf\Home\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\RearRightMotor.ino">
+      <Filter>MotorControllers</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Visual Micro\.HoverCraftSystem.vsarduino.h">
