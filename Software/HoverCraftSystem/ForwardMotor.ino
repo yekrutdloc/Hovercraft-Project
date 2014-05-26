@@ -2,9 +2,9 @@
 const int fPM_Pin = 6;
 
 // Manual set of PWM
-int fPM_Force = 100;
+int fPM_Force = 200;
 
-static void Thread6(void *arg) {
+static void Thread7(void *arg) {
 	//START of one-run setup program
 
 	//Setup motor pin

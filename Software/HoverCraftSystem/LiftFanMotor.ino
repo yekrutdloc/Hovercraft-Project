@@ -2,9 +2,9 @@
 const int lf_Pin = 7;
 
 // Manual set of PWM
-int lf_Force = 150;
+int lf_Force = 255;
 
-static void Thread7(void *arg) {
+static void Thread8(void *arg) {
 	//START of one-run setup program
 
 	//Setup motor pin

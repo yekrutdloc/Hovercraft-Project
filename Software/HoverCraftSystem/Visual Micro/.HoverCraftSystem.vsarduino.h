@@ -51,16 +51,19 @@ extern "C" void __cxa_pure_virtual() {;}
 
 //
 //
-static void Thread9(void *arg);
-static void Thread6(void *arg);
-static void Thread2(void *arg);
-static void Thread3(void *arg);
+static void Thread10(void *arg);
 static void Thread7(void *arg);
-static void Thread1(void *arg);
-void quick_sort(int fr_sorted_ADCwithMiddle[17], int low, int high);
-void fr_getPhotoArrayValues();
-static void Thread5(void *arg);
+static void Thread3(void *arg);
 static void Thread4(void *arg);
+static void Thread8(void *arg);
+static void Thread1(void *arg);
+void fr_quick_sort(int fr_sorted_ADCwithMiddle[17], int low, int high);
+void fr_getPhotoArrayValues();
+static void Thread2(void *arg);
+void re_quick_sort(int re_sorted_ADCwithMiddle[17], int low, int high);
+void re_getPhotoArrayValues();
+static void Thread5(void *arg);
+static void Thread6(void *arg);
 
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\sam\cores\arduino\arduino.h"
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\sam\variants\arduino_due_x\pins_arduino.h" 
@@ -73,6 +76,7 @@ static void Thread4(void *arg);
 #include "\\psf\Workspaces\P2\Software\HoverCraftSystem\FrontRightMotor.ino"
 #include "\\psf\Workspaces\P2\Software\HoverCraftSystem\LiftFanMotor.ino"
 #include "\\psf\Workspaces\P2\Software\HoverCraftSystem\LineSensorSystems.ino"
+#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\ReLineSensorSystem.ino"
 #include "\\psf\Workspaces\P2\Software\HoverCraftSystem\RearLeftMotor.ino"
 #include "\\psf\Workspaces\P2\Software\HoverCraftSystem\RearRightMotor.ino"
 #endif

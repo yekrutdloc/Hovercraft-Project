@@ -47,6 +47,7 @@
       <Filter>MotorControllers</Filter>
     </None>
     <None Include="LineSensorSystems.ino" />
+    <None Include="ReLineSensorSystem.ino" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Visual Micro\.HoverCraftSystem.vsarduino.h">

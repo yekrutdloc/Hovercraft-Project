@@ -1,6 +1,6 @@
 char recievedChar = 'a';
 
-static void Thread9(void *arg) {
+static void Thread10(void *arg) {
 	Serial.print(recievedChar);
 	while (1){
 		if (Serial.available()) {

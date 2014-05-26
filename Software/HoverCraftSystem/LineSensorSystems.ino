@@ -6,8 +6,6 @@ int const frMux_s2Pin = 51;
 int const frMux_s3Pin = 50;
 int const frMux_zPin = A1;
 
-
-
 // buzzer pin
 int const fr_buzzerPin = 31;
 
@@ -38,6 +36,13 @@ static void Thread1(void *arg) {
 
 		fr_getPhotoArrayValues();
 
+		//for (int i = 0; i < 16; i++)
+		//{
+		//	Serial.print(fr_AdcValues[i]);
+		//	Serial.print(" - ");
+		//}
+		//Serial.println(" ");
+
 		int middle_value = (fr_AdcValues[7] + fr_AdcValues[8]) / 2;
 
 		for (int j = 0; j < 8; j++) {
@@ -54,7 +59,7 @@ static void Thread1(void *arg) {
 			fr_sorted_ADCwithMiddle[i] = fr_ADCwithMiddle[i];
 		}
 
-		quick_sort(fr_sorted_ADCwithMiddle, 0, 16);
+		fr_quick_sort(fr_sorted_ADCwithMiddle, 0, 16);
 
 		int lowest_three, highest_three = 0;
 
@@ -75,17 +80,23 @@ static void Thread1(void *arg) {
 
 		spridning = (double)(highest_three - lowest_three) / highest_three;
 
-		if (spridning > 0.20){
+		Serial.print("Spridning: ");
+		Serial.println(spridning);
+
+		if (spridning > 0.31){
 			line_exist = 1;
 		}
 		else{
 			line_exist = 0;
 		}
 
+		Serial.print("Line Exist: ");
+		Serial.println(line_exist);
+
 		if (line_exist){
 
 			for (int i = 0; i < 17; i++){
-				if (fr_ADCwithMiddle[i] < (fr_sorted_ADCwithMiddle[16] * 0.8)){
+				if (fr_ADCwithMiddle[i] < (fr_sorted_ADCwithMiddle[16] * 0.69)){
 					fr_OneZeroValues[i] = 1;
 				}
 
@@ -129,41 +140,46 @@ static void Thread1(void *arg) {
 			min_index = 8;
 		}
 
-		Serial.println(min_index);
+		//Serial.println(min_index);
 
 		if (min_index > 9){
-			frLM_PIDInput = min_index;
+			frRM_PIDInput = min_index;
 			frLM_PIDInput = 8;
 		}
 		if (min_index < 9){
-			frLM_PIDInput = 8;
+			frRM_PIDInput = 8;
 			frLM_PIDInput = -1 * (min_index - 16);
 		}
+
+	/*	Serial.print("Right - ");
+		Serial.print(frRM_PIDInput);
+		Serial.print(" - Left");
+		Serial.println(frLM_PIDInput);*/
 	}
 }
 
-void quick_sort(int fr_sorted_ADCwithMiddle[17], int low, int high)
+void fr_quick_sort(int fr_sorted_ADCwithMiddle[17], int low, int high)
 {
 	int pivot, j, temp, i;
-	if (low<high)
+	if (low < high)
 	{
 		pivot = low;
 		i = low;
 		j = high;
 
-		while (i<j)
+		while (i < j)
 		{
-			while ((fr_sorted_ADCwithMiddle[i] <= fr_sorted_ADCwithMiddle[pivot]) && (i<high))
+			while ((fr_sorted_ADCwithMiddle[i] <= fr_sorted_ADCwithMiddle[pivot]) && (i < high))
 			{
 				i++;
 			}
 
-			while (fr_sorted_ADCwithMiddle[j]>fr_sorted_ADCwithMiddle[pivot])
+			while (fr_sorted_ADCwithMiddle[j] > fr_sorted_ADCwithMiddle[pivot])
 			{
 				j--;
 			}
 
-			if (i<j)
+			if (i < j)
 			{
 				temp = fr_sorted_ADCwithMiddle[i];
 				fr_sorted_ADCwithMiddle[i] = fr_sorted_ADCwithMiddle[j];
@@ -174,8 +190,8 @@ void quick_sort(int fr_sorted_ADCwithMiddle[17], int low, int high)
 		temp = fr_sorted_ADCwithMiddle[pivot];
 		fr_sorted_ADCwithMiddle[pivot] = fr_sorted_ADCwithMiddle[j];
 		fr_sorted_ADCwithMiddle[j] = temp;
-		quick_sort(fr_sorted_ADCwithMiddle, low, j - 1);
-		quick_sort(fr_sorted_ADCwithMiddle, j + 1, high);
+		fr_quick_sort(fr_sorted_ADCwithMiddle, low, j - 1);
+		fr_quick_sort(fr_sorted_ADCwithMiddle, j + 1, high);
 	}
 }
 

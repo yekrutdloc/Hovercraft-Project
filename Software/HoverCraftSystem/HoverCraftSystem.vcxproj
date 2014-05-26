@@ -98,6 +98,7 @@
     <None Include="RearRightMotor.ino">
       <FileType>CppCode</FileType>
     </None>
+    <None Include="ReLineSensorSystem.ino" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Visual Micro\.HoverCraftSystem.vsarduino.h" />
@@ -107,7 +108,7 @@
   </ImportGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties arduino.upload.port="COM8" />
+      <UserProperties arduino.upload.port="COM6" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
