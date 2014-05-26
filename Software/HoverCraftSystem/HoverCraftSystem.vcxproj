@@ -98,7 +98,9 @@
     <None Include="RearRightMotor.ino">
       <FileType>CppCode</FileType>
     </None>
-    <None Include="ReLineSensorSystem.ino" />
+    <None Include="ReLineSensorSystem.ino">
+      <FileType>CppCode</FileType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Visual Micro\.HoverCraftSystem.vsarduino.h" />

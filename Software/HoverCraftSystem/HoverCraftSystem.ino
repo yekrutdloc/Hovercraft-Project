@@ -7,15 +7,12 @@ extern double* pfrLM_PIDInput;
 extern double* preRM_PIDInput;
 extern double* preLM_PIDInput;
 
-extern int runFrontCalibration = 0;
-extern int runRearCalibration = 0;
-extern int startDriving = 0;
-
-//Buzzer-beep Semaphore
-//xSemaphoreHandle buzzerSem;
-//extern double* pbuzzerSem = &buzzerSem;
+extern int fPM_Force = 0;
+extern xSemaphoreHandle fPM_Sem;
 
 void setup() {
+
+
 	// Start serial
 	Serial.begin(38400);
 
