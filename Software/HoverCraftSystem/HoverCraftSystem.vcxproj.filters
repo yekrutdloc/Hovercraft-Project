@@ -13,12 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="LineSensorSystems">
-      <UniqueIdentifier>{126a3e62-85ed-4591-bc4f-c8319a99b25b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="PIDControllers">
-      <UniqueIdentifier>{82688303-5cb7-4cc7-8281-3a943212fae7}</UniqueIdentifier>
-    </Filter>
     <Filter Include="MotorControllers">
       <UniqueIdentifier>{602bf9dd-1326-4be2-bff7-c0743a9f3027}</UniqueIdentifier>
     </Filter>
@@ -28,48 +22,31 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="HoverCraftSystem.ino" />
-    <None Include="FrontLeftMotorControl.ino">
-      <Filter>MotorControllers</Filter>
-    </None>
-    <None Include="FrontLeftMotorPID.ino">
-      <Filter>PIDControllers</Filter>
-    </None>
-    <None Include="FrontLineSensorSystem.ino">
-      <Filter>LineSensorSystems</Filter>
-    </None>
-    <None Include="FrontRightMotorControl.ino">
-      <Filter>MotorControllers</Filter>
-    </None>
-    <None Include="FrontRightMotorPID.ino">
-      <Filter>PIDControllers</Filter>
-    </None>
-    <None Include="RearLineSensorSystem.ino">
-      <Filter>LineSensorSystems</Filter>
-    </None>
-    <None Include="RearRightMotorControl.ino">
-      <Filter>MotorControllers</Filter>
-    </None>
-    <None Include="RearLeftMotorControl.ino">
-      <Filter>MotorControllers</Filter>
-    </None>
-    <None Include="RearRightMotorPID.ino">
-      <Filter>PIDControllers</Filter>
-    </None>
-    <None Include="RearLeftMotorPID.ino">
-      <Filter>PIDControllers</Filter>
-    </None>
-    <None Include="LiftFanMotorControl.ino">
-      <Filter>MotorControllers</Filter>
-    </None>
-    <None Include="ForwardMotorControl.ino">
-      <Filter>MotorControllers</Filter>
-    </None>
     <None Include="BuzzerFunction.ino">
       <Filter>AdditionalFunctions</Filter>
     </None>
     <None Include="BluetoothModule.ino">
       <Filter>AdditionalFunctions</Filter>
     </None>
+    <None Include="ForwardMotor.ino">
+      <Filter>MotorControllers</Filter>
+    </None>
+    <None Include="FrontLeftMotor.ino">
+      <Filter>MotorControllers</Filter>
+    </None>
+    <None Include="FrontRightMotor.ino">
+      <Filter>MotorControllers</Filter>
+    </None>
+    <None Include="LiftFanMotor.ino">
+      <Filter>MotorControllers</Filter>
+    </None>
+    <None Include="RearLeftMotor.ino">
+      <Filter>MotorControllers</Filter>
+    </None>
+    <None Include="RearRightMotor.ino">
+      <Filter>MotorControllers</Filter>
+    </None>
+    <None Include="LineSensorSystems.ino" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Visual Micro\.HoverCraftSystem.vsarduino.h">

@@ -51,50 +51,28 @@ extern "C" void __cxa_pure_virtual() {;}
 
 //
 //
-static void Thread14(void *arg);
-static void Thread11(void *arg);
-static void Thread7(void *arg);
-static void Thread3(void *arg);
-static void Thread1(void *arg);
-void fr_DiffCalibration();
-void fr_blackValueCalibration();
-void fr_whiteValueCalibration();
-void fr_findRange();
-void fr_getPhotoArrayValues();
-void frontCalibration();
-void fr_runBuzzerBeep();
-static void Thread8(void *arg);
-static void Thread4(void *arg);
-static void Thread12(void *arg);
 static void Thread9(void *arg);
-static void Thread5(void *arg);
-static void Thread2(void *arg);
-void br_DiffCalibration();
-void br_blackValueCalibration();
-void br_whiteValueCalibration();
-void br_findRange();
-void br_getPhotoArrayValues();
-void rearCalibration();
-void br_runBuzzerBeep();
-static void Thread10(void *arg);
 static void Thread6(void *arg);
+static void Thread2(void *arg);
+static void Thread3(void *arg);
+static void Thread7(void *arg);
+static void Thread1(void *arg);
+void quick_sort(int fr_sorted_ADCwithMiddle[17], int low, int high);
+void fr_getPhotoArrayValues();
+static void Thread5(void *arg);
+static void Thread4(void *arg);
 
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\sam\cores\arduino\arduino.h"
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\sam\variants\arduino_due_x\pins_arduino.h" 
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\sam\variants\arduino_due_x\variant.h" 
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\HoverCraftSystem.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\BluetoothModule.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\BuzzerFunction.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\ForwardMotorControl.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\FrontLeftMotorControl.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\FrontLeftMotorPID.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\FrontLineSensorSystem.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\FrontRightMotorControl.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\FrontRightMotorPID.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\LiftFanMotorControl.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\RearLeftMotorControl.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\RearLeftMotorPID.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\RearLineSensorSystem.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\RearRightMotorControl.ino"
-#include "C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\RearRightMotorPID.ino"
+#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\HoverCraftSystem.ino"
+#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\BluetoothModule.ino"
+#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\BuzzerFunction.ino"
+#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\ForwardMotor.ino"
+#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\FrontLeftMotor.ino"
+#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\FrontRightMotor.ino"
+#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\LiftFanMotor.ino"
+#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\LineSensorSystems.ino"
+#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\RearLeftMotor.ino"
+#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\RearRightMotor.ino"
 #endif

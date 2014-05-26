@@ -2,7 +2,7 @@
 ////// buzzer pin
 //int const fr_buzzerPin = 31;
 //
-//static void Thread13(void *arg) {
+//static void Thread10(void *arg) {
 //
 //	pinMode(fr_buzzerPin, OUTPUT);    // buzzer setup
 //	digitalWrite(fr_buzzerPin, LOW);

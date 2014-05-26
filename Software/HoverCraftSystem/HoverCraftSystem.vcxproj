@@ -44,8 +44,8 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Program Files (x86)\Arduino\hardware\arduino\sam\cores\arduino;C:\Program Files (x86)\Arduino\hardware\arduino\sam\variants\arduino_due_x;C:\Users\Hisham\Documents\Arduino\libraries\FreeRTOS_ARM;C:\Users\Hisham\Documents\Arduino\libraries\FreeRTOS_ARM\utility;C:\Users\Hisham\Documents\Arduino\libraries\PID_v1;C:\Users\Hisham\Documents\Arduino\libraries\PID_v1\utility;C:\Program Files (x86)\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\arduino\sam\libraries;C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers;C:\Users\Hisham\Documents\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\arduino\sam\system\CMSIS\CMSIS\Include\;C:\Program Files (x86)\Arduino\hardware\arduino\sam\system\CMSIS\Device\ATMEL\;C:\Program Files (x86)\Arduino\hardware\arduino\sam\system\libsam;C:\Program Files (x86)\Arduino\hardware\arduino\sam\system\libsam\include;C:\Program Files (x86)\Arduino/hardware/tools/g++_arm_none_eabi\arm-none-eabi\include;C:\Program Files (x86)\Arduino/hardware/tools/g++_arm_none_eabi\arm_none_eabi\include\;C:\Program Files (x86)\Arduino/hardware/tools/g++_arm_none_eabi\lib\gcc\arm-none-eabi\4.4.1\include;C:\Program Files (x86)\Arduino/hardware/tools/g++_arm_none_eabi\lib\gcc\arm-none-eabi\4.4.1\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>C:\Users\Hisham\Documents\GitHub\P2\Software\HoverCraftSystem\Visual Micro\.HoverCraftSystem.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Arduino\hardware\arduino\sam\cores\arduino;C:\Program Files (x86)\Arduino\hardware\arduino\sam\variants\arduino_due_x;X:\Arduino\Arduino_Training\libraries\FreeRTOS_ARM;X:\Arduino\Arduino_Training\libraries\FreeRTOS_ARM\utility;X:\Arduino\Arduino_Training\libraries\PID_v1;X:\Arduino\Arduino_Training\libraries\PID_v1\utility;C:\Program Files (x86)\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\arduino\sam\libraries;C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers;X:\Arduino\Arduino_Training\libraries;C:\Program Files (x86)\Arduino\hardware\arduino\sam\system\CMSIS\CMSIS\Include\;C:\Program Files (x86)\Arduino\hardware\arduino\sam\system\CMSIS\Device\ATMEL\;C:\Program Files (x86)\Arduino\hardware\arduino\sam\system\libsam;C:\Program Files (x86)\Arduino\hardware\arduino\sam\system\libsam\include;C:\Program Files (x86)\Arduino/hardware/tools/g++_arm_none_eabi\arm-none-eabi\include;C:\Program Files (x86)\Arduino/hardware/tools/g++_arm_none_eabi\arm_none_eabi\include\;C:\Program Files (x86)\Arduino/hardware/tools/g++_arm_none_eabi\lib\gcc\arm-none-eabi\4.4.1\include;C:\Program Files (x86)\Arduino/hardware/tools/g++_arm_none_eabi\lib\gcc\arm-none-eabi\4.4.1\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>\\psf\Workspaces\P2\Software\HoverCraftSystem\Visual Micro\.HoverCraftSystem.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
       <PreprocessorDefinitions>__SAM3X8E__;USB_VID=0x2341;USB_PID=0x003e;USBCON;USB_MANUFACTURER="Unknown";USB_PRODUCT="Arduino Due";ARDUINO=156;ARDUINO_MAIN;printf=iprintf;__SAM__;__sam__;F_CPU=84000000L;__cplusplus;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
@@ -74,43 +74,28 @@
     <None Include="BuzzerFunction.ino">
       <FileType>CppCode</FileType>
     </None>
-    <None Include="ForwardMotorControl.ino">
+    <None Include="ForwardMotor.ino">
       <FileType>CppCode</FileType>
     </None>
-    <None Include="FrontLeftMotorControl.ino">
+    <None Include="FrontLeftMotor.ino">
       <FileType>CppCode</FileType>
     </None>
-    <None Include="FrontLeftMotorPID.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="FrontLineSensorSystem.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="FrontRightMotorControl.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="FrontRightMotorPID.ino">
+    <None Include="FrontRightMotor.ino">
       <FileType>CppCode</FileType>
     </None>
     <None Include="HoverCraftSystem.ino">
       <FileType>CppCode</FileType>
     </None>
-    <None Include="LiftFanMotorControl.ino">
+    <None Include="LiftFanMotor.ino">
       <FileType>CppCode</FileType>
     </None>
-    <None Include="RearLeftMotorControl.ino">
+    <None Include="LineSensorSystems.ino">
       <FileType>CppCode</FileType>
     </None>
-    <None Include="RearLeftMotorPID.ino">
+    <None Include="RearLeftMotor.ino">
       <FileType>CppCode</FileType>
     </None>
-    <None Include="RearLineSensorSystem.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="RearRightMotorControl.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="RearRightMotorPID.ino">
+    <None Include="RearRightMotor.ino">
       <FileType>CppCode</FileType>
     </None>
   </ItemGroup>

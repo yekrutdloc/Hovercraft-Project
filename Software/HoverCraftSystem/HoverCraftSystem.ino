@@ -1,17 +1,11 @@
 #include <FreeRTOS_ARM.h>
 #include <PID_v1.h>
 
-extern double* pfr_FRMPID;
-extern double* pfr_FLMPID;
+extern double* pfrRM_PIDInput;
+extern double* pfrLM_PIDInput;
 
-extern double* pbr_BRMPID;
-extern double* pbr_BLMPID;
-
-extern double* pFLMControl;
-extern double* pFRMControl;
-
-extern double* pBLMControl;
-extern double* pBRMControl;
+extern double* preRM_PIDInput;
+extern double* preLM_PIDInput;
 
 extern int runFrontCalibration = 0;
 extern int runRearCalibration = 0;
@@ -25,45 +19,26 @@ void setup() {
 	// Start serial
 	Serial.begin(38400);
 
-	//Makes sure calibration-programs doesnt run automatically at start
-	runFrontCalibration = 0;
-	runRearCalibration = 0;
-	startDriving = 0;
+	xTaskCreate(Thread1, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //LineSensorSystems
 
-	// Tasks for front systems
-	xTaskCreate(Thread1, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //FrontLineSensorSystem
-	xTaskCreate(Thread3, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //FrontLeftMotorPID
-	xTaskCreate(Thread4, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //FrontRIghtMotorPID
-	xTaskCreate(Thread7, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //FrontLeftMotorControl
-	xTaskCreate(Thread8, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //FrontRightMotorControl
-
-	// Tasks for rear systems
-	xTaskCreate(Thread2, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //RearLineSensorSystem
-	xTaskCreate(Thread5, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //RearLeftMotorPID
-	xTaskCreate(Thread6, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //RearRightMotorPID
-	xTaskCreate(Thread9, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //RearLeftMotorControl
-	xTaskCreate(Thread10, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //RearRightMotorControl
-
-	//Tasks for forwardPropulsionFan
-	//xTaskCreate(Thread11, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //LiftFanMotorControl
-
-	//Tasks for Liftfan
-	xTaskCreate(Thread12, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //LiftFanMotorControl
+	// Tasks for fan controllers
+	xTaskCreate(Thread7, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //LiftFanMotorController
+	xTaskCreate(Thread2, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //FrontLeftMotorController
+	xTaskCreate(Thread3, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //FrontRightMotorController
+	//xTaskCreate(Thread4, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //RearRightMotorController
+	//xTaskCreate(Thread5, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //RearLeftMotorController
+	//xTaskCreate(Thread6, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //ForwardPropulsionController
 
 	//Tasks for additional functions
-	//xTaskCreate(Thread13, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //Buzzer
-	xTaskCreate(Thread14, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //BluetoothModule
-
+	//xTaskCreate(Thread8, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //Buzzer
+	//xTaskCreate(Thread9, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //BluetoothModule
 
 	// start scheduler
 	vTaskStartScheduler();
-
 	Serial.println(F("Insufficient RAM"));
-
 	while (1);
 }
 
 void loop() {
 	// Not used
-
 }
