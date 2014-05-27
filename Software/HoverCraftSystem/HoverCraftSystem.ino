@@ -10,22 +10,25 @@ extern double* preLM_PIDInput;
 extern int fPM_Force;
 extern xSemaphoreHandle fPM_Sem;
 
+extern int frLS_RAW[16];
+extern int reLS_RAW[16];
+
 void setup() {
 
 	// Start serial
 	Serial.begin(9600);
-
+	
+	// Set software-ADC to 12 bit
+	analogReadResolution(12);
 
 	xTaskCreate(Thread1, NULL, configMINIMAL_STACK_SIZE, NULL, 3, NULL); //Front LineSensorSystems
-	xTaskCreate(Thread2, NULL, configMINIMAL_STACK_SIZE, NULL, 3, NULL); // Rear LineSensorSystems
-
 
 	// Tasks for fan controllers
 	xTaskCreate(Thread8, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //LiftFanMotorController
-	xTaskCreate(Thread3, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //FrontLeftMotorController
-	xTaskCreate(Thread4, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //FrontRightMotorController
-	xTaskCreate(Thread5, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //RearRightMotorController
-	xTaskCreate(Thread6, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //RearLeftMotorController
+	//xTaskCreate(Thread3, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //FrontLeftMotorController
+	//xTaskCreate(Thread4, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //FrontRightMotorController
+	//xTaskCreate(Thread5, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //RearRightMotorController
+	//xTaskCreate(Thread6, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //RearLeftMotorController
 	xTaskCreate(Thread7, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //ForwardPropulsionController
 
 	//Tasks for additional functions

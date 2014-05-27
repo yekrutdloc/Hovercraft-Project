@@ -22,8 +22,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="HoverCraftSystem.ino" />
-    <None Include="FrontLineSensorSystems.ino" />
-    <None Include="RearLineSensorSystem.ino" />
     <None Include="BuzzerFunction.ino">
       <Filter>AdditionalFunctions</Filter>
     </None>
@@ -48,6 +46,8 @@
     <None Include="RearRightMotor.ino">
       <Filter>MotorControllers</Filter>
     </None>
+    <None Include="LineSensorFilter.ino" />
+    <None Include="LineSensorRead.ino" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Visual Micro\.HoverCraftSystem.vsarduino.h">

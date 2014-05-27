@@ -11,11 +11,11 @@ static void Thread7(void *arg) {
 	pinMode(fPM_Pin, OUTPUT);
 
 	// Manual start-parameter of PWM
-	int fPM_Force = 140;
+	int fPM_Force = 255;
 
 	//END of one-run setup program
 	while (1){ //Start of infinite loop for thread
-		xSemaphoreTake(fPM_Sem, portMAX_DELAY);
 		analogWrite(fPM_Pin, fPM_Force);
+		xSemaphoreTake(fPM_Sem, portMAX_DELAY);
 	} //END of infinite loop for thread
 }
