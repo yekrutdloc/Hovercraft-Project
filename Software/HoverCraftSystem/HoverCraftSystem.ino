@@ -12,13 +12,13 @@ extern xSemaphoreHandle fPM_Sem;
 
 void setup() {
 
-
 	// Start serial
+	Serial.begin(9600);
 
 
 	xTaskCreate(Thread1, NULL, configMINIMAL_STACK_SIZE, NULL, 3, NULL); //Front LineSensorSystems
 	xTaskCreate(Thread2, NULL, configMINIMAL_STACK_SIZE, NULL, 3, NULL); // Rear LineSensorSystems
-	
+
 
 	// Tasks for fan controllers
 	xTaskCreate(Thread8, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //LiftFanMotorController

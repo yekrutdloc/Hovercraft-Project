@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HoverCraftSystem", "HoverCraftSystem.vcxproj", "{B2541433-9564-4A18-BA81-9EB18E000E3D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HoverCraftSystem", "HoverCraftSystem.vcxproj", "{8422FB67-53DA-43F2-A15C-7CDF494D5AB3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B2541433-9564-4A18-BA81-9EB18E000E3D}.Debug|Win32.ActiveCfg = Debug|Win32
-		{B2541433-9564-4A18-BA81-9EB18E000E3D}.Debug|Win32.Build.0 = Debug|Win32
-		{B2541433-9564-4A18-BA81-9EB18E000E3D}.Release|Win32.ActiveCfg = Release|Win32
-		{B2541433-9564-4A18-BA81-9EB18E000E3D}.Release|Win32.Build.0 = Release|Win32
+		{8422FB67-53DA-43F2-A15C-7CDF494D5AB3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8422FB67-53DA-43F2-A15C-7CDF494D5AB3}.Debug|Win32.Build.0 = Debug|Win32
+		{8422FB67-53DA-43F2-A15C-7CDF494D5AB3}.Release|Win32.ActiveCfg = Release|Win32
+		{8422FB67-53DA-43F2-A15C-7CDF494D5AB3}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
