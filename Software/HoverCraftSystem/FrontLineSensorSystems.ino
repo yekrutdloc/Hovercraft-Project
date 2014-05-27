@@ -74,8 +74,8 @@ static void Thread1(void *arg) {
 
 		spridning = (double)(highest_three - lowest_three) / highest_three;
 
-		Serial.print("Spridning: ");
-		Serial.println(spridning);
+		//Serial.print("Spridning: ");
+		//Serial.println(spridning);
 
 		if (spridning > 0.31){
 			line_exist = 1;
@@ -84,8 +84,8 @@ static void Thread1(void *arg) {
 			line_exist = 0;
 		}
 
-		Serial.print("Line Exist: ");
-		Serial.println(line_exist);
+		//Serial.print("Line Exist: ");
+		//Serial.println(line_exist);
 
 		if (line_exist){
 
@@ -163,7 +163,7 @@ static void Thread1(void *arg) {
 			frLM_PIDInput = -1 * (min_index - 16);
 		}
 
-	/*	Serial.print("Right - ");
+		/*	Serial.print("Right - ");
 		Serial.print(frRM_PIDInput);
 		Serial.print(" - Left");
 		Serial.println(frLM_PIDInput);*/
