@@ -11,11 +11,21 @@ static void Thread7(void *arg) {
 	pinMode(fPM_Pin, OUTPUT);
 
 	// Manual start-parameter of PWM
-	int fPM_Force = 255;
+	int fPM_Force = 180;
+	analogWrite(fPM_Pin, fPM_Force);
+	//vTaskDelay((10000L * configTICK_RATE_HZ) / 1000L);
+	//analogWrite(fPM_Pin, 0);
+	//vTaskDelay((1000L * configTICK_RATE_HZ) / 1000L);
+	//analogWrite(fPM_Pin, 90);
+
+	//vTaskDelay((1000L * configTICK_RATE_HZ) / 1000L);
 
 	//END of one-run setup program
 	while (1){ //Start of infinite loop for thread
-		analogWrite(fPM_Pin, fPM_Force);
-		xSemaphoreTake(fPM_Sem, portMAX_DELAY);
+	vTaskDelay((3000L * configTICK_RATE_HZ) / 1000L);
+	analogWrite(fPM_Pin, 50);
+	vTaskDelay((800L * configTICK_RATE_HZ) / 1000L);
+	analogWrite(fPM_Pin, 255);
+		
 	} //END of infinite loop for thread
 }
