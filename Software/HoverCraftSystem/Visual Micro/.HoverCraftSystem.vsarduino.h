@@ -53,29 +53,30 @@ extern "C" void __cxa_pure_virtual() {;}
 //
 static void Thread7(void *arg);
 static void Thread3(void *arg);
-static void Thread1(void *arg);
-void fr_quick_sort(int fr_sorted_ADCwithMiddle[17], int low, int high);
-void fr_getPhotoArrayValues();
 static void Thread4(void *arg);
 static void Thread8(void *arg);
-static void Thread5(void *arg);
-static void Thread2(void *arg);
+void fr_filterLoop();
+void fr_quick_sort(int fr_sorted_ADCwithMiddle[17], int low, int high);
+void re_filterLoop();
 void re_quick_sort(int re_sorted_ADCwithMiddle[17], int low, int high);
+static void Thread1(void *arg);
+void fr_getPhotoArrayValues();
 void re_getPhotoArrayValues();
+static void Thread5(void *arg);
 static void Thread6(void *arg);
 
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\sam\cores\arduino\arduino.h"
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\sam\variants\arduino_due_x\pins_arduino.h" 
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\sam\variants\arduino_due_x\variant.h" 
-#include "\\psf\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\HoverCraftSystem.ino"
-#include "\\psf\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\BluetoothModule.ino"
-#include "\\psf\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\BuzzerFunction.ino"
-#include "\\psf\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\ForwardMotor.ino"
-#include "\\psf\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\FrontLeftMotor.ino"
-#include "\\psf\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\FrontLineSensorSystems.ino"
-#include "\\psf\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\FrontRightMotor.ino"
-#include "\\psf\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\LiftFanMotor.ino"
-#include "\\psf\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\RearLeftMotor.ino"
-#include "\\psf\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\RearLineSensorSystem.ino"
-#include "\\psf\Workspaces\Arduino\Arduino_Training\HoverCraftSystem\RearRightMotor.ino"
+#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\HoverCraftSystem.ino"
+#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\BluetoothModule.ino"
+#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\BuzzerFunction.ino"
+#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\ForwardMotor.ino"
+#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\FrontLeftMotor.ino"
+#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\FrontRightMotor.ino"
+#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\LiftFanMotor.ino"
+#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\LineSensorFilter.ino"
+#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\LineSensorRead.ino"
+#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\RearLeftMotor.ino"
+#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\RearRightMotor.ino"
 #endif
