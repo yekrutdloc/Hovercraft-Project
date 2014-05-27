@@ -34,10 +34,10 @@ static void Thread1(void *arg) {
 	while (1) {
 
 		fr_getPhotoArrayValues();
-
+		fr_filterLoop();
 		re_getPhotoArrayValues();
-
-		//Print out raw values for front sensor
+		re_filterLoop();
+	//	Print out raw values for front sensor
 		//for (int i = 0; i < 16; i++)
 		//{
 		//	Serial.print(frLS_RAW[i]);
@@ -53,8 +53,8 @@ static void Thread1(void *arg) {
 		//}
 		//Serial.println(" ");
 
-		fr_filterLoop();
-		re_filterLoop();
+		
+		
 
 		// DONT FORGET TO SAMPLE RATE SET 			vTaskDelay((1L * configTICK_RATE_HZ) / 1000L);
 
@@ -64,66 +64,75 @@ static void Thread1(void *arg) {
 
 // Function to cycle through each multiplex-channel and store photoresistor value
 void fr_getPhotoArrayValues() {
-	for (int i = 0; i < 5;	i++){
+	for (int i = 0; i < 2; i++){
 		for (int photoChannel = 0; photoChannel < 16; photoChannel++) {
 			switch (photoChannel) {
 			case 0:
-				digitalWrite(frMux_s0Pin, LOW);
-				digitalWrite(frMux_s1Pin, LOW);
-				digitalWrite(frMux_s2Pin, LOW);
-				digitalWrite(frMux_s3Pin, LOW);
+				digitalWrite(frMux_s0Pin, HIGH);
+				digitalWrite(frMux_s1Pin, HIGH);
+				digitalWrite(frMux_s2Pin, HIGH);
+				digitalWrite(frMux_s3Pin, HIGH);
 				vTaskDelay((1L * configTICK_RATE_HZ) / 1000L);
 				frLS_RAW[photoChannel] += analogRead(frMux_zPin);
 				break;
 			case 1:
-				digitalWrite(frMux_s0Pin, HIGH);
-				digitalWrite(frMux_s1Pin, LOW);
-				digitalWrite(frMux_s2Pin, LOW);
-				digitalWrite(frMux_s3Pin, LOW);
+				digitalWrite(frMux_s0Pin, LOW);
+				digitalWrite(frMux_s1Pin, HIGH);
+				digitalWrite(frMux_s2Pin, HIGH);
+				digitalWrite(frMux_s3Pin, HIGH);
 				vTaskDelay((1L * configTICK_RATE_HZ) / 1000L);
 				frLS_RAW[photoChannel] += analogRead(frMux_zPin);
 				break;
 			case 2:
-				digitalWrite(frMux_s0Pin, LOW);
-				digitalWrite(frMux_s1Pin, HIGH);
-				digitalWrite(frMux_s2Pin, LOW);
-				digitalWrite(frMux_s3Pin, LOW);
+				digitalWrite(frMux_s0Pin, HIGH);
+				digitalWrite(frMux_s1Pin, LOW);
+				digitalWrite(frMux_s2Pin, HIGH);
+				digitalWrite(frMux_s3Pin, HIGH);
 				vTaskDelay((1L * configTICK_RATE_HZ) / 1000L);
 				frLS_RAW[photoChannel] += analogRead(frMux_zPin);
 				break;
 			case 3:
-				digitalWrite(frMux_s0Pin, HIGH);
-				digitalWrite(frMux_s1Pin, HIGH);
-				digitalWrite(frMux_s2Pin, LOW);
-				digitalWrite(frMux_s3Pin, LOW);
+				digitalWrite(frMux_s0Pin, LOW);
+				digitalWrite(frMux_s1Pin, LOW);
+				digitalWrite(frMux_s2Pin, HIGH);
+				digitalWrite(frMux_s3Pin, HIGH);
 				vTaskDelay((1L * configTICK_RATE_HZ) / 1000L);
 				frLS_RAW[photoChannel] += analogRead(frMux_zPin);
 				break;
 			case 4:
-				digitalWrite(frMux_s0Pin, LOW);
-				digitalWrite(frMux_s1Pin, LOW);
-				digitalWrite(frMux_s2Pin, HIGH);
-				digitalWrite(frMux_s3Pin, LOW);
+				digitalWrite(frMux_s0Pin, HIGH);
+				digitalWrite(frMux_s1Pin, HIGH);
+				digitalWrite(frMux_s2Pin, LOW);
+				digitalWrite(frMux_s3Pin, HIGH);
 				vTaskDelay((1L * configTICK_RATE_HZ) / 1000L);
 				frLS_RAW[photoChannel] += analogRead(frMux_zPin);
 				break;
 			case 5:
-				digitalWrite(frMux_s0Pin, HIGH);
-				digitalWrite(frMux_s1Pin, LOW);
-				digitalWrite(frMux_s2Pin, HIGH);
-				digitalWrite(frMux_s3Pin, LOW);
+				digitalWrite(frMux_s0Pin, LOW);
+				digitalWrite(frMux_s1Pin, HIGH);
+				digitalWrite(frMux_s2Pin, LOW);
+				digitalWrite(frMux_s3Pin, HIGH);
 				vTaskDelay((1L * configTICK_RATE_HZ) / 1000L);
 				frLS_RAW[photoChannel] += analogRead(frMux_zPin);
 				break;
 			case 6:
-				digitalWrite(frMux_s0Pin, LOW);
-				digitalWrite(frMux_s1Pin, HIGH);
-				digitalWrite(frMux_s2Pin, HIGH);
-				digitalWrite(frMux_s3Pin, LOW);
+				digitalWrite(frMux_s0Pin, HIGH);
+				digitalWrite(frMux_s1Pin, LOW);
+				digitalWrite(frMux_s2Pin, LOW);
+				digitalWrite(frMux_s3Pin, HIGH);
 				vTaskDelay((1L * configTICK_RATE_HZ) / 1000L);
 				frLS_RAW[photoChannel] += analogRead(frMux_zPin);
 				break;
 			case 7:
+				digitalWrite(frMux_s0Pin, LOW);
+				digitalWrite(frMux_s1Pin, LOW);
+				digitalWrite(frMux_s2Pin, LOW);
+				digitalWrite(frMux_s3Pin, HIGH);
+				vTaskDelay((1L * configTICK_RATE_HZ) / 1000L);
+				frLS_RAW[photoChannel] += analogRead(frMux_zPin);
+				break;
+
+			case 8:
 				digitalWrite(frMux_s0Pin, HIGH);
 				digitalWrite(frMux_s1Pin, HIGH);
 				digitalWrite(frMux_s2Pin, HIGH);
@@ -131,67 +140,59 @@ void fr_getPhotoArrayValues() {
 				vTaskDelay((1L * configTICK_RATE_HZ) / 1000L);
 				frLS_RAW[photoChannel] += analogRead(frMux_zPin);
 				break;
-			case 8:
-				digitalWrite(frMux_s0Pin, LOW);
-				digitalWrite(frMux_s1Pin, LOW);
-				digitalWrite(frMux_s2Pin, LOW);
-				digitalWrite(frMux_s3Pin, HIGH);
-				vTaskDelay((1L * configTICK_RATE_HZ) / 1000L);
-				frLS_RAW[photoChannel] += analogRead(frMux_zPin);
-				break;
 			case 9:
-				digitalWrite(frMux_s0Pin, HIGH);
-				digitalWrite(frMux_s1Pin, LOW);
-				digitalWrite(frMux_s2Pin, LOW);
-				digitalWrite(frMux_s3Pin, HIGH);
+				digitalWrite(frMux_s0Pin, LOW);
+				digitalWrite(frMux_s1Pin, HIGH);
+				digitalWrite(frMux_s2Pin, HIGH);
+				digitalWrite(frMux_s3Pin, LOW);
 				vTaskDelay((1L * configTICK_RATE_HZ) / 1000L);
 				frLS_RAW[photoChannel] += analogRead(frMux_zPin);
 				break;
 			case 10:
-				digitalWrite(frMux_s0Pin, LOW);
-				digitalWrite(frMux_s1Pin, HIGH);
-				digitalWrite(frMux_s2Pin, LOW);
-				digitalWrite(frMux_s3Pin, HIGH);
+				digitalWrite(frMux_s0Pin, HIGH);
+				digitalWrite(frMux_s1Pin, LOW);
+				digitalWrite(frMux_s2Pin, HIGH);
+				digitalWrite(frMux_s3Pin, LOW);
 				vTaskDelay((1L * configTICK_RATE_HZ) / 1000L);
 				frLS_RAW[photoChannel] += analogRead(frMux_zPin);
 				break;
 			case 11:
-				digitalWrite(frMux_s0Pin, HIGH);
-				digitalWrite(frMux_s1Pin, HIGH);
-				digitalWrite(frMux_s2Pin, LOW);
-				digitalWrite(frMux_s3Pin, HIGH);
+				digitalWrite(frMux_s0Pin, LOW);
+				digitalWrite(frMux_s1Pin, LOW);
+				digitalWrite(frMux_s2Pin, HIGH);
+				digitalWrite(frMux_s3Pin, LOW);
 				vTaskDelay((1L * configTICK_RATE_HZ) / 1000L);
 				frLS_RAW[photoChannel] += analogRead(frMux_zPin);
 				break;
 			case 12:
-				digitalWrite(frMux_s0Pin, LOW);
-				digitalWrite(frMux_s1Pin, LOW);
-				digitalWrite(frMux_s2Pin, HIGH);
-				digitalWrite(frMux_s3Pin, HIGH);
+				digitalWrite(frMux_s0Pin, HIGH);
+				digitalWrite(frMux_s1Pin, HIGH);
+				digitalWrite(frMux_s2Pin, LOW);
+				digitalWrite(frMux_s3Pin, LOW);
 				vTaskDelay((1L * configTICK_RATE_HZ) / 1000L);
 				frLS_RAW[photoChannel] += analogRead(frMux_zPin);
 				break;
 			case 13:
-				digitalWrite(frMux_s0Pin, HIGH);
-				digitalWrite(frMux_s1Pin, LOW);
-				digitalWrite(frMux_s2Pin, HIGH);
-				digitalWrite(frMux_s3Pin, HIGH);
+				digitalWrite(frMux_s0Pin, LOW);
+				digitalWrite(frMux_s1Pin, HIGH);
+				digitalWrite(frMux_s2Pin, LOW);
+				digitalWrite(frMux_s3Pin, LOW);
 				vTaskDelay((1L * configTICK_RATE_HZ) / 1000L);
 				frLS_RAW[photoChannel] += analogRead(frMux_zPin);
 				break;
 			case 14:
-				digitalWrite(frMux_s0Pin, LOW);
-				digitalWrite(frMux_s1Pin, HIGH);
-				digitalWrite(frMux_s2Pin, HIGH);
-				digitalWrite(frMux_s3Pin, HIGH);
+				digitalWrite(frMux_s0Pin, HIGH);
+				digitalWrite(frMux_s1Pin, LOW);
+				digitalWrite(frMux_s2Pin, LOW);
+				digitalWrite(frMux_s3Pin, LOW);
 				vTaskDelay((1L * configTICK_RATE_HZ) / 1000L);
 				frLS_RAW[photoChannel] += analogRead(frMux_zPin);
 				break;
 			case 15:
-				digitalWrite(frMux_s0Pin, HIGH);
-				digitalWrite(frMux_s1Pin, HIGH);
-				digitalWrite(frMux_s2Pin, HIGH);
-				digitalWrite(frMux_s3Pin, HIGH);
+				digitalWrite(frMux_s0Pin, LOW);
+				digitalWrite(frMux_s1Pin, LOW);
+				digitalWrite(frMux_s2Pin, LOW);
+				digitalWrite(frMux_s3Pin, LOW);
 				vTaskDelay((1L * configTICK_RATE_HZ) / 1000L);
 				frLS_RAW[photoChannel] += analogRead(frMux_zPin);
 				break;
@@ -201,12 +202,12 @@ void fr_getPhotoArrayValues() {
 
 	for (int i = 0; i < 16; i++)
 	{
-		frLS_RAW[i] = frLS_RAW[i] / 5;
+		frLS_RAW[i] = frLS_RAW[i] / 2;
 	}
 }
 
 void re_getPhotoArrayValues() {
-	for (int i = 0; i < 5; i++){
+	for (int i = 0; i < 3; i++){
 		for (int photoChannel = 0; photoChannel < 16; photoChannel++) {
 			switch (photoChannel) {
 			case 0:
@@ -343,6 +344,6 @@ void re_getPhotoArrayValues() {
 
 	for (int i = 0; i < 16; i++)
 	{
-		reLS_RAW[i] = reLS_RAW[i] / 5;
+		reLS_RAW[i] = reLS_RAW[i] / 3;
 	}
 }
