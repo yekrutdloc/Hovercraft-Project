@@ -17,7 +17,7 @@ static void Thread6(void *arg) {
 	//Setup PID
 	//frLM_PID.SetSampleTime(100);
 	reRM_PID.SetControllerDirection(DIRECT);
-	reRM_PID.SetOutputLimits(40, 140);
+	reRM_PID.SetOutputLimits(40, 150);
 
 	//Setup motor pin
 	pinMode(reRM_Pin, OUTPUT);
