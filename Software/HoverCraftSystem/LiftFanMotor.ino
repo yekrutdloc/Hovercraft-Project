@@ -1,3 +1,6 @@
+// This Sketch contains code to PWM-control
+// the lift fan
+
 // Pin for motor
 const int lf_Pin = 7;
 

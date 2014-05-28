@@ -1,5 +1,5 @@
 // This Sketch contains actual code for controlling and receiving values from the line sensor modules
-// It's capable of reading each photoresistor connected to the multiplex, by using a function to switch 
+// It's capable of reading each phototransistor connected to the multiplex, by using a function to switch 
 // to each channel and store its value in an array
 // After reading all phototransistor values at that time, a filterloop-functions are executed,
 // which is a function within LineSensorFilter.

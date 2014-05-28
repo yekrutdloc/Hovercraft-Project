@@ -17,7 +17,7 @@ extern int reLS_RAW[16];
 
 void setup() {
 
-	// Start serial
+	// Start serial, which can be used throughout the whole program
 	Serial.begin(115200);
 	
 	// Set software-ADC to 12 bit
