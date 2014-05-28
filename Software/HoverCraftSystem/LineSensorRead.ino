@@ -40,7 +40,7 @@ static void Thread1(void *arg) {
 	//	Print out raw values for front sensor
 		//for (int i = 0; i < 16; i++)
 		//{
-		//	Serial.print(frLS_RAW[i]);
+		//	Serial.print(reLS_RAW[i]);
 		//	Serial.print(" - ");
 		//}
 		//Serial.println(" ");

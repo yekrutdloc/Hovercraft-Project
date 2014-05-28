@@ -11,7 +11,7 @@ static void Thread7(void *arg) {
 	pinMode(fPM_Pin, OUTPUT);
 
 	// Manual start-parameter of PWM
-	int fPM_Force = 180;
+	int fPM_Force = 140;
 	analogWrite(fPM_Pin, fPM_Force);
 	//vTaskDelay((10000L * configTICK_RATE_HZ) / 1000L);
 	//analogWrite(fPM_Pin, 0);
@@ -25,7 +25,7 @@ static void Thread7(void *arg) {
 	vTaskDelay((3000L * configTICK_RATE_HZ) / 1000L);
 	analogWrite(fPM_Pin, 50);
 	vTaskDelay((800L * configTICK_RATE_HZ) / 1000L);
-	analogWrite(fPM_Pin, 255);
+	analogWrite(fPM_Pin, 200);
 		
 	} //END of infinite loop for thread
 }

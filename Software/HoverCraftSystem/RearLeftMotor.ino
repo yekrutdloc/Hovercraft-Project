@@ -17,7 +17,7 @@ static void Thread5(void *arg) {
 	//Setup PID
 	//frLM_PID.SetSampleTime(100);
 	reLM_PID.SetControllerDirection(DIRECT);
-	reLM_PID.SetOutputLimits(40, 200);
+	reLM_PID.SetOutputLimits(40, 150);
 
 	//Setup motor pin
 	pinMode(reLM_Pin, OUTPUT);

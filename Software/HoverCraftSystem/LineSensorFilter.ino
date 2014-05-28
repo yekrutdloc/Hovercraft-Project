@@ -33,29 +33,29 @@ double* preLM_PIDInput = &reLM_PIDInput;
 
 void fr_setup_Calibration(){
 
-	fr_calWhite = 2499;
+	fr_calWhite = 2502;
 
-	fr_weights[15] = 0.766;
-	fr_weights[14] = 0.982;
-	fr_weights[13] = 0.918;
-	fr_weights[12] = 1.047;
-	fr_weights[11] = 1.026;
-	fr_weights[10] = 0.985;
-	fr_weights[9] = 1.054;
-	fr_weights[8] = 0.796;
-	fr_weights[7] = 1.130;
-	fr_weights[6] = 0.857;
-	fr_weights[5] = 1.218;
-	fr_weights[4] = 1.427;
-	fr_weights[3] = 0.988;
-	fr_weights[2] = 0.962;
-	fr_weights[1] = 1.03;
-	fr_weights[0] = 1.186;
+	fr_weights[15] = 1.3301;
+	fr_weights[14] = 0.9669;
+	fr_weights[13] = 1.0812;
+	fr_weights[12] = 0.9353;
+	fr_weights[11] = 0.9389;
+	fr_weights[10] = 0.9469;
+	fr_weights[9] = 0.9493;
+	fr_weights[8] = 1.1651;
+	fr_weights[7] = 0.8582;
+	fr_weights[6] = 1.1052;
+	fr_weights[5] = 0.8167;
+	fr_weights[4] = 0.7627;
+	fr_weights[3] = 0.9469;
+	fr_weights[2] = 0.9805;
+	fr_weights[1] = 1.0005;
+	fr_weights[0] = 0.8;
 
 
 
 	for (int i = 0; i < 16; i++){
-		fr_weighted_RAW[i] =(double)(frLS_RAW[i] * fr_weights[i]);
+		fr_weighted_RAW[i] =(double)(frLS_RAW[i] / fr_weights[i]);
 
 	}
 	
@@ -64,28 +64,28 @@ void fr_setup_Calibration(){
 
 void re_setup_Calibration(){
 
-	re_calWhite = 2657;
+	re_calWhite = 2108;
 
-	re_weights[0] = 0.80;
-	re_weights[1] = 0.96;
-	re_weights[2] = 0.84;
-	re_weights[3] = 1.35;
-	re_weights[4] = 1.13;
-	re_weights[5] = 0.93;
-	re_weights[6] = 1.17;
-	re_weights[7] = 1.30;
-	re_weights[8] = 0.79;
-	re_weights[9] = 1.29;
-	re_weights[10] = 0.99;
-	re_weights[11] = 0.89;
-	re_weights[12] = 0.95;
-	re_weights[13] = 0.99;
-	re_weights[14] = 1.06;
-	re_weights[15] = 0.9;
+	re_weights[0] = 1.2273;
+	re_weights[1] = 1.0557;
+	re_weights[2] = 1.2250;
+	re_weights[3] = 0.7280;
+	re_weights[4] = 0.8830;
+	re_weights[5] = 1.0732;
+	re_weights[6] = 0.8849;
+	re_weights[7] = 0.7673;
+	re_weights[8] = 1.2131;
+	re_weights[9] = 0.7834;
+	re_weights[10] = 0.9969;
+	re_weights[11] = 1.0983;
+	re_weights[12] = 1.0367;
+	re_weights[13] = 1.0225;
+	re_weights[14] = 0.9471;
+	re_weights[15] = 1.0576;
 
 
 	for (int i = 0; i < 16; i++){
-		re_weighted_RAW[i] = (double)(reLS_RAW[i] * re_weights[i]);
+		re_weighted_RAW[i] = (double)(reLS_RAW[i] / re_weights[i]);
 
 	}
 }
@@ -103,12 +103,12 @@ void fr_filterLoop(){
 	fr_quick_sort(fr_sorted_RAW, 0, 15);
 
 
-	//for (int i = 0; i < 16; i++)
-	//{
-	//	Serial.print(fr_sorted_RAW[i]);
-	//	Serial.print(" - ");
-	//}
-	//Serial.println(" ");
+	for (int i = 0; i < 16; i++)
+	{
+		Serial.print(fr_weighted_RAW[i]);
+		Serial.print(" - ");
+	}
+	Serial.println(" ");
 
 	int fr_lowest_two = 0, fr_highest_two = 0;
 
