@@ -1,3 +1,6 @@
+// This Sketch contains actual PWM-control of front right motor and PID-regulation
+// The PID-regulation has a default sample time of 200ms
+
 //Local variables
 double frRM_Setpoint = 8;
 double frRM_Output;
@@ -30,6 +33,7 @@ static void Thread4(void *arg) {
 		//Serial.print("RIGHT Output:  ");
 		//Serial.print(frLM_Output);
 		//Serial.println();
+
 	} //END of infinite loop for thread
 }
 

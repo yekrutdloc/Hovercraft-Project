@@ -1,3 +1,10 @@
+// This Sketch contains actual code for controlling and receiving values from the line sensor modules
+// It's capable of reading each photoresistor connected to the multiplex, by using a function to switch 
+// to each channel and store its value in an array
+// After reading all phototransistor values at that time, a filterloop-functions are executed,
+// which is a function within LineSensorFilter.
+// The thread loop has a delay of 50ms, with the time it takes to read all the values,
+// a single run through the loop takes between 100-200ms
 
 // Front Line-Sensor pins
 int const frMux_s0Pin = 53;
@@ -17,6 +24,7 @@ int const reMux_zPin = 0;
 int frLS_RAW[16];
 int reLS_RAW[16];
 
+// Thread1-function for FreeRTOS
 static void Thread1(void *arg) {
 
 	// Front line sensor setup setup
@@ -31,7 +39,8 @@ static void Thread1(void *arg) {
 	pinMode(reMux_s2Pin, OUTPUT);    // s2
 	pinMode(reMux_s3Pin, OUTPUT);    // 3s
 
-	while (1) {
+	//END of one-run setup program
+	while (1){ //Start of infinite loop for thread
 
 		fr_getPhotoArrayValues();
 		fr_filterLoop();
@@ -53,16 +62,14 @@ static void Thread1(void *arg) {
 		//}
 		//Serial.println(" ");
 
-		
-		
-
-		// DONT FORGET TO SAMPLE RATE SET 			vTaskDelay((1L * configTICK_RATE_HZ) / 1000L);
-
+	vTaskDelay((50L * configTICK_RATE_HZ) / 1000L); //100ms delay
 	}
 }
 
 
-// Function to cycle through each multiplex-channel and store photoresistor value
+// Function to cycle through each multiplex-channel and store photoresistor value.
+// When running the functions to read all the photoresistor values, the reading occurs twice, and then average is calculated,
+// this occurs to mildy cancel out any noise and spikes of the phototransistor sensors, before sending them out for PID-regulation
 void fr_getPhotoArrayValues() {
 	for (int i = 0; i < 2; i++){
 		for (int photoChannel = 0; photoChannel < 16; photoChannel++) {

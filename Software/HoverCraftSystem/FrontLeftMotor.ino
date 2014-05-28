@@ -1,3 +1,6 @@
+// This Sketch contains actual PWM-control of front left motor and PID-regulation
+// The PID-regulation has a default sample time of 200ms
+
 //Local variables
 double frLM_Setpoint = 8;
 double frLM_Output;

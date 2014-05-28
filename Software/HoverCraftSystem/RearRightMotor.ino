@@ -1,3 +1,6 @@
+// This Sketch contains actual PWM-control of rear right motor and PID-regulation
+// The PID-regulation has a default sample time of 200ms
+
 //Local variables
 double reRM_Setpoint = 8;
 double reRM_Output;
@@ -30,6 +33,7 @@ static void Thread6(void *arg) {
 		//Serial.print("RIGHT INPUT:  ");
 		//Serial.print(reRM_PIDInput);
 		//Serial.println();
+
 	} //END of infinite loop for thread
 }
 
