@@ -55,10 +55,12 @@ static void Thread7(void *arg);
 static void Thread3(void *arg);
 static void Thread4(void *arg);
 static void Thread8(void *arg);
+void fr_setup_Calibration();
+void re_setup_Calibration();
 void fr_filterLoop();
-void fr_quick_sort(int fr_sorted_ADCwithMiddle[17], int low, int high);
+void fr_quick_sort(int fr_sorted_RAW[16], int low, int high);
 void re_filterLoop();
-void re_quick_sort(int re_sorted_ADCwithMiddle[17], int low, int high);
+void re_quick_sort(int re_sorted_RAW[16], int low, int high);
 static void Thread1(void *arg);
 void fr_getPhotoArrayValues();
 void re_getPhotoArrayValues();
@@ -69,7 +71,6 @@ static void Thread6(void *arg);
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\sam\variants\arduino_due_x\pins_arduino.h" 
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\sam\variants\arduino_due_x\variant.h" 
 #include "\\psf\Workspaces\P2\Software\HoverCraftSystem\HoverCraftSystem.ino"
-#include "\\psf\Workspaces\P2\Software\HoverCraftSystem\BluetoothModule.ino"
 #include "\\psf\Workspaces\P2\Software\HoverCraftSystem\BuzzerFunction.ino"
 #include "\\psf\Workspaces\P2\Software\HoverCraftSystem\ForwardMotor.ino"
 #include "\\psf\Workspaces\P2\Software\HoverCraftSystem\FrontLeftMotor.ino"

@@ -25,9 +25,6 @@
     <None Include="BuzzerFunction.ino">
       <Filter>AdditionalFunctions</Filter>
     </None>
-    <None Include="BluetoothModule.ino">
-      <Filter>AdditionalFunctions</Filter>
-    </None>
     <None Include="ForwardMotor.ino">
       <Filter>MotorControllers</Filter>
     </None>

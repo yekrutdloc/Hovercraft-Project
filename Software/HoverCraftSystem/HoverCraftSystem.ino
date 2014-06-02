@@ -1,3 +1,8 @@
+// This Sketch is the actual .ino file to contain the setup- and loop-functions.
+// In here all the library includes are present.,
+// Global variables which are used as communication between threads are declared
+// and thread-declarations of FreeRTOS threads are created and started.
+
 #include <FreeRTOS_ARM.h>
 #include <PID_v1.h>
 
@@ -7,29 +12,26 @@ extern double* pfrLM_PIDInput;
 extern double* preRM_PIDInput;
 extern double* preLM_PIDInput;
 
-extern int fPM_Force;
-extern xSemaphoreHandle fPM_Sem;
-
 extern int frLS_RAW[16];
 extern int reLS_RAW[16];
 
 void setup() {
 
-	// Start serial
-	Serial.begin(9600);
+	// Start serial, which can be used throughout the whole program
+	Serial.begin(115200);
 	
 	// Set software-ADC to 12 bit
 	analogReadResolution(12);
 
-	xTaskCreate(Thread1, NULL, configMINIMAL_STACK_SIZE, NULL, 3, NULL); //Front LineSensorSystems
+	xTaskCreate(Thread1, NULL, configMINIMAL_STACK_SIZE, NULL, 4, NULL); //Front LineSensorSystems
 
 	// Tasks for fan controllers
-	xTaskCreate(Thread8, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //LiftFanMotorController
-	//xTaskCreate(Thread3, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //FrontLeftMotorController
-	//xTaskCreate(Thread4, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //FrontRightMotorController
-	//xTaskCreate(Thread5, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //RearRightMotorController
-	//xTaskCreate(Thread6, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //RearLeftMotorController
-	xTaskCreate(Thread7, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //ForwardPropulsionController
+	//xTaskCreate(Thread8, NULL, configMINIMAL_STACK_SIZE, NULL, 3, NULL); //LiftFanMotorController
+	xTaskCreate(Thread3, NULL, configMINIMAL_STACK_SIZE, NULL, 3, NULL); //FrontLeftMotorController
+	xTaskCreate(Thread4, NULL, configMINIMAL_STACK_SIZE, NULL, 3, NULL); //FrontRightMotorController
+	xTaskCreate(Thread5, NULL, configMINIMAL_STACK_SIZE, NULL, 3, NULL); //RearRightMotorController
+	xTaskCreate(Thread6, NULL, configMINIMAL_STACK_SIZE, NULL, 3, NULL); //RearLeftMotorController
+	xTaskCreate(Thread7, NULL, configMINIMAL_STACK_SIZE, NULL, 3, NULL); //ForwardPropulsionController
 
 	//Tasks for additional functions
 	//xTaskCreate(Thread9, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //Buzzer
