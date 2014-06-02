@@ -68,9 +68,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="BluetoothModule.ino">
-      <FileType>CppCode</FileType>
-    </None>
     <None Include="BuzzerFunction.ino">
       <FileType>CppCode</FileType>
     </None>
@@ -89,8 +86,12 @@
     <None Include="LiftFanMotor.ino">
       <FileType>CppCode</FileType>
     </None>
-    <None Include="LineSensorFilter.ino" />
-    <None Include="LineSensorRead.ino" />
+    <None Include="LineSensorFilter.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="LineSensorRead.ino">
+      <FileType>CppCode</FileType>
+    </None>
     <None Include="RearLeftMotor.ino">
       <FileType>CppCode</FileType>
     </None>
