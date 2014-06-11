@@ -1,18 +1,26 @@
-// This Sketch contains actual PWM-control of rear right motor and PID-regulation
-// The PID-regulation has a default sample time of 200ms
+/**
+RearRightMotor.ino
 
-//Local variables
-double reRM_Setpoint = 8;
-double reRM_Output;
+Purpose: This Sketch contains actual PWM-control
+of rear right motor and PID-regulation
+The PID-regulation has a default sample time of 200ms
 
-//Specify the links and initial tuning parameters
-PID reRM_PID(preRM_PIDInput, &reRM_Output, &reRM_Setpoint, 28, 0, 0, DIRECT);
-
-// Pin for motor
-const int reRM_Pin = 5;
+@author Prince Balabis
+*/
 
 static void Thread6(void *arg) {
 	//START of one-run setup program
+
+	//Local variables
+	double reRM_Setpoint = 8;
+	double reRM_Output;
+
+	//Specify the links and initial tuning parameters
+	PID reRM_PID(preRM_PIDInput, &reRM_Output, &reRM_Setpoint,
+		28, 0, 0, DIRECT);
+
+	// Pin for motor
+	const int reRM_Pin = 5;
 
 	//turn the PID on
 	reRM_PID.SetMode(AUTOMATIC);
