@@ -1,4 +1,10 @@
-// This basic program blinks between two different PWM-values
+// PWM_BlinkTest.ino 
+//
+// Purpose: This basic program blinks 
+// between two different PWM-values.
+// Used to test if motor-controlling works
+//
+// @author Prince Balabis
 
 int pwmPin = 2;
 

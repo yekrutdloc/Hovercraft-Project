@@ -1,3 +1,10 @@
+// Multiplex1ch_Serial.ino
+// 
+// Purpose: A very simple Sketch which prints 
+// out an analog value from a specific channel.
+//
+// @author Prince Balabis
+
 
 // Front Line-Sensor pins
 int const s0pin = 53;

@@ -1,4 +1,10 @@
-// A simple program to print out the value of a photoresistor
+// Photoresistor_Serial.ino
+//
+// Purpose:A simple program to print out 
+// the value of a photoresistor
+//
+// @author Prince Balabis
+
 
 // Photoresistor pin
 int photoResistorPin = 0;

@@ -1,9 +1,14 @@
-// This program is taken from: http://forum.arduino.cc/index.php?topic=137635.0
+// ADCSamplingRate2Inputs_Test 
+//
+// Purpose: This program is taken from: http://forum.arduino.cc/index.php?topic=137635.0
 // It's made to benchmarks the ADC by reading TWO analog inputs
 // in order to get its sampling rate.
 // To calculate the sampling rate, get the microseconds
 // from the Serial-output, and use
 // this formula: 10^6/((10^-6)*(SAMPLING RATE))
+//
+// @author Prince Balabis
+
 
 void setup() {
   Serial.begin(9600); // Enable Serial-output
