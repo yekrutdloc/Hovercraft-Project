@@ -6,6 +6,7 @@ code to PWM-control
 the lift fan
 
 @author Prince Balabis
+@author Ali Rama
 */
 
 static void Thread8(void *arg) {

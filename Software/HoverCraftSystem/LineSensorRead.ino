@@ -14,6 +14,7 @@ to read all the values,
 a single run through the loop takes between 100-200ms
 
 @author Prince Balabis
+@author Ali Rama
 */
 
 // Front Line-Sensor pins

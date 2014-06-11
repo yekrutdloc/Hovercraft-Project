@@ -7,6 +7,7 @@ from accelerating too much. In the future an accelerometer
 is to be added to be able to regulate the motor.
 
 @author Prince Balabis
+@author Ali Rama
 */
 
 static void Thread7(void *arg) {
