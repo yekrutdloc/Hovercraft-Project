@@ -6,6 +6,7 @@ front left motor and PID-regulation
 The PID-regulation has a default sample time of 200ms.
 
 @author Prince Balabis
+@author Ali Rama
 */
 
 static void Thread3(void *arg) {

@@ -7,6 +7,7 @@ Global variables which are used as communication between threads are declared
 and thread-declarations of FreeRTOS threads are created and started.
 
 @author Prince Balabis
+@author Ali Rama
 */
 
 // Library includes
