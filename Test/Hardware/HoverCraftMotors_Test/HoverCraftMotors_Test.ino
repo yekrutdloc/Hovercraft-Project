@@ -1,4 +1,10 @@
-// This program is made to easily test each or several motors with PWM
+//HoverCraftMotors_Test.ino
+//
+// Purpose: This program is made to easily 
+// test each or several motors with PWM
+//
+// @author Prince Balabis
+//
 
 // Pins to the motors/fans
 const int liftFanPin = 7;

@@ -1,5 +1,16 @@
-////
-////// buzzer pin
+/**
+BuzzerFunction.ino
+
+Purpose: This Sketch used to exist for the purpose of
+returning feedback whenever an action was made.
+It was former used to feedback calibration actions,
+but due to different calibration algorithms,
+this Sketch is currently no longer used.
+
+@author Prince Balabis
+*/
+
+// buzzer pin
 //int const fr_buzzerPin = 31;
 //
 //static void Thread9(void *arg) {

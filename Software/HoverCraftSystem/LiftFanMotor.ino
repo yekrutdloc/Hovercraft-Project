@@ -1,14 +1,21 @@
-// This Sketch contains code to PWM-control
-// the lift fan
+/**
+LiftFanMotor.ino
 
-// Pin for motor
-const int lf_Pin = 7;
+Purpose: This Sketch contains
+code to PWM-control
+the lift fan
 
-// Manual set of PWM
-int lf_Force = 255;
+@author Prince Balabis
+*/
 
 static void Thread8(void *arg) {
 	//START of one-run setup program
+
+	// Pin for motor
+	const int lf_Pin = 7;
+
+	// Manual set of PWM
+	int lf_Force = 255;
 
 	//Setup motor pin
 	pinMode(lf_Pin, OUTPUT);

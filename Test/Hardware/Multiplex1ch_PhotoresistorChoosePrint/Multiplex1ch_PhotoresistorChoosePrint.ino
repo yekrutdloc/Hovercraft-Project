@@ -1,3 +1,11 @@
+// Multiplex1ch_PhotoresistorChoosePrint.ino
+//
+// Purpose: This Sketch is used to test specific multiplex-channels
+// With the use of Serial - a multiplex channel can be chosen. by typing a number between 0-15
+// When a channel has been chosen, the analog values from that specific channel are printed out.
+//
+// @author Prince Balabis
+
 
 // Front Line-Sensor pins
 int const s0pin = 53;

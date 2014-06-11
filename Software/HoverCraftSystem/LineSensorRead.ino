@@ -1,10 +1,20 @@
-// This Sketch contains actual code for controlling and receiving values from the line sensor modules
-// It's capable of reading each phototransistor connected to the multiplex, by using a function to switch 
-// to each channel and store its value in an array
-// After reading all phototransistor values at that time, a filterloop-functions are executed,
-// which is a function within LineSensorFilter.
-// The thread loop has a delay of 50ms, with the time it takes to read all the values,
-// a single run through the loop takes between 100-200ms
+/**
+LineSensorRead.ino
+
+Purpose: This Sketch contains actual code for controlling and 
+receiving values from the line sensor modules
+It's capable of reading each phototransistor connected to the
+multiplex, by using a function to switch
+to each channel and store its value in an array
+After reading all phototransistor values at that time, a 
+filterloop-functions are executed,
+which is a function within LineSensorFilter.
+The thread loop has a delay of 50ms, with the time it takes 
+to read all the values,
+a single run through the loop takes between 100-200ms
+
+@author Prince Balabis
+*/
 
 // Front Line-Sensor pins
 int const frMux_s0Pin = 53;
@@ -46,7 +56,7 @@ static void Thread1(void *arg) {
 		fr_filterLoop();
 		re_getPhotoArrayValues();
 		re_filterLoop();
-	//	Print out raw values for front sensor
+		//	Print out raw values for front sensor
 		//for (int i = 0; i < 16; i++)
 		//{
 		//	Serial.print(reLS_RAW[i]);
@@ -62,14 +72,19 @@ static void Thread1(void *arg) {
 		//}
 		//Serial.println(" ");
 
-	vTaskDelay((50L * configTICK_RATE_HZ) / 1000L); //100ms delay
+		vTaskDelay((50L * configTICK_RATE_HZ) / 1000L); //100ms delay
 	}
 }
 
 
-// Function to cycle through each multiplex-channel and store photoresistor value.
-// When running the functions to read all the photoresistor values, the reading occurs twice, and then average is calculated,
-// this occurs to mildy cancel out any noise and spikes of the phototransistor sensors, before sending them out for PID-regulation
+/**
+Function to cycle through each multiplex-channel for the FRONT line sensor and store
+photoresistor value.
+When running the functions to read all the photoresistor values,
+the reading occurs twice, and then average is calculated,
+this occurs to mildy cancel out any noise and spikes of the
+phototransistor sensors, before sending them out for PID-regulation
+*/
 void fr_getPhotoArrayValues() {
 	for (int i = 0; i < 2; i++){
 		for (int photoChannel = 0; photoChannel < 16; photoChannel++) {
@@ -213,6 +228,14 @@ void fr_getPhotoArrayValues() {
 	}
 }
 
+/**
+Function to cycle through each multiplex-channel for the Rear line sensor and store
+photoresistor value.
+When running the functions to read all the photoresistor values,
+the reading occurs twice, and then average is calculated,
+this occurs to mildy cancel out any noise and spikes of the
+phototransistor sensors, before sending them out for PID-regulation
+*/
 void re_getPhotoArrayValues() {
 	for (int i = 0; i < 3; i++){
 		for (int photoChannel = 0; photoChannel < 16; photoChannel++) {

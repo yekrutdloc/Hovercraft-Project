@@ -1,3 +1,5 @@
+//SingleLineSensorProgram.ino 
+//
 // This Arduino Sketch is to run a single Line Sensor System.
 // Before starting the program, hover the line sensor above the line.
 // When starting the program, a calibration is executed which reads the photoresistor values,
@@ -8,6 +10,9 @@
 // If the realtime value of a photoresistor is close to the calibration value - the black line is assumed
 // Change pin-variables below if needed
 // Change calibration sensitivity below if needed
+//
+// @author Prince Balabis
+
 
 // Front Line-Sensor pins
 int const s0pin = 51;

@@ -1,24 +1,32 @@
-// This Sketch contains actual PWM-control of front left motor and PID-regulation
-// The PID-regulation has a default sample time of 200ms
+/**
+FrontLeftMotor.ino
 
-//Local variables
-double frLM_Setpoint = 8;
-double frLM_Output;
+Purpose: This Sketch contains actual PWM-control of
+front left motor and PID-regulation
+The PID-regulation has a default sample time of 200ms.
 
-//Specify the links and initial tuning parameters
-PID frLM_PID(pfrLM_PIDInput, &frLM_Output, &frLM_Setpoint, 25, 0, 0, DIRECT);
-
-// Pin for motor
-const int frLM_Pin = 3;
+@author Prince Balabis
+*/
 
 static void Thread3(void *arg) {
 	//START of one-run setup program
+
+	//Local variables
+	double frLM_Setpoint = 8;
+	double frLM_Output;
+
+	//Specify the links and initial tuning parameters
+	PID frLM_PID(pfrLM_PIDInput, &frLM_Output, &frLM_Setpoint,
+		25, 0, 0, DIRECT);
+
+	// Pin for motor
+	const int frLM_Pin = 3;
 
 	//Turn PID on
 	frLM_PID.SetMode(AUTOMATIC);
 
 	//Setup PID
-	//frLM_PID.SetSampleTime(100);
+	frLM_PID.SetSampleTime(200);
 	frLM_PID.SetControllerDirection(DIRECT);
 	frLM_PID.SetOutputLimits(40, 150);
 

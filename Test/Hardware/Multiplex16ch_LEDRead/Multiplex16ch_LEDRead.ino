@@ -1,7 +1,12 @@
+// Multiplex16ch_LEDRead.ino
+//
 // This program is made to test a 16 channel multiplex.
 // Connect LEDs to each channel & 5V to common Input/Output on the multiplex
 // Choosing the channel is done by writing to Serial.
 // Enter a number between 0-15 to choose a channel accordingly.
+// When chosen a channel, the LED at that channel will light up.
+//
+// @author Prince Balabis
 
 // Multiplex pins
 int const s0pin = 44;

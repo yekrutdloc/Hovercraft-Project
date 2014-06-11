@@ -1,9 +1,13 @@
-// This program is to demonstrate the different movements programmed to the hovercraft
+// Dance.ino
+//
+// Purpose: This program is to demonstrate the different movements programmed to the hovercraft
 // When program starts, 5 second delay is added to wait for the lift fan to fully spin up
 // Afterwards the first dance move starts, which is to rotate right.
 // The dance move length is changed by changing the variable "moveLength"
 // Afterwards the lift fan spins down, to act as a break, before resuming to the next dance move
 // Change motor pins below if needed
+//
+// @author Prince Balabis
 
 // Pins for motors
 const int liftFanPin = 7;
@@ -64,7 +68,7 @@ void loop()
   enableHoverLift();
   travelRight();
   disableHoverLift();
-  
+
   // Infinite loop to end dance
   while (1) {
     delay(2000);

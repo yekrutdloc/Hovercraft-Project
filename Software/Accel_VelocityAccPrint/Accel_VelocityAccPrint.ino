@@ -1,4 +1,21 @@
 
+//
+// Accel_VelocityAccPrint.ino
+//
+// Purpose: This Sketch is currently in development.
+// Most of the code is taken from Arduino.cc
+// The Sketch calculates velocity from accelerometer data
+// This Sketch gets accelerometer data from the MPU-6050
+// which then runs the values through a low-pass filter written by "Krodal"
+// A calibration written by Prince Balabis runs at the start of the program - 
+// in order to calculate zero acceleration with gravity-affection removed.
+// Also the calibration enables "real accleration"-calculation,
+// which in other words mean the real acceleration is calculated 
+// independent from gravity.
+// 
+// @author Prince Balabis
+
+
 // MPU-6050 Accelerometer + Gyro
 // -----------------------------
 //
