@@ -1,3 +1,11 @@
+/**
+LineSensorFilter.ino
+
+Purpose: THE PURPOSE OF THIS FILE IS EXPLAINED HERE
+
+@author Hisham Ramish
+*/
+
 // Front variables
 // USING
 int fr_sorted_RAW[16], re_sorted_RAW[16];
@@ -55,10 +63,10 @@ void fr_setup_Calibration(){
 
 
 	for (int i = 0; i < 16; i++){
-		fr_weighted_RAW[i] =(double)(frLS_RAW[i] / fr_weights[i]);
+		fr_weighted_RAW[i] = (double)(frLS_RAW[i] / fr_weights[i]);
 
 	}
-	
+
 
 }
 
@@ -194,7 +202,7 @@ void fr_filterLoop(){
 	else{
 		min_index = 0;
 	}
-	
+
 	if (min_index && counter){
 		if (min_index > 10 && !min_index){
 
@@ -205,7 +213,7 @@ void fr_filterLoop(){
 			panic_mode = 0;
 		}
 	}
-	
+
 
 	//Serial.println("PANIC MODE:");
 	//Serial.println(panic_mode);
@@ -229,17 +237,17 @@ void fr_filterLoop(){
 
 
 	/*else if (!fr_line_exist){
-		
+
 		if (panic_mode){
-			frRM_PIDInput = 0;
-			frLM_PIDInput = 8;
+		frRM_PIDInput = 0;
+		frLM_PIDInput = 8;
 		}
 		else if (!panic_mode){
-			frRM_PIDInput = 8;
-			frLM_PIDInput = 0;
+		frRM_PIDInput = 8;
+		frLM_PIDInput = 0;
 		}
 
-	}*/
+		}*/
 
 }
 
@@ -393,7 +401,7 @@ void re_filterLoop(){
 			reRM_PIDInput = -1 * (min_index - 17);
 		}
 	}
-	
+
 
 	/*	Serial.print("Right - ");
 	Serial.print(reRM_PIDInput);

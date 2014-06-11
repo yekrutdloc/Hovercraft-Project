@@ -1,11 +1,19 @@
-// This Sketch is the actual .ino file to contain the setup- and loop-functions.
-// In here all the library includes are present.,
-// Global variables which are used as communication between threads are declared
-// and thread-declarations of FreeRTOS threads are created and started.
+/**
+HoverCraftSystem.ino
 
+Purpose: This Sketch is the actual .ino file to contain the setup- and loop-functions.
+In here all the library includes are present.
+Global variables which are used as communication between threads are declared
+and thread-declarations of FreeRTOS threads are created and started.
+
+@author Prince Balabis
+*/
+
+// Library includes
 #include <FreeRTOS_ARM.h>
 #include <PID_v1.h>
 
+// Public variables for communication between threads
 extern double* pfrRM_PIDInput;
 extern double* pfrLM_PIDInput;
 
@@ -19,7 +27,7 @@ void setup() {
 
 	// Start serial, which can be used throughout the whole program
 	Serial.begin(115200);
-	
+
 	// Set software-ADC to 12 bit
 	analogReadResolution(12);
 
@@ -37,8 +45,9 @@ void setup() {
 	//xTaskCreate(Thread9, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //Buzzer
 	//xTaskCreate(Thread10, NULL, configMINIMAL_STACK_SIZE, NULL, 2, NULL); //BluetoothModule
 
-	// start scheduler
+	// Start scheduler
 	vTaskStartScheduler();
+
 	Serial.println(F("Insufficient RAM"));
 	while (1);
 }
