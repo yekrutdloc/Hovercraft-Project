@@ -3,7 +3,6 @@ FrontLeftMotor.ino
 
 Purpose: This Sketch contains actual PWM-control of
 front left motor and PID-regulation
-The PID-regulation has a default sample time of 200ms.
 
 @author Prince Balabis
 @author Ali Rama
@@ -27,7 +26,6 @@ static void Thread3(void *arg) {
 	frLM_PID.SetMode(AUTOMATIC);
 
 	//Setup PID
-	frLM_PID.SetSampleTime(200);
 	frLM_PID.SetControllerDirection(DIRECT);
 	frLM_PID.SetOutputLimits(40, 150);
 

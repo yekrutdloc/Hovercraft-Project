@@ -9,9 +9,8 @@ to each channel and store its value in an array
 After reading all phototransistor values at that time, a 
 filterloop-functions are executed,
 which is a function within LineSensorFilter.
-The thread loop has a delay of 50ms, with the time it takes 
-to read all the values,
-a single run through the loop takes between 100-200ms
+The thread loop has a delay function of 50ms.
+For the program to run the thread loop a single iteration, it takes a little over 105ms.(including delay functions)
 
 @author Prince Balabis
 @author Ali Rama
@@ -73,7 +72,7 @@ static void Thread1(void *arg) {
 		//}
 		//Serial.println(" ");
 
-		vTaskDelay((50L * configTICK_RATE_HZ) / 1000L); //100ms delay
+		vTaskDelay((50L * configTICK_RATE_HZ) / 1000L); //50ms delay
 	}
 }
 

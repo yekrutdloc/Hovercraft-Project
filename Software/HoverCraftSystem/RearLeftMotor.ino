@@ -3,7 +3,6 @@ RearLeftMotor.ino
 
 Purpose: This Sketch contains actual PWM-control
 of rear left motor and PID-regulation
-The PID-regulation has a default sample time of 200ms
 
 @author Prince Balabis
 @author Ali Rama
@@ -27,7 +26,6 @@ static void Thread5(void *arg) {
 	reLM_PID.SetMode(AUTOMATIC);
 
 	//Setup PID
-	//frLM_PID.SetSampleTime(100);
 	reLM_PID.SetControllerDirection(DIRECT);
 	reLM_PID.SetOutputLimits(40, 150);
 
