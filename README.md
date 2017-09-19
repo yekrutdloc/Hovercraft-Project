@@ -1,7 +1,7 @@
-# P2
-School project P2 - Line-following HoverCraft
+# Line-following Hovercraft
+School project embedded systems, web, Arduino
 
-Functioning HoverCraft system
+Functioning Hovercraft system
 
 Contains documentation
 
